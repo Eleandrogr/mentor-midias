@@ -1,0 +1,24 @@
+{
+  "fuso": "America/Sao_Paulo",
+  "repo": "eleandrogr/mentor-midias",
+  "midia_base_url": "https://eleandrogr.github.io/mentor-midias/",
+  "pagina_aprovacao_slug": "PREENCHER_NA_ETAPA_5",
+  "buffer": {
+    "organizacao": "6aefab98f8cdcb8bed5e3fe8",
+    "canais": {
+      "instagram": "6aefaceee29c69a1719afea3",
+      "facebook": "6aefad81e29c69a1719b07e1",
+      "linkedin": "6aefad61e29c69a1719b0139"
+    },
+    "limite_fila_por_canal": 10
+  },
+  "redes": {
+    "instagram": { "posts_por_dia": 3, "horarios": ["08:30", "12:15", "19:00"], "formatos": ["carrossel_video", "carrossel_video", "reel"] },
+    "facebook":  { "posts_por_dia": 3, "horarios": ["08:45", "12:30", "19:15"], "formato": "video_unico_vertical" },
+    "linkedin":  { "posts_por_dia": 1, "horarios": ["09:10"], "formato": "video_unico", "escolha": "a peça marcada linkedin=true" }
+  },
+  "aprovacao": { "pauta_chega": "07:00", "limite": "11:00", "pauta_e_de": "amanha" },
+  "pilares": ["Gestão financeira", "Indicadores e KPIs", "Controle e processos", "ERP e produto Mentor"],
+  "publico": "Gestores e donos de pequenas e médias empresas",
+  "grade": { "alternar_fundo": true, "ordem_sugerida": ["night", "cloud", "blue"] }
+}
