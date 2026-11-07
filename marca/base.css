@@ -1,0 +1,30 @@
+/* Mentor — base visual para peças de redes sociais */
+@font-face { font-family: "Saira"; font-weight: 800; src: url("fonts/Saira-ExtraBold.woff2") format("woff2"); }
+@font-face { font-family: "Geist"; font-weight: 400; src: url("fonts/Geist-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Geist"; font-weight: 500; src: url("fonts/Geist-Medium.woff2") format("woff2"); }
+@font-face { font-family: "Geist"; font-weight: 600; src: url("fonts/Geist-SemiBold.woff2") format("woff2"); }
+@font-face { font-family: "Geist Mono"; font-weight: 400; src: url("fonts/GeistMono-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Geist Mono"; font-weight: 500; src: url("fonts/GeistMono-Medium.woff2") format("woff2"); }
+
+:root {
+  --blue: #0984E3;    /* Electric Blue — marca */
+  --night: #1E272E;   /* Night Black — base escura */
+  --cyan: #00CEC9;    /* Cyan Neon — dado em destaque no escuro */
+  --cloud: #F5F6FA;   /* Cloud White — fundo claro */
+  --muted-dark: #A3AFB8; /* texto de apoio sobre Night */
+  --muted-light: #5B6670; /* texto de apoio sobre Cloud */
+  --m: 88px;          /* margem externa */
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 100%; height: 100%; }
+body { font-family: "Geist", sans-serif; -webkit-font-smoothing: antialiased; }
+.peca { position: relative; width: 100%; height: 100%; overflow: hidden; padding: var(--m); display: flex; flex-direction: column; }
+.peca.night { background: var(--night); color: var(--cloud); }
+.peca.cloud { background: var(--cloud); color: var(--night); }
+.peca.blue  { background: var(--blue);  color: #FFFFFF; }
+.logo { height: 52px; width: auto; display: block; align-self: flex-start; }
+.display { font-family: "Saira", sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 0.01em; line-height: 0.98; }
+.apoio { font-size: 32px; line-height: 1.4; font-weight: 400; text-wrap: pretty; }
+.fonte { font-size: 22px; line-height: 1.4; }
+.mono { font-family: "Geist Mono", monospace; font-variant-numeric: tabular-nums; }
+.spacer { flex: 1; }
