@@ -53,6 +53,17 @@ Assinatura: **Clareza para decidir.** Mentor é o ERP em nuvem da EGR Systems.
   3. **Educativo** (Blue): logo sobre azul → rótulo (Geist 600, caixa alta) → título → bloco de fórmula/lista em Geist Mono → apoio com quadrado-marcador Night. Arquivo: `exemplos/educativo.html`.
 - Grade de alternância: não repetir o mesmo fundo em dois posts seguidos do mesmo dia.
 
+## 6A. Gráficos animados (prioridade)
+Pedido do Eleandro: **abusar de gráficos animados**. O gráfico é o jeito mais claro de mostrar "o dado antes do adjetivo".
+- Meta: **pelo menos 1 tela com gráfico animado em cada peça** (carrossel ou reel) sempre que o tema tiver números comparáveis. Sem dado com fonte, sem gráfico.
+- Tipos: barras horizontais (comparar categorias; até 6 barras), barras verticais (até 8 períodos), linha (evolução no tempo), número-herói com barra de progresso (parte de um todo). Evite pizza e rosca.
+- Animação: barras crescem (`data-growx` / `data-grow`), linhas se desenham (`data-draw`), valores contam (`data-count`). Entradas escalonadas de 0,2 s por barra.
+- Destaque único: só a barra/série que conta a história usa a cor de destaque (Cyan sobre Night, Blue sobre Cloud, Night sobre Blue). O resto em cinza (#46535E sobre Night; #C5CBD3 sobre Cloud).
+- Escala honesta: barras sempre começam do zero; largura/altura proporcional ao valor; rótulo com o valor exato em Geist Mono; unidade explícita no subtítulo; período no subtítulo.
+- Ordem das séries quando houver várias: realizado (azul), projetado (ciano), orçado/meta (laranja #F29F05), período anterior (Night), outros (cinza). Máximo 5 séries.
+- Toda tela com gráfico leva a linha "Fonte: ..." no rodapé.
+- Modelos: `exemplos/video/tela-grafico-barras.html` (dados reais, Sebrae) e `exemplos/video/tela-grafico-linha.html` (estrutura de referência com dados ILUSTRATIVOS: troque por dados reais antes de usar).
+
 ## 7. Formatos e tamanhos
 | Rede | Formato | Tamanho |
 |---|---|---|
@@ -83,4 +94,5 @@ Assinatura: **Clareza para decidir.** Mentor é o ERP em nuvem da EGR Systems.
 - [ ] Sem superlativo, sem exclamação, dado antes do adjetivo.
 - [ ] Tamanho certo para a rede; vídeo com som; arquivo dentro do limite.
 - [ ] Texto legível no celular (apoio ≥ 28px em 1080px; contraste ≥ 4,5:1).
+- [ ] Pelo menos 1 tela com gráfico animado por peça, quando houver dados comparáveis; escala começando do zero.
 - [ ] Revisão ortográfica.

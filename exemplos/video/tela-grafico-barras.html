@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/base.css">
+<!-- Modelo: gráfico de barras horizontais animado (Night).
+     Regra do destaque único: só a barra que conta a história fica em Cyan; as outras em cinza.
+     Valores reais com fonte no rodapé. Largura da barra = valor / maior valor do eixo. -->
+<style>
+  .titulo { font-size: 76px; margin-top: 64px; max-width: 900px; }
+  .apoio { color: var(--muted-dark); margin-top: 20px; max-width: 840px; font-size: 30px; }
+  .grafico { margin-top: 56px; display: flex; flex-direction: column; gap: 26px; }
+  .linha { display: grid; grid-template-columns: 300px 1fr 120px; align-items: center; gap: 20px; }
+  .rotulo { font-size: 28px; color: var(--cloud); }
+  .trilho { height: 44px; position: relative; }
+  .barra { position: absolute; inset: 0 auto 0 0; border-radius: 4px; background: #46535E; }
+  .barra.destaque { background: var(--cyan); }
+  .valor { font: 500 32px "Geist Mono", monospace; color: var(--muted-dark); text-align: right; font-variant-numeric: tabular-nums; }
+  .valor.destaque { color: var(--cyan); }
+  .eixo { margin-top: 18px; border-top: 1px solid rgba(245,246,250,.18); }
+  .fonte { color: var(--muted-dark); border-top: 1px solid rgba(245,246,250,.18); padding-top: 22px; }
+</style></head>
+<body><div class="peca night">
+  <img class="logo" src="marca/logos/mentor-logo-escuro.svg" alt="Mentor" data-in="0">
+  <div class="display titulo" data-in="0.3">Comércio fecha mais cedo</div>
+  <p class="apoio" data-in="0.7">Empresas que fecham em até 5 anos, por setor</p>
+  <div class="grafico">
+    <div class="linha" data-in="1.0"><span class="rotulo">Comércio</span><div class="trilho"><div class="barra destaque" style="width:100%" data-growx="1.1"></div></div><span class="valor destaque" data-in="1.1" data-count="30.2" data-decimals="1" data-suffix="%">30,2%</span></div>
+    <div class="linha" data-in="1.2"><span class="rotulo">Indústria de transformação</span><div class="trilho"><div class="barra" style="width:90.4%" data-growx="1.3"></div></div><span class="valor" data-in="1.3" data-count="27.3" data-decimals="1" data-suffix="%">27,3%</span></div>
+    <div class="linha" data-in="1.4"><span class="rotulo">Serviços</span><div class="trilho"><div class="barra" style="width:88.1%" data-growx="1.5"></div></div><span class="valor" data-in="1.5" data-count="26.6" data-decimals="1" data-suffix="%">26,6%</span></div>
+    <div class="linha" data-in="1.6"><span class="rotulo">Agropecuária</span><div class="trilho"><div class="barra" style="width:59.6%" data-growx="1.7"></div></div><span class="valor" data-in="1.7" data-count="18" data-decimals="1" data-suffix="%">18,0%</span></div>
+    <div class="linha" data-in="1.8"><span class="rotulo">Indústria extrativa</span><div class="trilho"><div class="barra" style="width:47.4%" data-growx="1.9"></div></div><span class="valor" data-in="1.9" data-count="14.3" data-decimals="1" data-suffix="%">14,3%</span></div>
+  </div>
+  <div class="spacer"></div>
+  <p class="fonte" data-in="2.4">Fonte: Sebrae, pesquisa Sobrevivência de Empresas (2020)</p>
+</div></body></html>

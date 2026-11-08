@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/base.css">
+<!-- Modelo: gráfico de linha animado (Cloud). ESTRUTURA DE REFERÊNCIA.
+     Os valores abaixo são ILUSTRATIVOS e marcados como tal: nunca publique sem trocar por dados reais com fonte.
+     Como montar: área 880x420; x = 40 + i * (800 / (n-1)); y = 380 - (valor - min) / (max - min) * 340.
+     Destaque único: a linha em Blue e o ponto final; grade e eixos em cinza fino. -->
+<style>
+  .titulo { font-size: 76px; margin-top: 64px; }
+  .apoio { color: var(--muted-light); margin-top: 20px; font-size: 30px; }
+  svg.graf { margin-top: 48px; width: 904px; height: 460px; overflow: visible; }
+  .grade line { stroke: rgba(30,39,46,.10); stroke-width: 1; }
+  .eixo text { font: 400 22px "Geist", sans-serif; fill: var(--muted-light); }
+  .serie { fill: none; stroke: var(--blue); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+  .area { fill: rgba(9,132,227,.08); }
+  .ponto { fill: var(--blue); }
+  .rotulo-final { font: 500 34px "Geist Mono", monospace; fill: var(--night); }
+  .fonte { color: var(--muted-light); border-top: 1px solid rgba(30,39,46,.14); padding-top: 22px; }
+  .ilustrativo { position: absolute; top: 96px; right: 88px; font: 600 20px "Geist"; letter-spacing: .08em; color: #B26A00; }
+</style></head>
+<body><div class="peca cloud">
+  <span class="ilustrativo">DADOS ILUSTRATIVOS</span>
+  <img class="logo" src="marca/logos/mentor-logo-claro.svg" alt="Mentor" data-in="0">
+  <div class="display titulo" data-in="0.3">Título com o dado</div>
+  <p class="apoio" data-in="0.7">O que a linha mede, unidade e período</p>
+  <svg class="graf" viewBox="0 0 904 460">
+    <g class="grade" data-in="0.9"><line x1="40" y1="40" x2="840" y2="40"/><line x1="40" y1="153" x2="840" y2="153"/><line x1="40" y1="267" x2="840" y2="267"/><line x1="40" y1="380" x2="840" y2="380"/></g>
+    <g class="eixo" data-in="0.9"><text x="40" y="420">jan</text><text x="360" y="420">abr</text><text x="680" y="420">jul</text><text x="800" y="420">ago</text></g>
+    <path class="area" data-in="2.0" d="M40,380 L40,300 L200,280 L360,250 L520,220 L680,160 L840,90 L840,380 Z"/>
+    <path class="serie" data-draw="1.0" d="M40,300 L200,280 L360,250 L520,220 L680,160 L840,90"/>
+    <circle class="ponto" cx="840" cy="90" r="12" data-in="2.3"/>
+    <text class="rotulo-final" x="760" y="60" data-in="2.4">+42%</text>
+  </svg>
+  <div class="spacer"></div>
+  <p class="fonte" data-in="2.6">Fonte: instituição, estudo (ano)</p>
+</div></body></html>
