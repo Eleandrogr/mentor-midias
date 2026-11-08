@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/base.css">
+<style>
+  .fonte-n { color: var(--muted-dark); border-top: 1px solid rgba(245,246,250,.18); padding-top: 22px; }
+  .fonte-c { color: var(--muted-light); border-top: 1px solid rgba(30,39,46,.14); padding-top: 22px; }
+  .fonte-b { color: #FFFFFF; opacity: .9; border-top: 1px solid rgba(255,255,255,.28); padding-top: 22px; }
+  .fonte-n, .fonte-c, .fonte-b { font-size: 24px; }
+  .ponto { color: var(--blue); }
+  .marcador { display: inline-block; width: 22px; height: 22px; border-radius: 4px; background: var(--night); margin-right: 16px; vertical-align: -2px; }
+  .topo { margin-top: 130px; }
+  @media (min-height: 1700px) { .topo { margin-top: 330px; } .grafico { margin-top: 96px !important; } }
+
+  .rotulo { font-size: 26px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; opacity: .9; }
+  .titulo { font-size: 104px; margin-top: 20px; }
+  .formula { margin-top: 56px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.28); border-radius: 12px; padding: 30px 34px; font-size: 34px; line-height: 1.6; }
+  .formula b { font-weight: 500; }
+  .apoio { margin-top: 44px; max-width: 820px; }</style></head>
+<body><div class="peca blue">
+  <img class="logo" src="marca/logos/mentor-logo-sobre-azul.svg" alt="Mentor" data-in="0">
+  <div class="rotulo topo" data-in="0.3">Indicador da semana</div>
+  <div class="display titulo" data-in="0.6">Peso do<br>custo operacional</div>
+  <div class="formula mono" data-in="1.2">Custos operacionais do mês<br>÷ faturamento do mês<br>× 100<br><b>= peso do custo (%)</b></div>
+  <p class="apoio" data-in="1.8"><span class="marcador"></span>Mostra quanto de cada R$ 100 vendidos fica com a operação.</p>
+</div></body></html>
