@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aprovação de Conteúdo Mentor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@800&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Mentor: Cloud de base, Night para texto, Blue para ação, Cyan só como dado no escuro */
+  --bg: #F5F6FA;
+  --card: #FFFFFF;
+  --ink: #1E272E;
+  --muted: #5B6670;
+  --line: #E1E4EB;
+  --accent: #0668B5;
+  --accent-ink: #FFFFFF;
+  --brand: #0984E3;
+  --ok: #1E8E5A; --ok-bg: #E3F4EB;
+  --warn: #B26A00; --warn-bg: #FFF1DB;
+  --bad: #C2353A; --bad-bg: #FBE6E7;
+  --info: #0668B5; --info-bg: #E2F0FB;
+  --done: #3E4A55; --done-bg: #E9ECF1;
+  --display: "Saira", "Arial Narrow", sans-serif;
+  --body: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Geist Mono", ui-monospace, monospace;
+  color-scheme: light;
+  /* layout: coluna única de leitura; barra de decisão fixa no rodapé */
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12181D; --card: #1E272E; --ink: #F5F6FA; --muted: #A3AFB8; --line: #2C3740;
+    --accent: #4AA8F0; --accent-ink: #0E1418; --brand: #0984E3;
+    --ok: #5CD49A; --ok-bg: #173327; --warn: #F2B35A; --warn-bg: #3A2A12;
+    --bad: #F2797D; --bad-bg: #3D1B1E; --info: #7BC0F6; --info-bg: #13283A;
+    --done: #C3CCD4; --done-bg: #26313A; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12181D; --card: #1E272E; --ink: #F5F6FA; --muted: #A3AFB8; --line: #2C3740;
+  --accent: #4AA8F0; --accent-ink: #0E1418; --brand: #0984E3;
+  --ok: #5CD49A; --ok-bg: #173327; --warn: #F2B35A; --warn-bg: #3A2A12;
+  --bad: #F2797D; --bad-bg: #3D1B1E; --info: #7BC0F6; --info-bg: #13283A;
+  --done: #C3CCD4; --done-bg: #26313A; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { background: var(--bg); color: var(--ink); font: 16px/1.5 var(--body); -webkit-font-smoothing: antialiased; }
+a { color: var(--accent); }
+button { font: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 16px 16px 140px; display: flex; flex-direction: column; gap: 20px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand svg { height: 28px; width: auto; }
+.brand span { font: 500 14px var(--body); color: var(--muted); border-left: 1px solid var(--line); padding-left: 10px; }
+.tabs { display: flex; gap: 4px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 3px; }
+.tabs button { border: 0; background: transparent; color: var(--muted); padding: 6px 12px; border-radius: 8px; font-weight: 500; font-size: 14px; }
+.tabs button[aria-selected="true"] { background: var(--ink); color: var(--bg); }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+.display { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: .01em; line-height: 1; }
+.eyebrow { font: 600 12px var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.dias { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
+.dia { flex: 0 0 auto; min-width: 92px; text-align: left; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 10px; padding: 8px 10px; display: flex; flex-direction: column; gap: 4px; }
+.dia[aria-current="true"] { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.dia b { font: 600 14px var(--body); }
+.pill { display: inline-flex; align-items: center; gap: 6px; font: 600 12px var(--body); padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.pill::before { content: ""; width: 7px; height: 7px; border-radius: 2px; background: currentColor; }
+.s-pendente { color: var(--warn); background: var(--warn-bg); }
+.s-aprovado { color: var(--ok); background: var(--ok-bg); }
+.s-ajustar { color: var(--info); background: var(--info-bg); }
+.s-rejeitado { color: var(--bad); background: var(--bad-bg); }
+.s-agendado { color: var(--done); background: var(--done-bg); }
+.resumo { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 10px; }
+.resumo .tema { font-size: 30px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px 16px; color: var(--muted); font-size: 14px; }
+.meta strong { color: var(--ink); font-weight: 500; }
+.aviso { border-left: 3px solid var(--warn); background: var(--warn-bg); color: var(--ink); padding: 10px 12px; border-radius: 6px; font-size: 14px; }
+.aviso.info { border-color: var(--info); background: var(--info-bg); }
+.peca { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.peca-head { padding: 14px 16px; display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; border-bottom: 1px solid var(--line); }
+.peca-head h3 { font-size: 20px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.chip { font: 500 12px var(--body); color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 1px 7px; }
+.chip.teste { color: var(--warn); border-color: var(--warn); }
+.midia { background: var(--bg); display: flex; gap: 8px; overflow-x: auto; padding: 12px 16px; scroll-snap-type: x mandatory; }
+.midia img, .midia video { flex: 0 0 auto; width: min(78%, 300px); aspect-ratio: 4 / 5; object-fit: cover; border-radius: 10px; border: 1px solid var(--line); background: var(--card); scroll-snap-align: start; }
+.midia .vazio { width: 100%; padding: 24px; text-align: center; color: var(--muted); font-size: 14px; }
+.peca-body { padding: 14px 16px; display: flex; flex-direction: column; gap: 14px; }
+.redes { display: grid; gap: 8px; }
+details { border: 1px solid var(--line); border-radius: 10px; }
+summary { padding: 10px 12px; display: flex; justify-content: space-between; gap: 8px; cursor: pointer; font-weight: 500; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary .hora { font: 500 14px var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.legenda { padding: 0 12px 12px; white-space: pre-wrap; font-size: 15px; color: var(--ink); }
+.tags { color: var(--accent); }
+.fontes { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.fontes li { font-size: 14px; border-left: 3px solid var(--brand); padding-left: 10px; }
+.fontes .dado { font: 500 15px var(--mono); }
+.fontes q { color: var(--muted); }
+.barra { position: fixed; left: 0; right: 0; bottom: 0; background: var(--card); border-top: 1px solid var(--line); padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); }
+.barra-in { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
+.acoes { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.btn { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 10px; padding: 12px 8px; font-weight: 600; min-height: 48px; }
+.btn.primario { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn.perigo { color: var(--bad); border-color: var(--bad); }
+.btn[disabled] { opacity: .4; cursor: not-allowed; }
+textarea { width: 100%; min-height: 90px; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font: 15px/1.45 var(--body); background: var(--bg); color: var(--ink); resize: vertical; }
+.linha { display: flex; gap: 8px; justify-content: flex-end; }
+.estado { color: var(--muted); font-size: 14px; text-align: center; }
+.vazio-geral { background: var(--card); border: 1px dashed var(--line); border-radius: 14px; padding: 28px; text-align: center; color: var(--muted); }
+.cfg { display: flex; flex-direction: column; gap: 14px; }
+.cfg section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+.cfg pre { margin: 0; white-space: pre-wrap; font: 13px/1.5 var(--mono); max-height: 360px; overflow: auto; background: var(--bg); border-radius: 8px; padding: 12px; }
+.regra { border-left: 3px solid var(--line); padding-left: 10px; font-size: 14px; }
+.regra[data-c="alta"] { border-color: var(--ok); }
+.regra[data-c="media"] { border-color: var(--warn); }
+.tabela { width: 100%; border-collapse: collapse; font-size: 14px; }
+.tabela th, .tabela td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+.tabela td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.switch { display: flex; align-items: center; gap: 10px; }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: 150px; background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 10px; font-size: 14px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+.toast.on { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+@media (max-width: 420px) { .resumo .tema { font-size: 26px; } .acoes { gap: 6px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <svg viewBox="0 0 258.1 64" aria-label="Mentor" role="img"><path d="M34 10.6L7 16V48L57 58V34" fill="none" stroke="currentColor" stroke-width="6.5" stroke-linejoin="round" stroke-linecap="round"/><rect x="43" y="3" width="17" height="17" rx="3" fill="#0984E3"/><text x="82" y="44" font-family="Saira, sans-serif" font-weight="800" font-size="40" fill="currentColor" letter-spacing="0.5">MENTOR</text></svg>
+      <span>Aprovação</span>
+    </div>
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tab-pautas" aria-selected="true">Pautas</button>
+      <button role="tab" id="tab-config" aria-selected="false">Configurações</button>
+    </div>
+  </header>
+
+  <main id="view-pautas" class="wrap" style="padding:0;gap:20px">
+    <div>
+      <div class="eyebrow" style="margin-bottom:8px">Próximos dias</div>
+      <div class="dias" id="dias"></div>
+    </div>
+    <div id="pauta"><p class="estado">Carregando pautas…</p></div>
+  </main>
+
+  <main id="view-config" class="cfg" hidden></main>
+</div>
+
+<div class="barra" id="barra" hidden>
+  <div class="barra-in">
+    <div id="ajuste-box" hidden>
+      <label for="comentario" class="eyebrow">O que precisa mudar</label>
+      <textarea id="comentario" placeholder="Ex.: troque o número da peça 2 por um dado mais recente; título do reel mais curto."></textarea>
+      <div class="linha" style="margin-top:8px">
+        <button class="btn" id="cancelar-ajuste">Cancelar</button>
+        <button class="btn primario" id="enviar-ajuste">Enviar ajuste</button>
+      </div>
+    </div>
+    <div id="rejeitar-box" hidden>
+      <p style="margin:0 0 8px">Rejeitar esta pauta? Nada será publicado neste dia e a produção poderá gerar outra.</p>
+      <div class="linha">
+        <button class="btn" id="cancelar-rejeitar">Voltar</button>
+        <button class="btn perigo" id="confirmar-rejeitar">Rejeitar pauta</button>
+      </div>
+    </div>
+    <div class="acoes" id="acoes">
+      <button class="btn primario" id="aprovar">Aprovar</button>
+      <button class="btn" id="ajustar">Pedir ajuste</button>
+      <button class="btn perigo" id="rejeitar">Rejeitar</button>
+    </div>
+    <p class="estado" id="barra-estado" hidden></p>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const ROTULO = { pendente: "Pendente", aprovado: "Aprovado", ajustar: "Ajuste pedido", rejeitado: "Rejeitado", agendado: "Agendado" };
+const REDE = { instagram: "Instagram", facebook: "Facebook", linkedin: "LinkedIn" };
+const FORMATO = { carrossel_video: "Carrossel de vídeos", reel: "Reel", video_unico: "Vídeo único", video_unico_vertical: "Vídeo vertical" };
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const blob = (id) => (id ? "/_blob/" + encodeURIComponent(id) : "");
+const safeUrl = (u) => (/^https?:\/\//i.test(u || "") ? u : "#");
+let db = null, pautas = [], atual = null, configs = {};
+
+function hojeSP() {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: "America/Sao_Paulo" }).format(new Date());
+}
+function rotuloDia(iso) {
+  const [y, m, d] = iso.split("-").map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d, 12));
+  const hoje = hojeSP();
+  const amanha = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Sao_Paulo" }).format(new Date(Date.now() + 864e5));
+  const sem = dt.toLocaleDateString("pt-BR", { weekday: "short", timeZone: "UTC" }).replace(".", "");
+  const dm = dt.toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit", timeZone: "UTC" });
+  if (iso === hoje) return "Hoje · " + dm;
+  if (iso === amanha) return "Amanhã · " + dm;
+  return sem + " · " + dm;
+}
+function toast(msg) {
+  const t = $("#toast"); t.textContent = msg; t.classList.add("on");
+  clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove("on"), 2600);
+}
+
+function renderDias() {
+  const el = $("#dias");
+  if (!pautas.length) { el.innerHTML = '<span class="estado">Nenhuma pauta ainda.</span>'; return; }
+  el.innerHTML = pautas.map((p) => `
+    <button class="dia" data-id="${esc(p.id)}" aria-current="${atual === p.id}">
+      <b>${esc(rotuloDia(p.id))}</b>
+      <span class="pill s-${esc(p.data.status)}">${esc(ROTULO[p.data.status] || p.data.status)}</span>
+    </button>`).join("");
+  el.querySelectorAll(".dia").forEach((b) => b.addEventListener("click", () => { atual = b.dataset.id; render(); }));
+}
+
+function renderMidia(pc) {
+  const ids = (pc.midias_asset && pc.midias_asset.length) ? pc.midias_asset : [];
+  if (ids.length) {
+    return ids.map((id, i) => `<video src="${blob(id)}" ${pc.previa_asset && i === 0 ? `poster="${blob(pc.previa_asset)}"` : ""} controls playsinline preload="metadata" aria-label="Tela ${i + 1}"></video>`).join("");
+  }
+  if (pc.previa_asset) return `<img src="${blob(pc.previa_asset)}" alt="Prévia de ${esc(pc.titulo)}">`;
+  return '<div class="vazio">Prévia indisponível</div>';
+}
+
+function renderRedes(pc) {
+  const redes = pc.redes || {};
+  return Object.keys(REDE).filter((r) => redes[r]).map((r) => {
+    const x = redes[r];
+    const tags = (x.hashtags || []).map((h) => (h.startsWith("#") ? h : "#" + h)).join(" ");
+    return `<details>
+      <summary><span>${REDE[r]}</span><span class="hora">${esc(x.horario || "")}</span></summary>
+      <div class="legenda">${esc(x.legenda || "")}${tags ? `\n\n<span class="tags">${esc(tags)}</span>` : ""}</div>
+    </details>`;
+  }).join("");
+}
+
+function renderFontes(pc) {
+  const f = pc.fontes || [];
+  if (!f.length) return '<p class="estado" style="text-align:left;margin:0">Esta peça não usa números.</p>';
+  return `<ul class="fontes">${f.map((x) => `<li><span class="dado">${esc(x.dado)}</span> — ${esc(x.fonte)}${x.frase ? `<br><q>${esc(x.frase)}</q>` : ""}<br><a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener">Abrir a fonte</a></li>`).join("")}</ul>`;
+}
+
+function render() {
+  renderDias();
+  const box = $("#pauta");
+  const p = pautas.find((x) => x.id === atual);
+  if (!p) {
+    box.innerHTML = '<div class="vazio-geral">Quando a produção rodar, a pauta do dia seguinte aparece aqui para você aprovar.</div>';
+    $("#barra").hidden = true; return;
+  }
+  const d = p.data;
+  const pecas = (d.pecas || []).slice().sort((a, b) => (a.ordem || 0) - (b.ordem || 0));
+  const prazo = d.status === "pendente" ? `<div class="aviso">Aprove até <strong>11h de ${esc(rotuloDia(hojeAnterior(p.id)))}</strong> para os posts saírem neste dia.</div>` : "";
+  const exemplo = d.exemplo ? '<div class="aviso info">Pauta de exemplo para testar os botões. Nada dela será publicado.</div>' : "";
+  const coment = d.comentario && d.status === "ajustar" ? `<div class="aviso info"><strong>Ajuste pedido:</strong> ${esc(d.comentario)}</div>` : "";
+  box.innerHTML = `
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <section class="resumo">
+        <div style="display:flex;justify-content:space-between;gap:8px;align-items:center">
+          <span class="eyebrow">${esc(rotuloDia(p.id))} · ${esc(d.pilar || "")}</span>
+          <span class="pill s-${esc(d.status)}">${esc(ROTULO[d.status] || d.status)}</span>
+        </div>
+        <h1 class="display tema">${esc(d.tema || "Sem tema")}</h1>
+        <div class="meta">
+          <span>Versão <strong>${esc(d.versao || 1)}</strong></span>
+          <span><strong>${pecas.length}</strong> peças</span>
+          ${d.teste ? `<span>Teste: <strong>${esc(d.teste.descricao || d.teste.peca || "")}</strong></span>` : ""}
+          ${d.decidido_em ? `<span>Decidido em <strong>${esc(new Date(d.decidido_em).toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo", dateStyle: "short", timeStyle: "short" }))}</strong></span>` : ""}
+        </div>
+        ${exemplo}${prazo}${coment}
+      </section>
+      ${pecas.map((pc) => `
+        <article class="peca">
+          <div class="peca-head">
+            <div>
+              <span class="eyebrow">Peça ${esc(pc.ordem || "")}</span>
+              <h3 class="display">${esc(pc.titulo || "")}</h3>
+              <div class="chips">
+                <span class="chip">${esc(FORMATO[pc.formato] || pc.formato || "")}</span>
+                ${pc.linkedin ? '<span class="chip">Vai para o LinkedIn</span>' : ""}
+                ${d.teste && d.teste.peca === pc.id ? '<span class="chip teste">Teste</span>' : ""}
+              </div>
+            </div>
+          </div>
+          <div class="midia">${renderMidia(pc)}</div>
+          <div class="peca-body">
+            ${pc.angulo ? `<p style="margin:0;color:var(--muted)">${esc(pc.angulo)}</p>` : ""}
+            <div><div class="eyebrow" style="margin-bottom:6px">Legenda e horário por rede</div><div class="redes">${renderRedes(pc)}</div></div>
+            <div><div class="eyebrow" style="margin-bottom:6px">Fontes dos números</div>${renderFontes(pc)}</div>
+          </div>
+        </article>`).join("")}
+    </div>`;
+  renderBarra(d);
+}
+
+function hojeAnterior(iso) {
+  const [y, m, d] = iso.split("-").map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d - 1, 12));
+  return dt.toISOString().slice(0, 10);
+}
+
+function renderBarra(d) {
+  $("#barra").hidden = false;
+  $("#ajuste-box").hidden = true; $("#rejeitar-box").hidden = true; $("#acoes").hidden = false;
+  const fechado = d.status === "agendado";
+  ["#aprovar", "#ajustar", "#rejeitar"].forEach((s) => ($(s).disabled = fechado || !db));
+  $("#aprovar").disabled = $("#aprovar").disabled || d.status === "aprovado";
+  const est = $("#barra-estado");
+  if (!db) { est.hidden = false; est.textContent = "Entre na sua conta para aprovar."; }
+  else if (fechado) { est.hidden = false; est.textContent = "Já agendado no Buffer. Para mudar, edite direto no Buffer."; }
+  else if (d.status === "aprovado") { est.hidden = false; est.textContent = "Aprovado. O agendamento roda na próxima verificação."; }
+  else est.hidden = true;
+}
+
+async function decidir(status, comentario) {
+  const p = pautas.find((x) => x.id === atual);
+  if (!p || !db) return;
+  const botoes = document.querySelectorAll(".barra .btn");
+  botoes.forEach((b) => (b.disabled = true));
+  try {
+    const dados = { status, decidido_em: new Date().toISOString(), atualizado_em: new Date().toISOString() };
+    if (comentario !== undefined) dados.comentario = comentario;
+    await db.doc("pautas/" + p.id).update(dados);
+    toast(status === "aprovado" ? "Pauta aprovada." : status === "ajustar" ? "Ajuste enviado." : "Pauta rejeitada.");
+  } catch (e) {
+    toast("Não consegui salvar. Tente de novo.");
+    console.error(e);
+  } finally {
+    botoes.forEach((b) => (b.disabled = false));
+    render();
+  }
+}
+
+$("#aprovar").addEventListener("click", () => decidir("aprovado"));
+$("#ajustar").addEventListener("click", () => { $("#acoes").hidden = true; $("#ajuste-box").hidden = false; $("#comentario").focus(); });
+$("#cancelar-ajuste").addEventListener("click", () => renderBarra(pautas.find((x) => x.id === atual).data));
+$("#enviar-ajuste").addEventListener("click", () => {
+  const c = $("#comentario").value.trim();
+  if (!c) { toast("Escreva o que precisa mudar."); $("#comentario").focus(); return; }
+  $("#comentario").value = "";
+  decidir("ajustar", c);
+});
+$("#rejeitar").addEventListener("click", () => { $("#acoes").hidden = true; $("#rejeitar-box").hidden = false; });
+$("#cancelar-rejeitar").addEventListener("click", () => renderBarra(pautas.find((x) => x.id === atual).data));
+$("#confirmar-rejeitar").addEventListener("click", () => decidir("rejeitado"));
+
+function trocarAba(cfg) {
+  $("#tab-pautas").setAttribute("aria-selected", String(!cfg));
+  $("#tab-config").setAttribute("aria-selected", String(cfg));
+  $("#view-pautas").hidden = cfg; $("#view-config").hidden = !cfg;
+  $("#barra").hidden = cfg || !pautas.find((x) => x.id === atual);
+  if (cfg) renderConfig();
+}
+$("#tab-pautas").addEventListener("click", () => trocarAba(false));
+$("#tab-config").addEventListener("click", () => trocarAba(true));
+
+function renderConfig() {
+  const el = $("#view-config");
+  const ap = configs.aprendizados || {};
+  const redes = configs.redes || {};
+  const grade = configs.grade || {};
+  const regras = (ap.regras || []).map((r) => `<div class="regra" data-c="${esc(r.confianca)}"><strong>${esc(REDE[r.rede] || r.rede || "")}</strong> · ${esc(r.regra)}<br><span style="color:var(--muted)">Confiança ${esc(r.confianca)} · ${esc(r.evidencia || "")}</span></div>`).join("");
+  const linhasRedes = Object.keys(REDE).filter((r) => redes[r]).map((r) => `<tr><td>${REDE[r]}</td><td class="num">${esc(redes[r].posts_por_dia)}</td><td class="num">${esc((redes[r].horarios || []).join(" · "))}</td></tr>`).join("");
+  el.innerHTML = `
+    <section>
+      <h2 class="eyebrow">Redes e horários</h2>
+      ${linhasRedes ? `<table class="tabela"><thead><tr><th>Rede</th><th>Posts/dia</th><th>Horários</th></tr></thead><tbody>${linhasRedes}</tbody></table>` : '<p class="estado">Sem configuração de redes.</p>'}
+      <p style="margin:0;color:var(--muted);font-size:14px">Pauta chega às ${esc(redes.pauta_chega || "07:00")} e o prazo de aprovação é ${esc(redes.limite || "11:00")}.</p>
+    </section>
+    <section>
+      <h2 class="eyebrow">Grade visual</h2>
+      <label class="switch"><input type="checkbox" id="alternar" ${grade.alternar_fundo ? "checked" : ""} ${db ? "" : "disabled"}> Alternar fundo claro e escuro entre os posts do dia</label>
+    </section>
+    <section>
+      <h2 class="eyebrow">Aprendizados</h2>
+      ${regras || `<p class="estado" style="text-align:left;margin:0">${esc(ap.observacao || "Ainda não há dados de desempenho.")}</p>`}
+      ${ap.atualizado_em ? `<p style="margin:0;color:var(--muted);font-size:13px">Atualizado em ${esc(new Date(ap.atualizado_em).toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" }))}</p>` : ""}
+    </section>
+    <section>
+      <h2 class="eyebrow">Manual operacional da marca</h2>
+      <pre>${esc((configs.marca || {}).texto || "Ainda não carregado.")}</pre>
+    </section>`;
+  const sw = $("#alternar");
+  if (sw) sw.addEventListener("change", async () => {
+    try { await db.doc("config/grade").set({ ...grade, alternar_fundo: sw.checked, atualizado_em: new Date().toISOString() }); toast("Grade salva."); }
+    catch (e) { toast("Não consegui salvar a grade."); sw.checked = !sw.checked; }
+  });
+}
+
+(async function iniciar() {
+  const timer = setTimeout(() => { if (!pautas.length) $("#pauta").innerHTML = '<div class="vazio-geral">Não consegui carregar as pautas. Verifique se você entrou na sua conta e recarregue.</div>'; }, 10000);
+  try { db = await claude.use("db"); } catch (e) { db = null; }
+  if (!db) { clearTimeout(timer); $("#pauta").innerHTML = '<div class="vazio-geral">Entre na sua conta do Claude para ver e aprovar as pautas.</div>'; return; }
+  db.collection("pautas").orderBy("data", "desc").limit(21).onSnapshot((snap) => {
+    clearTimeout(timer);
+    pautas = snap.docs.map((d) => ({ id: d.id, data: d.data() })).sort((a, b) => a.id.localeCompare(b.id));
+    if (!atual || !pautas.find((x) => x.id === atual)) {
+      const pend = pautas.find((x) => x.data.status === "pendente" || x.data.status === "ajustar");
+      const hoje = hojeSP();
+      atual = (pend || pautas.find((x) => x.id >= hoje) || pautas[pautas.length - 1] || {}).id || null;
+    }
+    if ($("#view-pautas").hidden) renderConfig(); else render();
+  }, (err) => { clearTimeout(timer); $("#pauta").innerHTML = '<div class="vazio-geral">Erro ao ler as pautas. Recarregue a página.</div>'; console.error(err); });
+  db.collection("config").onSnapshot((snap) => {
+    configs = {}; snap.docs.forEach((d) => (configs[d.id] = d.data()));
+    if (!$("#view-config").hidden) renderConfig();
+  }, (err) => console.error(err));
+})();
+</script>
+</body>
+</html>
