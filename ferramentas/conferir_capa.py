@@ -23,7 +23,19 @@ import numpy as np
 LIM_BRILHO, LIM_DESVIO, LIM_CONTEUDO = 30, 18, 0.04
 
 
+RAIZ = Path(__file__).resolve().parent.parent
+
+
 def _local(src: str, pasta: Path) -> Path:
+    # URL do GitHub Pages do próprio repositório -> usa o arquivo do clone (o sandbox nem sempre alcança github.io)
+    try:
+        base = json.loads((RAIZ / "config" / "rotina.json").read_text(encoding="utf-8"))["midia_base_url"]
+        if src.lower().startswith(base.lower()):
+            local = RAIZ / src[len(base):].split("?")[0]
+            if local.exists():
+                return local
+    except Exception:
+        pass
     if src.startswith("http"):
         destino = pasta / ("item" + Path(src.split("?")[0]).suffix)
         urllib.request.urlretrieve(src, destino)
