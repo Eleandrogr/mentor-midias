@@ -11,6 +11,8 @@ Uso:
   python3 ferramentas/video.py sequencia saida.mp4 tela1.html tela2.html ... --w 1080 --h 1920 --seg 5 --semente 7
 
 Sempre inclui trilha (ferramentas/trilha.py). Confere a resolução no final.
+Antes de gravar, confere a área segura de cada tela (ferramentas/moldura.py):
+no 1080x1920 nada de logo/texto/número nas faixas cobertas pela interface do Reels.
 """
 import argparse
 import json
@@ -24,6 +26,7 @@ from playwright.sync_api import sync_playwright
 RAIZ = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ / "ferramentas"))
 import trilha  # noqa: E402
+import moldura  # noqa: E402
 from scipy.io import wavfile  # noqa: E402
 import numpy as np  # noqa: E402
 
@@ -90,6 +93,9 @@ def main():
         telas, saida = [Path(a.args[0])], Path(a.args[1])
     else:
         saida, telas = Path(a.args[0]), [Path(x) for x in a.args[1:]]
+    probs = moldura.conferir(telas, a.w, a.h)
+    if probs:
+        sys.exit("ERRO: área segura violada (corrija o layout antes de gravar):\n- " + "\n- ".join(probs))
     with tempfile.TemporaryDirectory(dir=RAIZ) as d:
         pasta = Path(d)
         n = 0

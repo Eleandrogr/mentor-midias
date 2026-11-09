@@ -28,3 +28,19 @@ body { font-family: "Geist", sans-serif; -webkit-font-smoothing: antialiased; }
 .fonte { font-size: 22px; line-height: 1.4; }
 .mono { font-family: "Geist Mono", monospace; font-variant-numeric: tabular-nums; }
 .spacer { flex: 1; }
+
+/* ── Área segura do Reels / vídeo vertical 1080x1920 (9:16) ─────────────────────
+   A interface do Instagram/Facebook cobre: topo 250px (relógio + "Reels"),
+   rodapé 450px (perfil, legenda, comentário), direita 150px (curtir, comentar,
+   compartilhar, salvar) e esquerda 60px. O FUNDO vai até a borda; logo, títulos,
+   números e textos ficam só na área útil (até 870x1220, de x=60 a 930 e y=250 a 1470;
+   usamos x=88 na esquerda para manter a margem da marca).
+   O conteúdo é centralizado na vertical entre o logo e o fim da área útil.
+   Conferência automática: ferramentas/moldura.py (o video.py roda antes de gravar). */
+@media (min-height: 1700px) {
+  .peca { padding: 250px 150px 450px 88px; }       /* esquerda: 60px livres + respiro da marca */
+  .peca > .logo { margin-bottom: 48px; }
+  .peca > .logo + * { margin-top: auto !important; }   /* centraliza o bloco de conteúdo */
+  .peca > .spacer { flex: 0 0 56px; }                  /* fonte fica logo abaixo do conteúdo */
+  .peca::after { content: ""; margin-top: auto; }      /* espaço igual acima e abaixo */
+}

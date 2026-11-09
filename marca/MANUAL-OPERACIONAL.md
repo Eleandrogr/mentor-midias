@@ -53,6 +53,20 @@ Assinatura: **Clareza para decidir.** Mentor é o ERP em nuvem da EGR Systems.
   3. **Educativo** (Blue): logo sobre azul → rótulo (Geist 600, caixa alta) → título → bloco de fórmula/lista em Geist Mono → apoio com quadrado-marcador Night. Arquivo: `exemplos/educativo.html`.
 - Grade de alternância: não repetir o mesmo fundo em dois posts seguidos do mesmo dia.
 
+## 6B. Área segura (Reels e vídeo vertical 1080x1920)
+A interface do Instagram/Facebook cobre parte da tela. **Nada importante (logo, título, número, texto, gráfico, fonte) fica nestas faixas:**
+- Topo: 250px livres (relógio + menu "Reels").
+- Rodapé: 450px livres (nome do perfil, legenda, barra de comentário).
+- Lateral direita: 150px livres (curtir, comentar, compartilhar, salvar).
+- Lateral esquerda: 60px livres (usamos 88px, a margem da marca).
+- Área útil: x 88–930, y 250–1470 (cerca de 840x1220). O **fundo** vai até a borda.
+- Logo no topo da área útil (y = 250), não colado no canto da tela.
+- Conteúdo **centralizado na vertical** entre o logo e o fim da área útil; sem metade de baixo vazia.
+- Já vem pronto em `marca/base.css` (regra para telas com 1700px ou mais de altura): não sobrescreva `padding` da `.peca` nem use `margin-top` fixo grande no primeiro bloco.
+- **Feed/carrossel 1080x1350 (4:5)**: a miniatura do grid do perfil mostra só o miolo 3:4 (corta ~34px de cada lado). Logo, título e textos dentro da margem de 88px, longe das bordas laterais.
+- Conferência: `ferramentas/moldura.py` mede cada tela no estado final e reprova o que invadir as margens ou deixar metade da área útil vazia. O `video.py` roda essa conferência antes de gravar e para com erro se algo falhar.
+- **Prévia com moldura** antes de agendar: `python3 ferramentas/moldura.py --w 1080 --h 1920 --seg <s> --video reel.mp4 --previa reel-moldura.png` (sobrepõe relógio, "Reels", botões e legenda). Olhe a prévia; se algo ficou coberto, ajuste antes de publicar.
+
 ## 6A. Gráficos animados (prioridade)
 Pedido do Eleandro: **abusar de gráficos animados**. O gráfico é o jeito mais claro de mostrar "o dado antes do adjetivo".
 - Meta: **pelo menos 1 tela com gráfico animado em cada peça** (carrossel ou reel) sempre que o tema tiver números comparáveis. Sem dado com fonte, sem gráfico.
@@ -68,7 +82,7 @@ Pedido do Eleandro: **abusar de gráficos animados**. O gráfico é o jeito mais
 | Rede | Formato | Tamanho |
 |---|---|---|
 | Instagram feed / carrossel | imagem ou vídeo por tela | 1080x1350 (4:5) ou 1080x1080 |
-| Instagram Reels | vídeo vertical | 1080x1920, 9:16 |
+| Instagram Reels | vídeo vertical | 1080x1920, 9:16 (área segura: item 6B) |
 | Facebook | vídeo único vertical ou reel | 1080x1920 ou 1080x1350 |
 | LinkedIn (página) | vídeo único, imagem ou PDF-carrossel | 1080x1080 ou 1080x1350; PDF até 300 páginas |
 - **Carrossel de vídeos (Instagram)**: **slide 1 é sempre uma CAPA ESTÁTICA (PNG 1080x1350)**, fundo Electric Blue, logo sobre azul, rótulo, número-herói (se houver), título em Saira e chamada "Arraste…" com quadrado-marcador Night; gerada com `ferramentas/capa.py`. Os vídeos vêm do slide 2 em diante (2 a 6 vídeos de 4–8s). Motivo: o Instagram usa o primeiro item como capa no perfil e não deixa trocar depois; vídeo começando em fundo liso vira capa preta/vazia. Última tela = assinatura/CTA.
@@ -89,6 +103,7 @@ Pedido do Eleandro: **abusar de gráficos animados**. O gráfico é o jeito mais
 
 ## 9. Checklist de conferência (toda peça)
 - [ ] Primeiro item com conteúdo visível: carrossel abre com capa estática; vídeo único com começo cortado; `conferir_capa.py` aprovado.
+- [ ] Área segura: no 1080x1920 nada nas faixas da interface (topo 250, rodapé 450, direita 150, esquerda 60); `moldura.py` aprovado e prévia com moldura conferida. No 1080x1350, logo e título longe das laterais.
 - [ ] Título em Saira, maiúsculas, até 6 palavras.
 - [ ] Um único destaque de cor.
 - [ ] Logo oficial, versão certa para o fundo, canto superior esquerdo, área de proteção livre.

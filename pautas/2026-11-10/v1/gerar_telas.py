@@ -12,7 +12,7 @@ CSS_COMUM = """
   .ponto { color: var(--blue); }
   .marcador { display: inline-block; width: 22px; height: 22px; border-radius: 4px; background: var(--night); margin-right: 16px; vertical-align: -2px; }
   .topo { margin-top: 130px; }
-  @media (min-height: 1700px) { .topo { margin-top: 330px; } .grafico { margin-top: 96px !important; } }
+  @media (min-height: 1700px) { .grafico { margin-top: 96px !important; } }  /* área segura do Reels: marca/base.css */
 """
 
 
