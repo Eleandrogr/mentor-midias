@@ -71,7 +71,9 @@ Pedido do Eleandro: **abusar de gráficos animados**. O gráfico é o jeito mais
 | Instagram Reels | vídeo vertical | 1080x1920, 9:16 |
 | Facebook | vídeo único vertical ou reel | 1080x1920 ou 1080x1350 |
 | LinkedIn (página) | vídeo único, imagem ou PDF-carrossel | 1080x1080 ou 1080x1350; PDF até 300 páginas |
-- **Carrossel de vídeos (Instagram)**: 3 a 7 telas, cada tela um vídeo curto (4–8s) animando o modelo-base. Tela 1 = gancho com o número; última tela = assinatura/CTA.
+- **Carrossel de vídeos (Instagram)**: **slide 1 é sempre uma CAPA ESTÁTICA (PNG 1080x1350)**, fundo Electric Blue, logo sobre azul, rótulo, número-herói (se houver), título em Saira e chamada "Arraste…" com quadrado-marcador Night; gerada com `ferramentas/capa.py`. Os vídeos vêm do slide 2 em diante (2 a 6 vídeos de 4–8s). Motivo: o Instagram usa o primeiro item como capa no perfil e não deixa trocar depois; vídeo começando em fundo liso vira capa preta/vazia. Última tela = assinatura/CTA.
+- **Vídeo como primeiro item** (reel, vídeo único no Facebook/LinkedIn): depois do `video.py`, rodar `ferramentas/cortar_inicio.py` para cortar o começo vazio; o primeiro quadro já mostra o conteúdo.
+- **Trava de capa**: antes de agendar, `ferramentas/conferir_capa.py` no primeiro item de cada post. Escuro ou vazio → não agenda e avisa o Eleandro.
 - **Facebook e LinkedIn** (Buffer aceita 1 vídeo por post): o carrossel vira um vídeo único em que as telas passam em sequência.
 - Todo vídeo tem som: trilha instrumental livre de direitos autorais (biblioteca royalty-free ou trilha gerada), volume moderado, sem voz.
 - Animações sóbrias: entrada por fade/slide curto (200–400ms), número contando até o valor. Sem efeitos 3D, brilho ou transições chamativas.
@@ -86,6 +88,7 @@ Pedido do Eleandro: **abusar de gráficos animados**. O gráfico é o jeito mais
 - Sem aviso legal fixo (pode ser ativado depois em config/marca).
 
 ## 9. Checklist de conferência (toda peça)
+- [ ] Primeiro item com conteúdo visível: carrossel abre com capa estática; vídeo único com começo cortado; `conferir_capa.py` aprovado.
 - [ ] Título em Saira, maiúsculas, até 6 palavras.
 - [ ] Um único destaque de cor.
 - [ ] Logo oficial, versão certa para o fundo, canto superior esquerdo, área de proteção livre.
