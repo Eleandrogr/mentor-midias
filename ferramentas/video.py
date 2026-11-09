@@ -10,6 +10,10 @@ Uso:
   # várias telas em sequência -> um MP4 (Facebook/LinkedIn/Reels)
   python3 ferramentas/video.py sequencia saida.mp4 tela1.html tela2.html ... --w 1080 --h 1920 --seg 5 --semente 7
 
+  # Reels e vídeos verticais do Facebook: abertura curta (1ª tela 2,4 s com entradas 2x mais rápidas),
+  # depois cortar o começo vazio com cortar_inicio.py --max 2 -> primeira troca de tela por volta de 2 s
+  python3 ferramentas/video.py sequencia reel.mp4 t1.html t2.html ... --w 1080 --h 1920 --seg 4.5 --abertura 2.4
+
 Sempre inclui trilha (ferramentas/trilha.py). Confere a resolução no final.
 Antes de gravar, confere a área segura de cada tela (ferramentas/moldura.py):
 no 1080x1920 nada de logo/texto/número nas faixas cobertas pela interface do Reels.
@@ -43,7 +47,7 @@ def _preparar(html_path: Path, destino: Path) -> Path:
     return destino
 
 
-def _quadros(html_path: Path, pasta: Path, w: int, h: int, seg: float, inicio: int) -> int:
+def _quadros(html_path: Path, pasta: Path, w: int, h: int, seg: float, inicio: int, vel: float = 1.0) -> int:
     tmp = _preparar(html_path, pasta / f"_tela_{inicio}.html")
     total = int(round(seg * FPS))
     with sync_playwright() as p:
@@ -52,7 +56,7 @@ def _quadros(html_path: Path, pasta: Path, w: int, h: int, seg: float, inicio: i
         pg.goto(f"file://{tmp}", wait_until="networkidle")
         pg.evaluate("document.fonts.ready")
         for i in range(total):
-            pg.evaluate(f"window.frame({i / FPS})")
+            pg.evaluate(f"window.frame({i / FPS * vel})")
             pg.screenshot(path=str(pasta / f"f{inicio + i:06d}.png"), clip={"x": 0, "y": 0, "width": w, "height": h})
         b.close()
     return total
@@ -88,6 +92,10 @@ def main():
     ap.add_argument("--h", type=int, default=1350)
     ap.add_argument("--seg", type=float, default=6.0)
     ap.add_argument("--semente", type=int, default=0)
+    ap.add_argument("--abertura", type=float, default=0,
+                    help="sequência: duração da 1ª tela (abertura curta para reter no Reels). 0 = igual às outras")
+    ap.add_argument("--vel-abertura", type=float, default=2.0,
+                    help="com --abertura: acelera as entradas da 1ª tela (2 = duas vezes mais rápido)")
     a = ap.parse_args()
     if a.modo == "tela":
         telas, saida = [Path(a.args[0])], Path(a.args[1])
@@ -100,7 +108,9 @@ def main():
         pasta = Path(d)
         n = 0
         for tela in telas:
-            n += _quadros(tela, pasta, a.w, a.h, a.seg, n)
+            primeira = n == 0 and a.modo == "sequencia" and a.abertura > 0
+            n += _quadros(tela, pasta, a.w, a.h, a.abertura if primeira else a.seg, n,
+                          a.vel_abertura if primeira else 1.0)
         _codificar(pasta, n, n / FPS, saida, a.semente)
     info = conferir(saida)
     print(json.dumps(info, ensure_ascii=False))

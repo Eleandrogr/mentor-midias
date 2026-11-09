@@ -87,6 +87,7 @@ Pedido do Eleandro: **abusar de gráficos animados**. O gráfico é o jeito mais
 | LinkedIn (página) | vídeo único, imagem ou PDF-carrossel | 1080x1080 ou 1080x1350; PDF até 300 páginas |
 - **Carrossel de vídeos (Instagram)**: **slide 1 é sempre uma CAPA ESTÁTICA (PNG 1080x1350)**, fundo Electric Blue, logo sobre azul, rótulo, número-herói (se houver), título em Saira e chamada "Arraste…" com quadrado-marcador Night; gerada com `ferramentas/capa.py`. Os vídeos vêm do slide 2 em diante (2 a 6 vídeos de 4–8s). Motivo: o Instagram usa o primeiro item como capa no perfil e não deixa trocar depois; vídeo começando em fundo liso vira capa preta/vazia. Última tela = assinatura/CTA.
 - **Vídeo como primeiro item** (reel, vídeo único no Facebook/LinkedIn): depois do `video.py`, rodar `ferramentas/cortar_inicio.py` para cortar o começo vazio; o primeiro quadro já mostra o conteúdo.
+- **Abertura curta no Reels e no vídeo vertical do Facebook** (retenção): a 1ª tela fica cerca de **2 s** na tela antes da primeira troca, com as entradas 2x mais rápidas (o gancho aparece completo em ~0,5 s). Gerar com `video.py sequencia ... --abertura 2.9` e depois `cortar_inicio.py ... --max 2.4`. As demais telas seguem com 4,5–5 s. O gancho da 1ª tela precisa ser lido em 2 s: título curto, apoio de no máximo 2 linhas.
 - **Trava de capa**: antes de agendar, `ferramentas/conferir_capa.py` no primeiro item de cada post. Escuro ou vazio → não agenda e avisa o Eleandro.
 - **Facebook e LinkedIn** (Buffer aceita 1 vídeo por post): o carrossel vira um vídeo único em que as telas passam em sequência.
 - Todo vídeo tem som: trilha instrumental livre de direitos autorais (biblioteca royalty-free ou trilha gerada), volume moderado, sem voz.
@@ -102,6 +103,7 @@ Pedido do Eleandro: **abusar de gráficos animados**. O gráfico é o jeito mais
 - Sem aviso legal fixo (pode ser ativado depois em config/marca).
 
 ## 9. Checklist de conferência (toda peça)
+- [ ] Reels/vídeo vertical: primeira troca de tela em ~2 s (abertura curta).
 - [ ] Primeiro item com conteúdo visível: carrossel abre com capa estática; vídeo único com começo cortado; `conferir_capa.py` aprovado.
 - [ ] Área segura: no 1080x1920 nada nas faixas da interface (topo 250, rodapé 450, direita 150, esquerda 60); `moldura.py` aprovado e prévia com moldura conferida. No 1080x1350, logo e título longe das laterais.
 - [ ] Título em Saira, maiúsculas, até 6 palavras.
