@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/base.css">
+<style>
+  .fonte-n { color: var(--muted-dark); border-top: 1px solid rgba(245,246,250,.18); padding-top: 22px; }
+  .fonte-c { color: var(--muted-light); border-top: 1px solid rgba(30,39,46,.14); padding-top: 22px; }
+  .fonte-b { color: #FFFFFF; opacity: .9; border-top: 1px solid rgba(255,255,255,.28); padding-top: 22px; }
+  .fonte-n, .fonte-c, .fonte-b { font-size: 24px; }
+  .ponto { color: var(--blue); }
+  .marcador { display: inline-block; width: 22px; height: 22px; border-radius: 4px; background: var(--night); margin-right: 16px; vertical-align: -2px; }
+  .topo { margin-top: 130px; }
+  @media (min-height: 1700px) { .grafico { margin-top: 96px !important; } }  /* área segura do Reels: marca/base.css */
+
+  .rotulo { font-size: 26px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted-light); }
+  .titulo { font-size: 96px; margin-top: 20px; max-width: 904px; }
+  .lista { margin-top: 56px; display: flex; flex-direction: column; gap: 28px; }
+  .item { display: grid; grid-template-columns: 76px 1fr; gap: 12px; align-items: baseline; border-top: 1px solid rgba(30,39,46,.14); padding-top: 26px; }
+  .item .n { font: 500 40px "Geist Mono", monospace; color: var(--muted-light); }
+  .item p { font-size: 34px; line-height: 1.35; }
+  .item p span { display: block; font-size: 28px; color: var(--muted-light); margin-top: 6px; }</style></head>
+<body><div class="peca cloud">
+  <img class="logo" src="marca/logos/mentor-logo-claro.svg" alt="Mentor" data-in="0">
+  <div class="rotulo topo" data-in="0.3">ERP em nuvem</div>
+  <div class="display titulo" data-in="0.6">Três perguntas antes de assinar<span class="ponto">.</span></div>
+  <div class="lista">
+    <div class="item" data-in="1.2"><span class="n">01</span><p>Acesso fora do escritório?<span>celular ou notebook, com login e permissão por usuário</span></p></div>
+    <div class="item" data-in="1.6"><span class="n">02</span><p>Financeiro e vendas juntos?<span>pedido, nota e recebimento sem redigitar</span></p></div>
+    <div class="item" data-in="2.0"><span class="n">03</span><p>Exporta tudo quando eu quiser?<span>relatórios e base completa, sem depender do suporte</span></p></div>
+  </div>
+</div></body></html>
