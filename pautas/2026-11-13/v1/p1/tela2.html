@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/base.css">
+<style>
+  .fonte-n { color: var(--muted-dark); border-top: 1px solid rgba(245,246,250,.18); padding-top: 22px; }
+  .fonte-c { color: var(--muted-light); border-top: 1px solid rgba(30,39,46,.14); padding-top: 22px; }
+  .fonte-b { color: #FFFFFF; opacity: .9; border-top: 1px solid rgba(255,255,255,.28); padding-top: 22px; }
+  .fonte-n, .fonte-c, .fonte-b { font-size: 24px; }
+  .ponto { color: var(--blue); }
+  .marcador { display: inline-block; width: 22px; height: 22px; border-radius: 4px; background: var(--night); margin-right: 16px; vertical-align: -2px; }
+  .topo { margin-top: 130px; }
+  @media (min-height: 1700px) { .grafico { margin-top: 96px !important; } }  /* área segura do Reels: marca/base.css */
+
+  .titulo { font-size: 76px; margin-top: 64px; max-width: 904px; }
+  .apoio { color: var(--muted-light); margin-top: 20px; max-width: 860px; font-size: 30px; }
+  .grafico { margin-top: 56px; display: flex; flex-direction: column; gap: 26px; }
+  .linha { display: grid; grid-template-columns: 420px 1fr 110px; align-items: center; gap: 20px; }
+  .rotulo { font-size: 28px; color: var(--night); }
+  .trilho { height: 44px; position: relative; }
+  .barra { position: absolute; inset: 0 auto 0 0; border-radius: 4px; background: #C5CBD3; min-width: 4px; }
+  .barra.destaque { background: var(--blue); }
+  .valor { font: 500 32px "Geist Mono", monospace; color: var(--muted-light); text-align: right; font-variant-numeric: tabular-nums; }
+  .valor.destaque { color: var(--night); }</style></head>
+<body><div class="peca cloud">
+  <img class="logo" src="marca/logos/mentor-logo-claro.svg" alt="Mentor" data-in="0">
+  <div class="display titulo" data-in="0.3">Do vestuário ao combustível</div>
+  <p class="apoio" data-in="0.7">Taxa de margem por atividade, % sobre o custo da mercadoria, 2024</p>
+  <div class="grafico">
+    <div class="linha" data-in="1.0"><span class="rotulo">Varejo de vestuário</span><div class="trilho"><div class="barra destaque" style="width:100.0%" data-growx="1.1"></div></div><span class="valor destaque" data-in="1.1" data-count="86.1" data-decimals="1" data-suffix="%">86,1%</span></div>
+    <div class="linha" data-in="1.2"><span class="rotulo">Varejo de tecidos e armarinho</span><div class="trilho"><div class="barra" style="width:90.5%" data-growx="1.3"></div></div><span class="valor" data-in="1.3" data-count="77.9" data-decimals="1" data-suffix="%">77,9%</span></div>
+    <div class="linha" data-in="1.4"><span class="rotulo">Varejo cultural e esportivo</span><div class="trilho"><div class="barra" style="width:83.7%" data-growx="1.5"></div></div><span class="valor" data-in="1.5" data-count="72.1" data-decimals="1" data-suffix="%">72,1%</span></div>
+    <div class="linha" data-in="1.6"><span class="rotulo">Comércio de veículos</span><div class="trilho"><div class="barra" style="width:16.5%" data-growx="1.7"></div></div><span class="valor" data-in="1.7" data-count="14.2" data-decimals="1" data-suffix="%">14,2%</span></div>
+    <div class="linha" data-in="1.8"><span class="rotulo">Atacado de matérias&#8209;primas agrícolas</span><div class="trilho"><div class="barra" style="width:15.0%" data-growx="1.9"></div></div><span class="valor" data-in="1.9" data-count="12.9" data-decimals="1" data-suffix="%">12,9%</span></div>
+    <div class="linha" data-in="2.0"><span class="rotulo">Atacado de combustíveis</span><div class="trilho"><div class="barra" style="width:7.3%" data-growx="2.1"></div></div><span class="valor" data-in="2.1" data-count="6.3" data-decimals="1" data-suffix="%">6,3%</span></div>
+  </div>
+  <div class="spacer"></div>
+  <p class="fonte-c" data-in="2.6">Fonte: IBGE, Pesquisa Anual de Comércio 2024 (2026)</p>
+</div></body></html>

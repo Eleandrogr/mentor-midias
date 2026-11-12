@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/base.css">
+<style>
+  .fonte-n { color: var(--muted-dark); border-top: 1px solid rgba(245,246,250,.18); padding-top: 22px; }
+  .fonte-c { color: var(--muted-light); border-top: 1px solid rgba(30,39,46,.14); padding-top: 22px; }
+  .fonte-b { color: #FFFFFF; opacity: .9; border-top: 1px solid rgba(255,255,255,.28); padding-top: 22px; }
+  .fonte-n, .fonte-c, .fonte-b { font-size: 24px; }
+  .ponto { color: var(--blue); }
+  .marcador { display: inline-block; width: 22px; height: 22px; border-radius: 4px; background: var(--night); margin-right: 16px; vertical-align: -2px; }
+  .topo { margin-top: 130px; }
+  @media (min-height: 1700px) { .grafico { margin-top: 96px !important; } }  /* área segura do Reels: marca/base.css */
+
+  .numero { font-size: 165px; color: var(--night); line-height: 0.86; white-space: nowrap; }
+  .titulo { font-size: 84px; margin-top: 52px; max-width: 904px; }
+  .apoio { color: var(--muted-light); margin-top: 36px; max-width: 860px; }</style></head>
+<body><div class="peca cloud">
+  <img class="logo" src="marca/logos/mentor-logo-claro.svg" alt="Mentor" data-in="0">
+  <div class="display numero topo" data-in="0.3" data-count="138.6" data-decimals="2" data-prefix="R$ " data-suffix="">R$ 138,60</div>
+  <div class="display titulo" data-in="1.3">Preço com 38,6% sobre custo<span class="ponto">.</span></div>
+  <p class="apoio" data-in="1.9">Uma mercadoria que custou R$ 100, vendida com a taxa de margem média do varejo em 2024.</p>
+  <div class="spacer"></div>
+  <p class="fonte-c" data-in="2.5">Cálculo Mentor sobre IBGE, Pesquisa Anual de Comércio 2024 (2026)</p>
+</div></body></html>
