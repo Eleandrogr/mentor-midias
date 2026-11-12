@@ -17,3 +17,6 @@ done
 python3 ferramentas/cortar_inicio.py $V/p2/linkedin.mp4 $V/p2/linkedin_c.mp4 && mv $V/p2/linkedin_c.mp4 $V/p2/linkedin.mp4
 cp $V/p3/reel.mp4 $V/p3/facebook.mp4
 echo FIM
+# Ajuste p1/facebook: abertura de 4,2 s e corte em 1,7 s, para o 1º quadro já mostrar os valores finais (sem número contando)
+# python3 ferramentas/video.py sequencia /home/claude/fb1_raw.mp4 $V/p1/tela1.html $V/p1/tela2.html $V/p1/tela3.html --w 1080 --h 1920 --seg 5 --semente 3171 --abertura 4.2
+# ffmpeg -ss 1.7 -i /home/claude/fb1_raw.mp4 -c:v libx264 -pix_fmt yuv420p -r 30 -c:a aac -b:a 128k -af "afade=t=in:d=0.3" -movflags +faststart $V/p1/facebook.mp4
