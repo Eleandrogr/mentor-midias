@@ -35,8 +35,8 @@ def montar(c: dict, h: int) -> str:
         sys.exit("ERRO: capa com número precisa da linha de fonte.")
     tem_num = bool(c.get("numero"))
     tam_tit = 96 if tem_num else 128
-    # número-herói cabe na largura útil (904px): Saira ExtraBold ~0,53 em por caractere
-    tam_num = min(300, int(904 / (0.55 * max(len(c.get("numero") or "x"), 1))))
+    # número-herói cabe na largura útil (904px): Saira ExtraBold ~0,6 em por caractere (com folga para não passar da margem de 88px)
+    tam_num = min(300, int(904 / (0.62 * max(len(c.get("numero") or "x"), 1))))
     topo = 96 if h <= 1400 else 300
     numero = f'<div class="display numero">{e("numero")}</div>' if tem_num else ""
     rotulo = f'<div class="rotulo">{e("rotulo")}</div>' if c.get("rotulo") else ""

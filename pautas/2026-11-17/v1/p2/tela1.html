@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/base.css">
+<style>
+  .fonte-n { color: var(--muted-dark); border-top: 1px solid rgba(245,246,250,.18); padding-top: 22px; }
+  .fonte-c { color: var(--muted-light); border-top: 1px solid rgba(30,39,46,.14); padding-top: 22px; }
+  .fonte-b { color: #FFFFFF; opacity: .9; border-top: 1px solid rgba(255,255,255,.28); padding-top: 22px; }
+  .fonte-n, .fonte-c, .fonte-b { font-size: 24px; }
+  .ponto { color: var(--blue); }
+  .marcador { display: inline-block; width: 22px; height: 22px; border-radius: 4px; background: var(--night); margin-right: 16px; vertical-align: -2px; }
+  .topo { margin-top: 130px; }
+  @media (min-height: 1700px) { .grafico { margin-top: 96px !important; } }  /* área segura do Reels: marca/base.css */
+
+  .rotulo { font-size: 26px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted-light); }
+  .titulo { font-size: 96px; margin-top: 20px; max-width: 904px; }
+  .formula { margin-top: 56px; border-top: 1px solid rgba(30,39,46,.14); border-bottom: 1px solid rgba(30,39,46,.14); padding: 36px 0; font: 500 40px/1.4 "Geist Mono", monospace; color: var(--night); }
+  .ex { margin-top: 40px; display: flex; flex-direction: column; gap: 18px; }
+  .ex div { display: flex; justify-content: space-between; font: 500 34px "Geist Mono", monospace; color: var(--muted-light); font-variant-numeric: tabular-nums; }
+  .ex div.r { color: var(--night); border-top: 1px solid rgba(30,39,46,.14); padding-top: 18px; }
+  .apoio { color: var(--muted-light); margin-top: 40px; max-width: 860px; font-size: 30px; }</style></head>
+<body><div class="peca cloud">
+  <img class="logo" src="marca/logos/mentor-logo-claro.svg" alt="Mentor" data-in="0">
+  <div class="rotulo topo" data-in="0.3">Como calcular</div>
+  <div class="display titulo" data-in="0.6">Reserva mensal do 13º<span class="ponto">.</span></div>
+  <div class="formula" data-in="1.1">salário ÷ 12 × 1,08</div>
+  <div class="ex">
+    <div class="" data-in="1.5"><span>Salário (exemplo)</span><span>R$ 3.000,00</span></div>
+    <div class="" data-in="1.9"><span>13º do mês (÷ 12)</span><span>R$ 250,00</span></div>
+    <div class="" data-in="2.3"><span>FGTS de 8% sobre ele</span><span>R$ 20,00</span></div>
+    <div class="r" data-in="2.7"><span>Reserva do mês</span><span>R$ 270,00</span></div>
+  </div>
+  <p class="apoio" data-in="2.9">Valores ilustrativos. 8,33% do 13º + FGTS = 9% do salário por mês.</p>
+</div></body></html>
