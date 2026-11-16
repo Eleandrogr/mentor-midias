@@ -1,0 +1,5 @@
+{"fundo": "cloud",
+ "titulo": "Conto o estoque inteiro e a conta nunca bate",
+ "apoio": "Como eu dividiria a contagem pela curva ABC.",
+ "previa": {"tipo": "linha", "pontos": [100, 62, 38, 24, 15, 10, 7], "rotulo_fim": "itens C"},
+ "chamada": "Arraste para ver o calendário"}

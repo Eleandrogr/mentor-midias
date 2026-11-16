@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css">
+<style>
+  .conta { margin-top: 64px; display: flex; flex-direction: column; gap: 48px; }
+  .linha { display: flex; justify-content: space-between; align-items: baseline; font-size: 74px; border-bottom: 2px solid rgba(255,255,255,.25); padding-bottom: 16px; }
+  .linha.total { border: 0; font-size: 88px; }
+  .cmp { display: flex; flex-direction: column; gap: 52px; margin-top: 64px; }
+  .par .r { font-size: 44px; margin-bottom: 10px; display: flex; justify-content: space-between; }
+  .tr { height: 84px; position: relative; background: rgba(30,39,46,.06); border-radius: 8px; }
+  .tr i { position: absolute; inset: 0 auto 0 0; border-radius: 8px; background: #C5CBD3; }
+  .tr i.d { background: var(--blue); }
+  .formula { font-family: "Geist Mono", monospace; font-size: 46px; white-space: nowrap; line-height: 1.3; margin-top: 56px; padding: 32px 30px; border: 2px solid rgba(245,246,250,.18); border-radius: 18px; }
+  .cta { font-family: "Saira", sans-serif; font-weight: 800; font-size: 172px; line-height: .9; color: var(--night); }
+</style></head>
+<body>
+<!-- 1. Gancho em 1ª pessoa, visível no quadro 0 -->
+<section class="cena night" data-dur="2.6" data-camera="aproxima">
+  <div class="quadrado livre" style="width:420px;height:420px;right:-140px;top:200px;background:rgba(0,206,201,.10)" data-flutua></div>
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="-1">
+    <div class="t1" style="font-size:120px" data-palavras data-in="-0.9" data-ritmo="0.11">Coloquei 30% em cima do custo e achei que ganhava 30%</div>
+    <p class="ap" style="color:var(--muted-dark);font-size:52px" data-in="1.0">A conta não fecha assim.</p>
+  </div>
+</section>
+<!-- 2. A conta (dado em até 3 s) -->
+<section class="cena blue" data-dur="3.6" data-trans="empurra" data-camera="desliza">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0">
+    <div class="rot" data-in="0">Exemplo</div>
+    <div class="conta mono">
+      <div class="linha" data-in="0.2" data-from="left"><span>Custo</span><b>R$ 100</b></div>
+      <div class="linha" data-in="0.6" data-from="left"><span>Preço (+30%)</span><b>R$ 130</b></div>
+      <div class="linha" data-in="1.0" data-from="left"><span>Lucro bruto</span><b>R$ 30</b></div>
+      <div class="linha total" data-in="1.5" data-from="left"><span>Margem</span><b data-in="1.5" data-count="23.1" data-decimals="1" data-suffix="%" data-pulsa="2.4" style="color:var(--night)">23,1%</b></div>
+    </div>
+    <p class="ap" style="font-size:50px" data-in="2.2">R$ 30 de R$ 130. A margem é sobre o preço.</p>
+  </div>
+</section>
+<!-- 3. Gráfico: markup x margem -->
+<section class="cena cloud" data-dur="3.8" data-trans="sobe" data-camera="aproxima">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="0">
+    <div class="t2" style="font-size:100px" data-palavras data-in="0" data-ritmo="0.1">O que você soma × o que sobra</div>
+    <div class="cmp mono">
+      <div class="par" data-in="0.5"><div class="r"><span>+30% no custo</span><span>sobra 23,1%</span></div><div class="tr"><i class="d" style="width:23.1%" data-growx="0.6"></i></div></div>
+      <div class="par" data-in="1.0"><div class="r"><span>+50% no custo</span><span>sobra 33,3%</span></div><div class="tr"><i class="d" style="width:33.3%" data-growx="1.1"></i></div></div>
+      <div class="par" data-in="1.5"><div class="r"><span>+100% no custo</span><span>sobra 50%</span></div><div class="tr"><i class="d" style="width:50%" data-growx="1.6"></i></div></div>
+    </div>
+    <p class="fn" style="color:var(--muted-light)" data-in="2.2">Margem bruta sobre o preço, antes de impostos e despesas.</p>
+  </div>
+</section>
+<!-- 4. A fórmula -->
+<section class="cena night" data-dur="3.4" data-trans="mascara" data-camera="afasta">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="0">
+    <div class="t2" style="font-size:100px" data-palavras data-in="0" data-ritmo="0.1">Quer 30% de margem?</div>
+    <div class="formula" data-in="0.6">Preço = custo ÷ (1 − 0,30)<br><span class="acc" data-in="1.4">100 ÷ 0,70 = R$ 142,86</span></div>
+    <p class="ap" style="color:var(--muted-dark);font-size:60px" data-in="2.0">Não R$ 130.</p>
+  </div>
+</section>
+<!-- 5. Na prática -->
+<section class="cena cloud" data-dur="3.2" data-trans="zoom" data-camera="aproxima">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="0">
+    <div class="rot" data-in="0"><span class="marcador acc-bg"></span>Na prática, hoje</div>
+    <div class="fala" style="margin-top:36px;font-size:96px" data-palavras data-in="0.25" data-ritmo="0.09">Pegue os 5 produtos que mais vende e divida o lucro pelo preço.</div>
+    <p class="ap" style="color:var(--muted-light);font-size:52px" data-in="1.8">Esse número é a sua margem de verdade.</p>
+  </div>
+</section>
+<!-- 6. CTA -->
+<section class="cena blue" data-dur="3.0" data-trans="empurra" data-camera="aproxima">
+  <div class="camera">
+    <img src="marca/logos/mentor-logo-sobre-azul.svg" style="height:96px;align-self:flex-start" data-in="0">
+    <div class="fala" style="margin-top:56px;font-size:96px" data-palavras data-in="0.2" data-ritmo="0.08">Comente</div>
+    <div class="cta" data-in="0.5" data-from="zoom" data-pulsa="1.3" data-som="impacto">MARGEM</div>
+    <div class="fala" style="font-size:72px;margin-top:16px" data-palavras data-in="0.8" data-ritmo="0.07">que eu te mando a planilha de preço.</div>
+  </div>
+</section>
+</body></html>

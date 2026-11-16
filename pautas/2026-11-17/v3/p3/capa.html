@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/base.css">
+<style>
+  .peca { background: var(--cloud); color: #1E272E; justify-content: space-between; }
+  .logo { height: 60px; }
+  .miolo { display: flex; flex-direction: column; gap: 44px; }
+  .titulo { font-size: 100px; line-height: .98; color: #1E272E; max-width: 904px; }
+  .titulo .ponto { color: #0984E3; }
+  .apoio { font-size: 40px; color: #5B6670; max-width: 880px; margin-top: -12px; }
+  .previa { border-radius: 22px; padding: 34px 36px; }
+  .barras { display: flex; flex-direction: column; gap: 22px; }
+  .pb { display: grid; grid-template-columns: 230px 1fr; align-items: center; gap: 20px; }
+  .pr { font-size: 34px; font-weight: 600; }
+  .pt { position: relative; height: 64px; display: flex; align-items: center; }
+  .pf { height: 100%; border-radius: 8px; }
+  .pv { font-size: 38px; font-weight: 500; margin-left: 16px; white-space: nowrap; }
+  .tela { padding: 0; }
+  .moldura { border-radius: 22px; overflow: hidden; border: 3px solid #0984E3; max-height: 420px; }
+  .moldura img { width: 100%; display: block; }
+  .leg { font-size: 28px; color: #5B6670; margin-top: 14px; }
+  .chamada { font-size: 34px; font-weight: 600; display: flex; align-items: center; }
+  .marcador { display: inline-block; width: 26px; height: 26px; border-radius: 5px; background: #0984E3; margin-right: 18px; }
+</style></head>
+<body><div class="peca">
+  <img class="logo" src="marca/logos/mentor-logo-claro.svg" alt="Mentor">
+  <div class="miolo">
+    <div class="display titulo">Conto o estoque inteiro e a conta nunca bate<span class="ponto">.</span></div>
+    <p class="apoio">Como eu dividiria a contagem pela curva ABC.</p>
+    <div class="previa" style="background:rgba(30,39,46,.08)"><svg width="820" height="270" viewBox="-10 -10 820 270">
+          <polyline points="0,20 93,104 187,156 280,187 373,207 467,218 560,225" fill="none" stroke="#0984E3" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="560" cy="225" r="16" fill="#0984E3"/>
+          <text x="588" y="235" font-family="Geist" font-weight="600" font-size="34" fill="#1E272E">itens C</text></svg></div>
+  </div>
+  <div class="chamada"><span class="marcador"></span>Arraste para ver o calendário &rarr;</div>
+</div></body></html>
