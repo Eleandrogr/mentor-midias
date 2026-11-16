@@ -11,34 +11,51 @@
       "facebook": "6aefad81e29c69a1719b07e1",
       "linkedin": "6aefad61e29c69a1719b0139"
     },
-    "limite_fila_por_canal": 10
+    "limite_fila_por_canal": 10,
+    "regra_fila": "agendar no máximo o dia seguinte: fila por canal = restante de hoje + amanhã (Instagram e Facebook até 6, LinkedIn até 2); antes de criar, contar os scheduled de cada canal e parar se passar de 10"
   },
   "redes": {
     "instagram": {
-      "posts_por_dia": 1,
+      "posts_por_dia": 3,
       "horarios": [
-        "12:15"
+        "08:40",
+        "12:15",
+        "18:30"
       ],
-      "formatos_rodizio": [
-        "carrossel",
-        "reel",
-        "frase"
+      "grade_do_dia": [
+        {
+          "peca": "p1",
+          "formato": "story",
+          "horario": "08:40"
+        },
+        {
+          "peca": "p2",
+          "formato": "carrossel",
+          "horario": "12:15"
+        },
+        {
+          "peca": "p3",
+          "formato": "reel",
+          "horario": "18:30"
+        }
       ],
-      "regra": "não repetir o formato do dia anterior"
+      "regra": "todo dia 1 story, 1 carrossel e 1 reel; a ordem das 3 pode variar, o horário segue o formato"
     },
     "facebook": {
-      "posts_por_dia": 1,
+      "posts_por_dia": 3,
       "horarios": [
-        "12:30"
+        "08:45",
+        "12:30",
+        "18:45"
       ],
-      "formato": "video_vertical (mesmo HTML do post em 1080x1920)"
+      "formato": "story = mesma arte do story (type story); carrossel e reel = vídeo vertical 1080x1920 (type reel)"
     },
     "linkedin": {
       "posts_por_dia": 1,
       "horarios": [
-        "09:10"
+        "12:45"
       ],
-      "formato": "video 1080x1350 do mesmo HTML, quando couber e fizer sentido"
+      "formato": "1 por dia: a versão 1080x1350 do carrossel (ou do reel, se o carrossel não couber); story não vai para o LinkedIn"
     }
   },
   "aprovacao": {
@@ -56,7 +73,7 @@
     ],
     "regra": "o fundo da capa/1º quadro segue a ordem em relação ao último post publicado"
   },
-  "versao_regras": "v2 (2026-11-16)",
+  "versao_regras": "v3 (2026-11-16): 3 peças por dia",
   "modulos": [
     "Estoque",
     "Vendas",
@@ -78,5 +95,22 @@
   "telas_mentor": [
     "marca/telas-site/",
     "marca/telas/"
-  ]
+  ],
+  "volume": {
+    "pecas_por_dia": 3,
+    "formatos_do_dia": [
+      "story",
+      "carrossel",
+      "reel"
+    ],
+    "gente_real_por_semana": 2,
+    "obs": "pedido do Eleandro em 16/11/2026: 3 posts por dia mesclando reels, carrossel e stories, usando o limite de 10 do Buffer"
+  },
+  "story": {
+    "tamanho": "1080x1920",
+    "tipo": "imagem PNG ou vídeo de 5 a 15 s",
+    "texto": "todo o texto vai desenhado na arte (story não mostra legenda)",
+    "area_segura": "topo 250, rodapé 340, laterais 88",
+    "cta": "palavra-chave por DM ou 'responda este story'; link sticker só se houver URL"
+  }
 }

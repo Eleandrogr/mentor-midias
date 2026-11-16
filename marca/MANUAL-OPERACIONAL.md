@@ -1,4 +1,4 @@
-# Mentor — Manual operacional de conteúdo (config/marca) — v2, nov/2026
+# Mentor — Manual operacional de conteúdo (config/marca) — v2, nov/2026 (volume v3: 3 peças/dia desde 16/11)
 
 Vale como regra para todas as skills de conteúdo. Substitui a v1 (molde azul com número gigante).
 Assinatura: **Clareza para decidir.** Mentor é o ERP em nuvem da EGR Systems. Instagram: @sistemamentor.
@@ -44,7 +44,7 @@ Assinatura: **Clareza para decidir.** Mentor é o ERP em nuvem da EGR Systems. I
 | Apoio sobre Night / Cloud | #A3AFB8 / #5B6670 | texto secundário e fonte |
 - **Um destaque de cor por peça**: Cyan no escuro, Blue no claro, Night no azul. Nada de cor avulsa. Verde/vermelho só para variação com sinal.
 - **Grid**: o fundo da capa/1º quadro alterna em sequência entre posts: azul → branco → escuro → azul… (nunca dois seguidos iguais; capa nunca "sempre azul").
-- **Formato também varia**: gente real, tela do sistema, gráfico, frase. Não repetir o mesmo formato em dois dias seguidos.
+- **Formato também varia**: todo dia tem story, carrossel e reel (item 12); dentro de cada formato, varie o tipo (gente real, tela do sistema, gráfico, frase). As 3 peças do dia não repetem o mesmo fundo no 1º quadro.
 
 ## 6. Tipografia e legibilidade (1080px de largura)
 - Saira ExtraBold (títulos, maiúsculas), Geist (texto), Geist Mono (valores). Arquivos em `marca/fonts/`.
@@ -86,9 +86,21 @@ Slides animados com `ferramentas/reel.py --h 1350` (uma cena por arquivo); slide
 - Edição: cortar silêncios, legenda grande palavra por palavra, zoom nos momentos-chave, gancho nos primeiros 2 s.
 - Vídeos de clientes usando o sistema só com autorização do cliente.
 
-## 12. Volume
-- Qualidade acima de volume: **1 post de arte por dia** (carrossel, reel ou frase) no Instagram, adaptado para Facebook (vídeo vertical) e LinkedIn (quando fizer sentido), + 2 vídeos de gente real por semana.
-- Só aumentar quando o analista mostrar, com confiança média ou alta, que a média de alcance subiu.
+## 11A. Story
+- 1080x1920, imagem PNG (`render.py`) ou vídeo de 5 a 15 s (`reel.py`). O story não mostra legenda: **todo o texto vai desenhado na arte**.
+- Área segura: 250px no topo (barra de progresso e nome do perfil), 340px no rodapé (campo de resposta), 88px nas laterais.
+- Papel do story: conversa rápida com o dono. Ângulos: pergunta do dia ("Você já sabe quanto pode retirar este mês?"), bastidor, mini-dica de 1 passo, chamada para o post do dia, prova com tela do Mentor.
+- Até 3 blocos de texto, título ≥ 90px. Mesmo destaque único de cor e logo ≥ 48px. Fundo também segue a alternância do grid.
+- CTA: "Responda este story com ESTOQUE", "Mande DEMO na DM". Link sticker só quando houver URL (campo `link`).
+- Número em story também leva a linha de fonte na arte (≥ 24px).
+- Facebook recebe a mesma arte como story. LinkedIn não recebe story.
+
+## 12. Volume (v3, 16/11/2026)
+- **3 peças por dia, sempre 1 story, 1 carrossel e 1 reel** (pedido do Eleandro). Horários padrão: story 08:40, carrossel 12:15, reel 18:30 no Instagram; Facebook 5 a 15 min depois (story como story, carrossel e reel como vídeo vertical); LinkedIn 1 por dia às 12:45 (versão 1080x1350 do carrossel, ou do reel se fizer mais sentido).
+- As 3 peças do dia têm temas diferentes e podem ser de módulos diferentes; o carrossel e o reel do dia nunca repetem o módulo do carrossel e do reel do dia anterior.
+- Os 2 vídeos de gente real da semana entram no lugar do reel do dia em que chegarem.
+- **Limite do Buffer (10 posts agendados por canal):** agendar só até o dia seguinte. Fila máxima: Instagram 6, Facebook 6, LinkedIn 2. Antes de criar, contar os agendados do canal; se passar de 10, parar e avisar.
+- Qualidade continua acima de volume: se uma peça não passar no item 13, ela não vai ao ar e as outras seguem.
 
 ## 13. Checagens antes de publicar (se falhar, não publica)
 - [ ] Primeiro quadro de todo vídeo preenchido (`conferir_capa.py`), sem quadro branco ou preto.
