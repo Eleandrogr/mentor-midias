@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css">
+<style>
+  .barra-prog { height: 90px; background: rgba(255,255,255,.25); border-radius: 8px; margin-top: 44px; position: relative; overflow: hidden; }
+  .barra-prog i { position: absolute; inset: 0 auto 0 0; width: 62.9%; background: var(--night); border-radius: 8px; }
+  .conta { margin-top: 80px; display: flex; flex-direction: column; gap: 44px; }
+  .linha { display: flex; justify-content: space-between; align-items: baseline; font-size: 64px; border-bottom: 2px solid rgba(30,39,46,.12); padding-bottom: 18px; }
+  .linha b { font-weight: 500; }
+  .linha.total { font-size: 76px; border: 0; color: var(--blue); }
+  .meses { display: flex; align-items: flex-end; gap: 12px; height: 560px; margin-top: 40px; }
+  .meses div { flex: 1; background: rgba(255,255,255,.35); border-radius: 6px 6px 0 0; }
+  .meses div.dez { background: var(--night); }
+  .eixo-m { display: flex; justify-content: space-between; font-size: 26px; margin-top: 12px; opacity: .85; }
+  .cta { font-family: "Saira", sans-serif; font-weight: 800; font-size: 360px; line-height: .9; color: var(--blue); }
+  .logo-g { height: 96px; }
+</style></head>
+<body>
+<!-- 1. Gancho: situação em 1ª pessoa (sem número). Já visível no quadro 0. -->
+<section class="cena night" data-dur="2.6" data-camera="aproxima">
+  <div class="quadrado livre" style="width:420px;height:420px;right:-140px;top:180px;background:rgba(0,206,201,.10)" data-flutua></div>
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="-1">
+    <div class="t1" data-palavras data-in="-0.35" data-ritmo="0.12">Novembro chegou e o 13º não estava no caixa</div>
+    <div style="margin-top:64px" data-in="0.9">
+      <div class="rot" style="display:flex;justify-content:space-between"><span>Caixa de novembro</span><span class="mono">13º</span></div>
+      <div style="height:70px;background:rgba(245,246,250,.10);border-radius:10px;margin-top:18px;position:relative;overflow:hidden">
+        <i style="position:absolute;inset:0;background:var(--cyan);border-radius:10px" data-esvazia="1.2" data-ate="0.18" data-dur="1.1"></i>
+        <span style="position:absolute;right:0;top:0;bottom:0;width:30%;border-left:4px dashed var(--cloud)"></span>
+      </div>
+    </div>
+    <p class="ap" data-in="1.7">Já vi muita empresa nessa situação.</p>
+  </div>
+</section>
+<!-- 2. O dado (até 3 s), com fonte e gráfico -->
+<section class="cena blue" data-dur="3.4" data-trans="empurra" data-camera="desliza">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0">
+    <div class="heroi" style="font-size:250px" data-in="0.1" data-from="zoom" data-count="62.9" data-decimals="1" data-suffix="%" data-pulsa="1.4">62,9%</div>
+    <div class="barra-prog" data-in="0.2"><i data-growx="0.3" data-dur="1.1"></i></div>
+    <p class="ap" style="font-size:56px;margin-top:44px" data-palavras data-in="0.7" data-ritmo="0.07">das MPEs paulistas que acham difícil pagar o 13º não reservaram nada.</p>
+    <p class="fn" data-in="1.4">Fonte: Sebrae-SP e Fundação Seade, Indicadores Sebrae-SP (2024)</p>
+  </div>
+</section>
+<!-- 3. A conta pronta -->
+<section class="cena cloud" data-dur="3.6" data-trans="sobe" data-camera="aproxima">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="0">
+    <div class="t2" data-palavras data-in="0" data-ritmo="0.1">A conta que eu faria hoje</div>
+    <div class="conta mono">
+      <div class="linha" data-in="0.7" data-from="left"><span>13º por mês</span><b data-in="0.7" data-count="8.33" data-decimals="2" data-suffix="%">8,33%</b></div>
+      <div class="linha" data-in="1.2" data-from="left"><span>+ FGTS sobre ele</span><b>0,67%</b></div>
+      <div class="linha total" data-in="1.8" data-from="left" data-pulsa="2.4"><span>Reserva</span><b>9% da folha</b></div>
+    </div>
+    <p class="fn" data-in="2.2">Lei 4.090/1962 e Lei 8.036/1990, art. 15</p>
+  </div>
+</section>
+<!-- 4. Gráfico: a reserva acumulando até dezembro (exemplo) -->
+<section class="cena blue" data-dur="3.4" data-trans="mascara" data-camera="afasta">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0">
+    <div class="t2" data-palavras data-in="0" data-ritmo="0.1">Folha de R$ 30 mil</div>
+    <p class="ap" data-in="0.5">R$ 2.700 por mês viram <b class="mono" data-in="0.5" data-count="32400" data-prefix="R$ " data-dur="2.2">R$ 32.400</b> em dezembro.</p>
+    <div class="meses">
+      <div style="height:8.3%" data-grow="0.6"></div><div style="height:16.7%" data-grow="0.72"></div><div style="height:25%" data-grow="0.84"></div>
+      <div style="height:33.3%" data-grow="0.96"></div><div style="height:41.7%" data-grow="1.08"></div><div style="height:50%" data-grow="1.2"></div>
+      <div style="height:58.3%" data-grow="1.32"></div><div style="height:66.7%" data-grow="1.44"></div><div style="height:75%" data-grow="1.56"></div>
+      <div style="height:83.3%" data-grow="1.68"></div><div style="height:91.7%" data-grow="1.8"></div><div class="dez" style="height:100%" data-grow="1.92" data-pulsa="2.5"></div>
+    </div>
+    <div class="eixo-m mono" data-in="0.6"><span>jan</span><span>dez</span></div>
+    <p class="fn" data-in="2.2">Valores de exemplo.</p>
+  </div>
+</section>
+<!-- 5. Na prática -->
+<section class="cena night" data-dur="3.2" data-trans="zoom" data-camera="aproxima">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="0">
+    <div class="rot" data-in="0"><span class="marcador acc-bg"></span>Na prática</div>
+    <div class="fala" style="margin-top:36px" data-palavras data-in="0.25" data-ritmo="0.09">Toda vez que pagar a folha, separe 9% numa conta só do 13º.</div>
+    <div style="margin-top:60px;display:flex;align-items:baseline;gap:28px" data-in="1.7" data-from="left"><span class="heroi acc" style="font-size:200px">30/11</span><span class="ap" style="margin:0;color:var(--muted-dark)">vence a<br>1ª parcela</span></div>
+  </div>
+</section>
+<!-- 6. CTA de palavra-chave -->
+<section class="cena cloud" data-dur="3.0" data-trans="empurra" data-camera="aproxima">
+  <div class="camera">
+    <img class="logo-g" src="marca/logos/mentor-logo-claro.svg" data-in="0" style="align-self:flex-start">
+    <div class="fala" style="margin-top:56px;font-size:96px" data-palavras data-in="0.2" data-ritmo="0.08">Comente</div>
+    <div class="cta" data-in="0.5" data-from="zoom" data-pulsa="1.3" data-som="impacto">13º</div>
+    <div class="fala" style="font-size:84px" data-palavras data-in="0.8" data-ritmo="0.08">que eu te mando a planilha de provisão.</div>
+  </div>
+</section>
+</body></html>

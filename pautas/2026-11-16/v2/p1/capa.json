@@ -1,0 +1,5 @@
+{"fundo": "cloud",
+ "titulo": "Paguei o fornecedor pelo Pix da minha conta pessoal",
+ "apoio": "O que isso esconde no seu caixa e o que eu faria.",
+ "previa": {"tipo": "linha", "pontos": [100, 96, 84, 88, 70, 52, 30], "rotulo_fim": "caixa real"},
+ "chamada": "Arraste para ver o que fazer"}
