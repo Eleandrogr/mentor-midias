@@ -53,7 +53,7 @@ def previa_html(p: dict, fundo: str) -> str:
         for s in p["series"][:4]:
             cor = dest if s.get("destaque") else comum
             linhas.append(f'''<div class="pb"><div class="pr">{html.escape(s["rotulo"])}</div>
-              <div class="pt"><div class="pf" style="width:{s["valor"] / mx * 100:.1f}%;background:{cor}"></div>
+              <div class="pt"><div class="pf" style="width:calc((100% - 200px) * {s["valor"] / mx:.3f});background:{cor}"></div>
               <span class="pv mono" style="color:{dest if s.get("destaque") else txt}">{_fmt(s["valor"], p.get("sufixo"))}</span></div></div>''')
         return f'<div class="previa barras" style="background:{trilho}">{"".join(linhas)}</div>'
     if p["tipo"] == "linha":
@@ -105,7 +105,7 @@ def montar(c: dict, w: int, h: int) -> str:
   .pb {{ display: grid; grid-template-columns: 230px 1fr; align-items: center; gap: 20px; }}
   .pr {{ font-size: 34px; font-weight: 600; }}
   .pt {{ position: relative; height: 64px; display: flex; align-items: center; }}
-  .pf {{ height: 100%; border-radius: 8px; }}
+  .pf {{ height: 100%; border-radius: 8px; flex-shrink: 0; }}
   .pv {{ font-size: 38px; font-weight: 500; margin-left: 16px; white-space: nowrap; }}
   .tela {{ padding: 0; }}
   .moldura {{ border-radius: 22px; overflow: hidden; border: 3px solid {dest}; max-height: 420px; }}

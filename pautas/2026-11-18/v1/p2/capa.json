@@ -1,0 +1,21 @@
+{
+ "fundo": "cloud",
+ "titulo": "Dei desconto para fechar a venda e o mês não fechou",
+ "apoio": "A conta que eu faço antes de dar desconto.",
+ "previa": {
+  "tipo": "barras",
+  "series": [
+   {
+    "rotulo": "Sem desconto",
+    "valor": 10
+   },
+   {
+    "rotulo": "Com 10% de desconto",
+    "valor": 15,
+    "destaque": true
+   }
+  ],
+  "sufixo": " vendas"
+ },
+ "chamada": "Arraste para ver a conta"
+}

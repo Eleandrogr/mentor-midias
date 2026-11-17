@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css">
+<style>.tab{margin-top:40px;display:flex;flex-direction:column;gap:20px;font-size:40px}
+.tl{display:grid;grid-template-columns:1fr 190px 190px;gap:10px;align-items:baseline;border-bottom:2px solid rgba(245,246,250,.12);padding-bottom:12px}
+.tl.h{font-size:30px;color:var(--muted-dark);border:0;padding:0}.tl b{font-weight:500;text-align:right}.tl.tot{font-size:46px;border:0}
+.res{margin-top:36px;display:flex;align-items:baseline;gap:24px}.res .h{font:800 140px "Saira";line-height:.9}.res span{font-size:40px;line-height:1.25}
+.g{display:flex;flex-direction:column;gap:28px;margin-top:44px}.gl{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center}
+.gl .d{font:800 54px "Saira";line-height:1}.tr{height:60px;position:relative}.tr i{position:absolute;inset:0 auto 0 0;border-radius:8px;background:rgba(255,255,255,.4)}
+.tr i.x{background:var(--night)}.tr span{position:absolute;top:50%;transform:translateY(-50%);font-size:38px;white-space:nowrap}
+.ck{display:flex;flex-direction:column;gap:30px;margin-top:44px}.it{display:grid;grid-template-columns:72px 1fr;gap:24px;align-items:center;font-size:46px;line-height:1.2}
+.n{width:72px;height:72px;border-radius:14px;background:var(--blue);color:#fff;font:800 40px "Saira";display:flex;align-items:center;justify-content:center}
+.pv{margin-top:48px;display:flex;flex-direction:column;gap:18px}.pv .l{display:grid;grid-template-columns:260px 1fr;gap:18px;align-items:center;font-size:36px}
+.pv i{display:block;height:56px;border-radius:8px;background:#C5CBD3}.pv i.x{background:var(--blue)}</style></head><body>
+<section class="cena cloud" data-dur="3.0" data-camera="aproxima"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="-1">
+  <div class="t1" style="font-size:112px" data-palavras data-in="-0.8" data-ritmo="0.1">Dei desconto para fechar a venda e o mês não fechou</div>
+  <div class="pv mono">
+    <div class="l" data-in="-0.3"><span>Sem desconto</span><i style="width:60%" data-growx="0.1"></i></div>
+    <div class="l" data-in="0.5"><span>Com desconto</span><i class="x" style="width:90%" data-growx="0.6"></i></div>
+  </div>
+  <p class="ap" style="color:var(--muted-light);font-size:46px" data-in="1.4">Vendas para sobrar o mesmo.</p>
+</div></section>
+<section class="cena night" data-dur="4.2" data-trans="empurra" data-camera="desliza"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="0">
+  <div class="t2" style="font-size:90px" data-palavras data-in="0" data-ritmo="0.09">10% de desconto numa margem de 30%</div>
+  <div class="tab mono">
+    <div class="tl h" data-in="0.4"><span></span><b>sem</b><b>com</b></div>
+    <div class="tl" data-in="0.6" data-from="left"><span>Preço</span><b>R$ 100</b><b>R$ 90</b></div>
+    <div class="tl" data-in="0.9" data-from="left"><span>Custo</span><b>R$ 70</b><b>R$ 70</b></div>
+    <div class="tl tot" data-in="1.2" data-from="left"><span>Sobra</span><b>R$ 30</b><b class="acc">R$ 20</b></div>
+  </div>
+  <div class="res" data-in="1.8"><span class="h acc" data-count="50" data-prefix="+" data-suffix="%" data-pulsa="2.7">+50%</span><span>de vendas para<br>sobrar o mesmo</span></div>
+  <p class="fn" data-in="2.2">Valores de exemplo.</p>
+</div></section>
+<section class="cena blue" data-dur="4.0" data-trans="mascara" data-camera="aproxima"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0">
+  <div class="t2" style="font-size:90px" data-palavras data-in="0" data-ritmo="0.1">Quanto vender a mais</div>
+  <div class="g mono">
+    <div class="gl" data-in="0.4"><span class="d">−5%</span><div class="tr"><i style="width:8%" data-growx="0.5"></i><span style="left:calc(8% + 18px)">+20%</span></div></div>
+    <div class="gl" data-in="0.9"><span class="d">−10%</span><div class="tr"><i class="x" style="width:20%" data-growx="1.0"></i><span style="left:calc(20% + 18px)">+50%</span></div></div>
+    <div class="gl" data-in="1.4"><span class="d">−15%</span><div class="tr"><i style="width:40%" data-growx="1.5"></i><span style="left:calc(40% + 18px)">+100%</span></div></div>
+    <div class="gl" data-in="1.9"><span class="d">−20%</span><div class="tr"><i style="width:80%" data-growx="2.0" data-pulsa="2.9"></i><span style="left:calc(80% - 150px);color:var(--night)">+200%</span></div></div>
+  </div>
+  <p class="fn" style="color:rgba(255,255,255,.88)" data-in="2.4">Exemplo com margem de 30%.</p>
+</div></section>
+<section class="cena cloud" data-dur="4.2" data-trans="sobe" data-camera="aproxima"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="0">
+  <div class="rot" data-in="0"><span class="marcador acc-bg"></span>Antes de dar desconto</div>
+  <div class="ck">
+    <div class="it" data-in="0.3" data-from="left"><span class="n">1</span><span>Saiba a margem do produto</span></div>
+    <div class="it" data-in="0.9" data-from="left"><span class="n">2</span><span>Calcule a venda extra</span></div>
+    <div class="it" data-in="1.5" data-from="left"><span class="n">3</span><span>Peça algo em troca</span></div>
+    <div class="it" data-in="2.1" data-from="left"><span class="n">4</span><span>Defina um teto por vendedor</span></div>
+  </div>
+</div></section>
+<section class="cena blue" data-dur="3.0" data-trans="zoom" data-camera="aproxima"><div class="camera">
+  <img src="marca/logos/mentor-logo-sobre-azul.svg" style="height:96px;align-self:flex-start" data-in="0">
+  <div class="fala" style="font-size:96px;margin-top:48px" data-palavras data-in="0.15">Comente</div>
+  <div class="t1" style="font-size:150px;line-height:.9;color:var(--night)" data-in="0.4" data-from="zoom" data-pulsa="1.2" data-som="impacto">DESCONTO</div>
+  <div class="fala" style="font-size:62px;margin-top:20px" data-palavras data-in="0.7" data-ritmo="0.06">que eu te mando a planilha de desconto.</div>
+</div></section></body></html>
