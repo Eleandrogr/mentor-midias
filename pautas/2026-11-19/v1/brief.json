@@ -1,0 +1,23 @@
+{
+ "data": "2026-11-19", "versao": 1, "regras": "v2", "volume": "v3",
+ "contexto": "11-18: story blue Financeiro, carrossel cloud Vendas, reel night Contratos. 11-17: carrossel Estoque, reel Pessoas. Último post (18/11 18:30) night -> 19/11 abre em blue.",
+ "teste": null,
+ "pecas": [
+  {"id": "p1", "formato": "story", "horario_ig": "08:40", "horario_fb": "08:45", "fundo": "blue", "modulo": "Vendas",
+   "brief": {"angulo": "dor", "tema": "Vendas: clientes que compraram e sumiram (sem compra há 90 dias)",
+     "cliente_ideal": "Dono de comércio, distribuidora ou serviço com clientela recorrente que só olha quem está comprando agora",
+     "objetivo": "lead (resposta VOLTA)", "cta": "Responda este story com VOLTA que eu te mando a planilha de clientes parados",
+     "teste_do_envio": "Mandaria para o vendedor ou o gerente comercial, para ligar para os clientes parados nesta semana"}},
+  {"id": "p2", "formato": "carrossel", "horario_ig": "12:15", "horario_fb": "12:30", "horario_li": "12:45", "fundo": "cloud", "modulo": "Pessoas", "linkedin": true,
+   "brief": {"angulo": "educativo", "tema": "Pessoas: férias coletivas de fim de ano — prazo de 15 dias para comunicar (CLT art. 139) e dispensa do MTE para ME/EPP",
+     "cliente_ideal": "Dono de indústria, comércio ou clínica que vai fechar entre Natal e Ano-Novo e ainda não avisou ninguém",
+     "objetivo": "salvamento", "cta": "Comente FÉRIAS que eu te mando o checklist com as datas de aviso",
+     "teste_do_envio": "Mandaria para o contador ou para quem cuida do RH, para conferir os prazos antes de 7/12"}},
+  {"id": "p3", "formato": "reel", "horario_ig": "18:30", "horario_fb": "18:45", "fundo": "night", "modulo": "Estoque",
+   "brief": {"angulo": "dor", "tema": "Estoque: produto parado é dinheiro parado — custo de oportunidade pela Selic de 13,75% a.a.",
+     "cliente_ideal": "Dono de comércio ou indústria com prateleira cheia e caixa apertado no fim do ano",
+     "objetivo": "lead (comentário PARADO)", "cta": "Comente PARADO que eu te mando a planilha que calcula o custo do estoque parado",
+     "teste_do_envio": "Mandaria para o sócio ou o comprador, para decidir o que não recomprar e o que liquidar"},
+   "aprendizado": "repete a abertura do reel de 16/11 (Night, situação em 1ª pessoa com palavras no quadro 0, dado aos ~3 s), sugestão do analista"}
+ ]
+}

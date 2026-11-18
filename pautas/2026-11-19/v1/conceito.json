@@ -1,0 +1,28 @@
+[
+ {"peca": "p1", "formato": "story", "fundo_inicial": "blue",
+  "big_ideas": {"segura": "pergunta do dia + três passos", "ousada": "a própria lista de clientes do dono, com a data da última compra; os que sumiram aparecem apagados com o selo SUMIU", "estranha": "cartaz de 'procura-se' de um cliente", "escolhida": "ousada", "por_que": "a segura repete o story de ontem; o cartaz parece piada e tira o foco da ação"},
+  "quebra_de_padrao": "a resposta antes da pergunta: a lista com os clientes apagados vem antes do título", "destaque": "Night sobre azul",
+  "elementos": ["logo sobre-azul 64px", "lista de 4 clientes de exemplo com 'última compra' (2 em Night ativos, 2 apagados com selo SUMIU)", "título 96px: Quem comprou de você e nunca mais voltou?", "caixa de resposta com VOLTA"]},
+ {"peca": "p2", "formato": "carrossel", "fundo_inicial": "cloud",
+  "big_ideas": {"segura": "capa com a pergunta e checklist", "ousada": "contagem regressiva: o carrossel trata o aviso como prazo, com calendário de dezembro e a data-limite marcada", "estranha": "convite de festa de fim de ano que vira aviso oficial", "escolhida": "ousada", "por_que": "a segura não mostra o prazo, que é o que o dono esquece; o convite confunde a mensagem"},
+  "quebra_de_padrao": "slide 2 abre com a resposta (7/12) antes da regra",
+  "capa": {"fundo": "cloud", "titulo": "Vou fechar no fim do ano. Já avisei quem precisa?", "apoio": "Férias coletivas têm prazo de aviso.", "previa": {"tipo": "linha", "pontos": [30, 26, 22, 19, 15], "rotulo_fim": "dia do aviso"}, "chamada": "Arraste para ver as datas"},
+  "slides": [
+   {"n": 2, "papel": "dado + fonte", "fundo": "night", "animado": true, "elementos": ["título: Para parar em 22/12, avise até 7/12", "calendário de dezembro: 7 em Cyan pulsando, 22 marcado, faixa de 15 dias crescendo", "Na prática: conte 15 dias para trás", "Fonte: CLT, art. 139 (gov.br)"]},
+   {"n": 3, "papel": "quem avisar", "fundo": "blue", "animado": true, "elementos": ["título: Quem precisa saber", "1 Ministério do Trabalho — ME e EPP dispensadas", "2 Sindicato da categoria — cópia do aviso", "3 Equipe — aviso afixado no local", "Fonte: CLT art. 139 §2º e §3º; LC 123, art. 51 (gov.br)"]},
+   {"n": 4, "papel": "vale salvar", "fundo": "cloud", "animado": false, "elementos": ["Na prática, nesta semana", "4 passos com datas"]},
+   {"n": 5, "papel": "CTA", "fundo": "blue", "animado": false, "elementos": ["Comente FÉRIAS"]}],
+  "facebook_linkedin": "video.html com capa animada + slides 2 a 5 (1080x1920 e 1080x1350)", "semente_trilha": 3232},
+ {"peca": "p3", "formato": "reel", "fundo_inicial": "night",
+  "big_ideas": {"segura": "número da Selic e conta", "ousada": "a prateleira vira cofre: caixas com etiqueta de preço e 'sem venda há 120 dias'; o dinheiro parado aparece como juros escorrendo", "estranha": "caixas de estoque falando", "escolhida": "ousada", "por_que": "a segura abre com número (proibido); as caixas falantes infantilizam"},
+  "quebra_de_padrao": "caixa gigante sangrando pela direita (decoração livre) na abertura",
+  "aprendizado_usado": "abertura igual ao reel de 16/11 (Night, situação em 1ª pessoa no quadro 0, dado aos ~2,8 s) — sugestão do analista, n=1",
+  "cenas": [
+   {"n": 1, "papel": "gancho", "fundo": "night", "dur": 2.8, "camera": "aproxima", "elementos": ["título palavras: Meu dinheiro estava parado na prateleira", "3 caixas com etiqueta 'sem venda há 120 dias' (exemplo)", "carimbo PARADO"]},
+   {"n": 2, "papel": "dado + fonte", "fundo": "blue", "dur": 3.4, "trans": "empurra", "elementos": ["13,75% contando", "ao ano: a Selic mantida pelo Copom em novembro de 2026", "Fonte: Banco Central (Copom), via Agência Brasil, 4/11/2026"]},
+   {"n": 3, "papel": "conta pronta", "fundo": "cloud", "dur": 3.8, "trans": "sobe", "elementos": ["R$ 50.000 parados", "× 13,75% ao ano", "= R$ 6.875 no ano / R$ 573 por mês", "Valores de exemplo"]},
+   {"n": 4, "papel": "gráfico", "fundo": "blue", "dur": 3.4, "trans": "mascara", "elementos": ["título: O custo cresce todo mês", "12 barras crescendo do zero até R$ 6.875 (exemplo)"]},
+   {"n": 5, "papel": "na prática", "fundo": "night", "dur": 4.0, "trans": "zoom", "elementos": ["3 passos: liste o que não vende há 90 dias; pare de recomprar; gire com promoção ou kit"]},
+   {"n": 6, "papel": "CTA", "fundo": "cloud", "dur": 3.0, "trans": "empurra", "elementos": ["Comente PARADO", "planilha do estoque parado"]}],
+  "semente_trilha": 3233}
+]

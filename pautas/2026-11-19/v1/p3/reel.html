@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css">
+<style>
+  .prat { margin-top: 56px; display: flex; gap: 22px; align-items: flex-end; }
+  .cx { flex: 1; background: rgba(245,246,250,.08); border: 2px solid rgba(245,246,250,.18); border-radius: 16px; padding: 22px 20px; display: flex; flex-direction: column; gap: 10px; }
+  .cx .tag { font-size: 30px; color: var(--muted-dark); }
+  .cx .v { font-size: 40px; font-weight: 600; }
+  .cx .d { font-size: 30px; color: var(--cyan); }
+  .base { height: 14px; background: rgba(245,246,250,.25); border-radius: 6px; margin-top: 10px; }
+  .carimbo { font-family: "Saira", sans-serif; font-weight: 800; text-transform: uppercase; font-size: 60px; color: var(--cyan); border: 4px solid var(--cyan); border-radius: 12px; padding: 6px 24px; align-self: flex-start; margin-top: 34px; }
+  .barra-prog { height: 90px; background: rgba(255,255,255,.25); border-radius: 8px; margin-top: 44px; position: relative; overflow: hidden; }
+  .barra-prog i { position: absolute; inset: 0 auto 0 0; width: 13.75%; background: var(--night); border-radius: 8px; }
+  .conta { margin-top: 60px; display: flex; flex-direction: column; gap: 38px; }
+  .linha { display: flex; justify-content: space-between; align-items: baseline; font-size: 52px; border-bottom: 2px solid rgba(30,39,46,.12); padding-bottom: 18px; }
+  .linha b { font-weight: 500; }
+  .linha.total { font-size: 58px; border: 0; color: var(--blue); }
+  .meses { display: flex; align-items: flex-end; gap: 12px; height: 440px; margin-top: 36px; }
+  .meses div { flex: 1; background: rgba(255,255,255,.35); border-radius: 6px 6px 0 0; }
+  .meses div.fim { background: var(--night); }
+  .eixo-m { display: flex; justify-content: space-between; font-size: 28px; margin-top: 12px; }
+  .passos { margin-top: 44px; display: flex; flex-direction: column; gap: 36px; }
+  .passos .p { display: grid; grid-template-columns: 76px 1fr; gap: 24px; align-items: center; font-size: 52px; line-height: 1.15; }
+  .passos .n { width: 76px; height: 76px; border-radius: 14px; background: var(--cyan); color: var(--night); font: 800 42px "Saira"; display: flex; align-items: center; justify-content: center; }
+  .cta { font-family: "Saira", sans-serif; font-weight: 800; font-size: 170px; line-height: .9; color: var(--blue); }
+</style></head>
+<body>
+<!-- 1. Gancho: situação em 1ª pessoa, visível no quadro 0 -->
+<section class="cena night" data-dur="2.8" data-camera="aproxima">
+  <div class="quadrado livre" style="width:460px;height:460px;right:-200px;top:1120px;background:rgba(0,206,201,.10)" data-flutua></div>
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="-1">
+    <div class="t1" style="font-size:120px" data-palavras data-in="-0.5" data-ritmo="0.12">Meu dinheiro estava parado na prateleira</div>
+    <div class="prat mono" data-in="-0.2">
+      <div class="cx"><span class="tag">Item A</span><span class="v">R$ 18 mil</span><span class="d">120 dias</span></div>
+      <div class="cx"><span class="tag">Item B</span><span class="v">R$ 20 mil</span><span class="d">150 dias</span></div>
+      <div class="cx"><span class="tag">Item C</span><span class="v">R$ 12 mil</span><span class="d">95 dias</span></div>
+    </div>
+    <div class="base"></div>
+    <div class="carimbo" data-in="1.0" data-from="zoom" data-som="impacto">Sem venda</div>
+  </div>
+</section>
+<!-- 2. O dado (até 3 s), com fonte -->
+<section class="cena blue" data-dur="3.4" data-trans="empurra" data-camera="desliza">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0">
+    <div class="heroi" style="font-size:215px" data-in="0.1" data-from="zoom" data-count="13.75" data-decimals="2" data-suffix="%" data-pulsa="1.4">13,75%</div>
+    <div class="barra-prog" data-in="0.2"><i data-growx="0.3" data-dur="1.1"></i></div>
+    <p class="ap" style="font-size:56px;margin-top:44px" data-palavras data-in="0.7" data-ritmo="0.07">ao ano: é a Selic, mantida pelo Copom em novembro.</p>
+    <p class="fn" data-in="1.4">Fonte: Banco Central (Copom), 4/11/2026, via Agência Brasil</p>
+  </div>
+</section>
+<!-- 3. A conta pronta -->
+<section class="cena cloud" data-dur="3.8" data-trans="sobe" data-camera="aproxima">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="0">
+    <div class="t2" data-palavras data-in="0" data-ritmo="0.1">O custo do estoque parado</div>
+    <div class="conta mono">
+      <div class="linha" data-in="0.6" data-from="left"><span>Parado</span><b>R$ 50.000</b></div>
+      <div class="linha" data-in="1.1" data-from="left"><span>Por mês</span><b data-in="1.1" data-count="573" data-prefix="R$ ">R$ 573</b></div>
+      <div class="linha total" data-in="1.8" data-from="left" data-pulsa="2.5"><span>Em 12 meses</span><b>R$ 6.875</b></div>
+    </div>
+    <p class="fn" data-in="2.2">Valores de exemplo: 50.000 × 13,75% (conta simples).</p>
+  </div>
+</section>
+<!-- 4. Gráfico: o custo acumulando (exemplo) -->
+<section class="cena blue" data-dur="3.4" data-trans="mascara" data-camera="afasta">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0">
+    <div class="t2" data-palavras data-in="0" data-ritmo="0.1">Cada mês parado soma</div>
+    <div class="meses" data-in="0.2">
+      <div style="height:8.3%" data-grow="0.30"></div><div style="height:16.7%" data-grow="0.40"></div><div style="height:25%" data-grow="0.50"></div><div style="height:33.3%" data-grow="0.60"></div><div style="height:41.7%" data-grow="0.70"></div><div style="height:50%" data-grow="0.80"></div><div style="height:58.3%" data-grow="0.90"></div><div style="height:66.7%" data-grow="1.00"></div><div style="height:75%" data-grow="1.10"></div><div style="height:83.3%" data-grow="1.20"></div><div style="height:91.7%" data-grow="1.30"></div><div class="fim" style="height:100%" data-grow="1.40" data-pulsa="2.2"></div>
+    </div>
+    <div class="eixo-m mono" data-in="0.4"><span>mês 1: R$ 573</span><span>mês 12: R$ 6.875</span></div>
+    <p class="fn" style="color:rgba(255,255,255,.88)" data-in="1.8">Exemplo com R$ 50 mil parados.</p>
+  </div>
+</section>
+<!-- 5. Na prática -->
+<section class="cena night" data-dur="4.0" data-trans="zoom" data-camera="aproxima">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="0">
+    <div class="rot" data-in="0"><span class="marcador acc-bg"></span>Na prática, nesta semana</div>
+    <div class="passos">
+      <div class="p" data-in="0.3" data-from="left"><span class="n">1</span><span>Liste o que não vende há 90 dias</span></div>
+      <div class="p" data-in="1.1" data-from="left"><span class="n">2</span><span>Pare de recomprar esses itens</span></div>
+      <div class="p" data-in="1.9" data-from="left" data-pulsa="2.8"><span class="n">3</span><span>Gire com kit ou <span class="acc">promoção</span></span></div>
+    </div>
+  </div>
+</section>
+<!-- 6. CTA -->
+<section class="cena cloud" data-dur="3.0" data-trans="empurra" data-camera="aproxima">
+  <div class="camera">
+    <img src="marca/logos/mentor-logo-claro.svg" style="height:96px;align-self:flex-start" data-in="0">
+    <div class="fala" style="font-size:90px;margin-top:48px" data-palavras data-in="0.15">Comente</div>
+    <div class="cta" data-in="0.4" data-from="zoom" data-pulsa="1.2" data-som="impacto">PARADO</div>
+    <div class="fala" style="font-size:60px;margin-top:20px" data-palavras data-in="0.7" data-ritmo="0.06">que eu te mando a planilha do estoque parado.</div>
+  </div>
+</section>
+</body></html>

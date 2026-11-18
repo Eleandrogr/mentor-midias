@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css">
+<style>
+  .cena .camera { padding: 250px 88px 340px 88px; justify-content: space-between; }
+  .lista { background: rgba(255,255,255,.12); border-radius: 26px; padding: 26px 34px; display: flex; flex-direction: column; gap: 6px; }
+  .lista .h { display: grid; grid-template-columns: 1fr 260px; font-size: 30px; color: rgba(255,255,255,.85); padding-bottom: 8px; }
+  .cl { display: grid; grid-template-columns: 1fr 260px; align-items: center; font-size: 40px; padding: 10px 0; border-top: 2px solid rgba(255,255,255,.18); }
+  .cl b { font-weight: 500; }
+  .cl.off { color: rgba(255,255,255,.5); }
+  .cl.off span:first-child { display: flex; align-items: center; gap: 18px; }
+  .selo { font: 800 30px "Saira", sans-serif; letter-spacing: .02em; background: var(--night); color: #fff; border-radius: 8px; padding: 4px 14px; }
+  .ex { font-size: 26px; color: rgba(255,255,255,.85); margin-top: 12px; }
+  .q { font-family: "Saira", sans-serif; font-weight: 800; text-transform: uppercase; font-size: 92px; line-height: .98; margin: 18px 0; }
+  .resp { border: 3px solid rgba(255,255,255,.55); border-radius: 28px; padding: 26px 44px; }
+  .resp .p { font-size: 44px; font-weight: 600; }
+  .resp .k { font-family: "Saira", sans-serif; font-weight: 800; font-size: 128px; line-height: .9; margin: 6px 0 4px; color: var(--night); }
+  .resp .s { font-size: 40px; line-height: 1.3; color: rgba(255,255,255,.92); }
+</style></head><body>
+<section class="cena blue"><div class="camera">
+  <img class="logo" src="marca/logos/mentor-logo-sobre-azul.svg" style="height:64px;align-self:flex-start;margin-bottom:28px">
+  <div>
+    <div class="lista">
+      <div class="h"><span>Cliente</span><span>Última compra</span></div>
+      <div class="cl"><span>Cliente A</span><b>esta semana</b></div>
+      <div class="cl off"><span>Cliente B <i class="selo">SUMIU</i></span><b>agosto</b></div>
+      <div class="cl"><span>Cliente C</span><b>outubro</b></div>
+      <div class="cl off"><span>Cliente D <i class="selo">SUMIU</i></span><b>julho</b></div>
+    </div>
+    <div class="ex">Lista de exemplo.</div>
+  </div>
+  <div class="q">Quem comprou de você e nunca mais voltou?</div>
+  <div class="resp">
+    <div class="p">Sem compra há 90 dias? Responda com</div>
+    <div class="k">VOLTA</div>
+    <div class="s">e eu te mando a planilha de clientes parados.</div>
+  </div>
+</div></section>
+</body></html>

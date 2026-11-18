@@ -1,0 +1,7 @@
+{
+ "fundo": "cloud",
+ "titulo": "Vou fechar no fim do ano. Já avisei quem precisa?",
+ "apoio": "Férias coletivas têm prazo de aviso.",
+ "previa": {"tipo": "linha", "pontos": [30, 27, 23, 19, 15, 11, 7, 3], "rotulo_fim": "7/12"},
+ "chamada": "Arraste para ver as datas"
+}

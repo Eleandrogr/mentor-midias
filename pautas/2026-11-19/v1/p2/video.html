@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css">
+<style>
+.cal{margin-top:36px;display:grid;grid-template-columns:repeat(7,1fr);gap:10px;font-size:36px;text-align:center}
+.cal .cd{font-size:26px;color:var(--muted-dark)}
+.cal .c{padding:12px 0;border-radius:12px;background:rgba(245,246,250,.06)}
+.cal .f{background:rgba(0,206,201,.16)}
+.cal .av{background:var(--cyan);color:var(--night);font-weight:700}
+.cal .ini{border:3px solid var(--cloud);font-weight:700}
+.q{display:flex;flex-direction:column;gap:30px;margin-top:44px}
+.qi{display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:start}
+.qi .n{width:80px;height:80px;border-radius:16px;background:var(--night);color:#fff;font:800 44px "Saira";display:flex;align-items:center;justify-content:center}
+.qi b{display:block;font-size:48px;font-weight:700;line-height:1.1}.qi small{display:block;font-size:36px;line-height:1.25;color:rgba(255,255,255,.9);margin-top:6px}
+.ck{display:flex;flex-direction:column;gap:30px;margin-top:44px}.it{display:grid;grid-template-columns:72px 1fr;gap:24px;align-items:center;font-size:46px;line-height:1.2}
+.ck .n{width:72px;height:72px;border-radius:14px;background:var(--blue);color:#fff;font:800 40px "Saira";display:flex;align-items:center;justify-content:center}
+.linha{margin-top:44px;border-radius:22px;background:rgba(30,39,46,.08);padding:30px 34px}
+</style></head><body>
+<section class="cena cloud" data-dur="3.0" data-camera="aproxima"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="-1">
+  <div class="t1" style="font-size:108px" data-palavras data-in="-0.8" data-ritmo="0.1">Vou fechar no fim do ano. Já avisei quem precisa?</div>
+  <div class="linha" data-in="-0.2"><svg width="760" height="220" viewBox="-10 -10 780 240"><polyline points="0,0 120,30 240,70 360,110 480,150 600,190" fill="none" stroke="#0984E3" stroke-width="10" stroke-linecap="round"/><circle cx="600" cy="190" r="16" fill="#0984E3"/><text x="630" y="200" font-family="Geist" font-weight="600" font-size="36" fill="#1E272E">7/12</text></svg></div>
+  <p class="ap" style="color:var(--muted-light);font-size:46px" data-in="1.2">Férias coletivas têm prazo de aviso.</p>
+</div></section>
+<section class="cena night" data-dur="4.4" data-trans="empurra" data-camera="desliza"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="0">
+  <div class="t2" style="font-size:90px" data-palavras data-in="0" data-ritmo="0.08">Para parar em 22/12, avise até 7/12</div>
+  <div class="cal mono" data-in="0.3"><span class="cd">D</span><span class="cd">S</span><span class="cd">T</span><span class="cd">Q</span><span class="cd">Q</span><span class="cd">S</span><span class="cd">S</span><span></span><span></span><span class="c">1</span><span class="c">2</span><span class="c">3</span><span class="c">4</span><span class="c">5</span><span class="c">6</span><span class="c av" data-pulsa="1.6" data-som="impacto">7</span><span class="c f">8</span><span class="c f">9</span><span class="c f">10</span><span class="c f">11</span><span class="c f">12</span><span class="c f">13</span><span class="c f">14</span><span class="c f">15</span><span class="c f">16</span><span class="c f">17</span><span class="c f">18</span><span class="c f">19</span><span class="c f">20</span><span class="c f">21</span><span class="c ini">22</span><span class="c">23</span><span class="c">24</span><span class="c">25</span><span class="c">26</span><span class="c">27</span><span class="c">28</span><span class="c">29</span><span class="c">30</span><span class="c">31</span></div>
+  <p class="ap" style="font-size:42px;margin-top:28px" data-in="1.4">Na prática: conte 15 dias para trás.</p>
+  <p class="fn" data-in="2.0">Datas de exemplo. Fonte: CLT, art. 139 (gov.br)</p>
+</div></section>
+<section class="cena blue" data-dur="4.4" data-trans="mascara" data-camera="aproxima"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0">
+  <div class="t2" style="font-size:92px" data-palavras data-in="0" data-ritmo="0.1">Quem precisa saber</div>
+  <div class="q">
+    <div class="qi" data-in="0.4" data-from="left"><span class="n">1</span><span><b>Ministério do Trabalho</b><small>15 dias antes. ME e EPP dispensadas.</small></span></div>
+    <div class="qi" data-in="1.1" data-from="left"><span class="n">2</span><span><b>Sindicato da categoria</b><small>Cópia do aviso, no mesmo prazo.</small></span></div>
+    <div class="qi" data-in="1.8" data-from="left" data-pulsa="2.6"><span class="n">3</span><span><b>Sua equipe</b><small>Aviso afixado no local.</small></span></div>
+  </div>
+  <p class="fn" style="color:rgba(255,255,255,.88)" data-in="2.3">Fonte: CLT, art. 139; LC 123, art. 51 (gov.br)</p>
+</div></section>
+<section class="cena cloud" data-dur="4.2" data-trans="sobe" data-camera="aproxima"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="0">
+  <div class="rot" data-in="0"><span class="marcador acc-bg"></span>Na prática, nesta semana</div>
+  <div class="ck">
+    <div class="it" data-in="0.3" data-from="left"><span class="n">1</span><span>Defina início e fim</span></div>
+    <div class="it" data-in="0.9" data-from="left"><span class="n">2</span><span>Conte 15 dias para trás</span></div>
+    <div class="it" data-in="1.5" data-from="left"><span class="n">3</span><span>Avise sindicato e equipe</span></div>
+    <div class="it" data-in="2.1" data-from="left"><span class="n">4</span><span>Leve as datas ao contador</span></div>
+  </div>
+</div></section>
+<section class="cena blue" data-dur="3.0" data-trans="zoom" data-camera="aproxima"><div class="camera">
+  <img src="marca/logos/mentor-logo-sobre-azul.svg" style="height:96px;align-self:flex-start" data-in="0">
+  <div class="fala" style="font-size:96px;margin-top:48px" data-palavras data-in="0.15">Comente</div>
+  <div class="t1" style="font-size:170px;line-height:.9;color:var(--night)" data-in="0.4" data-from="zoom" data-pulsa="1.2" data-som="impacto">FÉRIAS</div>
+  <div class="fala" style="font-size:62px;margin-top:20px" data-palavras data-in="0.7" data-ritmo="0.06">que eu te mando o checklist com as datas.</div>
+</div></section></body></html>
