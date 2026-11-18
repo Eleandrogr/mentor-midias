@@ -1,0 +1,75 @@
+{
+ "p1": {
+  "legendas": {
+   "instagram": {
+    "horario": "08:40",
+    "tipo": "story",
+    "legenda": "Story — pergunta do dia: quem comprou e não voltou (resposta VOLTA). Todo o texto está na arte.",
+    "hashtags": []
+   },
+   "facebook": {
+    "horario": "08:45",
+    "tipo": "story",
+    "legenda": "Story — pergunta do dia: quem comprou e não voltou (resposta VOLTA).",
+    "hashtags": []
+   },
+   "linkedin": null
+  }
+ },
+ "p2": {
+  "legendas": {
+   "instagram": {
+    "horario": "12:15",
+    "legenda": "Vou fechar no fim do ano. Já avisei quem precisa?\n\nFérias coletivas têm prazo. A comunicação sai com pelo menos 15 dias de antecedência. Para parar em 22/12, o aviso vai até 7/12.\n\nQuem precisa saber:\n1. Ministério do Trabalho (micro e pequena empresa estão dispensadas)\n2. Sindicato da categoria, com cópia do aviso\n3. Sua equipe, com aviso afixado no local\n\nNa prática, nesta semana:\n1. Defina início e fim (até 2 períodos no ano, nenhum com menos de 10 dias)\n2. Conte 15 dias para trás\n3. Avise sindicato e equipe\n4. Leve as datas ao contador\n\nFonte: CLT, art. 139, e gov.br — https://www.gov.br/pt-br/servicos/comunicar-ferias-coletivas\n\nComente FÉRIAS que eu te mando o checklist com as datas de aviso.",
+    "hashtags": [
+     "feriascoletivas",
+     "departamentopessoal",
+     "rh",
+     "pme",
+     "gestao"
+    ]
+   },
+   "facebook": {
+    "horario": "12:30",
+    "legenda": "Você já sabe até que dia precisa avisar as férias coletivas de dezembro?\n\nA comunicação sai com pelo menos 15 dias de antecedência. Para parar em 22/12, o aviso vai até 7/12.\n\nQuem precisa saber: Ministério do Trabalho (micro e pequena empresa estão dispensadas), sindicato da categoria e a equipe, com aviso afixado.\n\n1. Defina início e fim\n2. Conte 15 dias para trás\n3. Avise sindicato e equipe\n4. Leve as datas ao contador\n\nFonte: CLT, art. 139, e gov.br — https://www.gov.br/pt-br/servicos/comunicar-ferias-coletivas\n\nComente FÉRIAS que eu te mando o checklist com as datas de aviso.",
+    "hashtags": [
+     "feriascoletivas",
+     "pme"
+    ]
+   },
+   "linkedin": {
+    "horario": "12:45",
+    "legenda": "Sua empresa vai parar entre o Natal e o Ano-Novo?\n\nAs férias coletivas têm prazo de aviso: pelo menos 15 dias antes do início. Para parar em 22/12, a comunicação vai até 7/12.\n\nQuem precisa saber:\n1. Ministério do Trabalho (ME e EPP estão dispensadas)\n2. Sindicato da categoria, com cópia do aviso\n3. A equipe, com aviso afixado no local\n\nNa prática: defina as datas nesta semana, conte 15 dias para trás e leve o calendário ao contador para o pagamento entrar no caixa de dezembro.\n\nFonte: CLT, art. 139, e gov.br — https://www.gov.br/pt-br/servicos/comunicar-ferias-coletivas\n\nComente FÉRIAS que eu te mando o checklist com as datas de aviso.",
+    "hashtags": [
+     "gestaodepessoas",
+     "departamentopessoal",
+     "pme"
+    ]
+   }
+  }
+ },
+ "p3": {
+  "legendas": {
+   "instagram": {
+    "horario": "18:30",
+    "legenda": "Meu dinheiro estava parado na prateleira.\n\nA Selic está em 13,75% ao ano (Copom, novembro de 2026). É o quanto o dinheiro poderia render, ou custar, se veio de empréstimo.\n\nExemplo: R$ 50 mil em itens sem venda há mais de 90 dias. Na conta simples pela Selic, são R$ 6.875 em 12 meses, uns R$ 573 por mês, que esse dinheiro deixa de render.\n\nNa prática, nesta semana:\n1. Liste o que não vende há 90 dias\n2. Pare de recomprar esses itens\n3. Gire com kit ou promoção\n\nFonte: Banco Central (Copom), via Agência Brasil, 4/11/2026 — https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bc-surpreende-e-mantem-juros-basicos-em-1375-ao-ano\n\nValores de exemplo.\n\nComente PARADO que eu te mando a planilha do estoque parado.",
+    "hashtags": [
+     "gestaodeestoque",
+     "estoque",
+     "fluxodecaixa",
+     "pme",
+     "varejo"
+    ]
+   },
+   "facebook": {
+    "horario": "18:45",
+    "legenda": "Quanto do seu dinheiro está parado no estoque agora?\n\nA Selic está em 13,75% ao ano (Copom, novembro de 2026). R$ 50 mil em itens sem venda há mais de 90 dias deixam de render R$ 6.875 em 12 meses, uns R$ 573 por mês (conta simples, valores de exemplo).\n\n1. Liste o que não vende há 90 dias\n2. Pare de recomprar esses itens\n3. Gire com kit ou promoção\n\nFonte: Agência Brasil, 4/11/2026 — https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bc-surpreende-e-mantem-juros-basicos-em-1375-ao-ano\n\nComente PARADO que eu te mando a planilha do estoque parado.",
+    "hashtags": [
+     "estoque",
+     "pme"
+    ]
+   },
+   "linkedin": null
+  }
+ }
+}

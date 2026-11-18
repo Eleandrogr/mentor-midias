@@ -1,0 +1,37 @@
+{
+ "p1": [],
+ "p2": [
+  {
+   "dado": "Comunicação das férias coletivas com antecedência mínima de 15 dias; ME e EPP dispensadas da comunicação ao Ministério do Trabalho",
+   "fonte": "gov.br, serviço Comunicar férias coletivas (Ministério do Trabalho e Emprego)",
+   "frase": "\"com a antecedência mínima de 15 (quinze) dias\"; \"A comunicação está dispensada para as microempresas e empresas de pequeno porte\" (LC 123/06, art. 51, V)",
+   "url": "https://www.gov.br/pt-br/servicos/comunicar-ferias-coletivas"
+  },
+  {
+   "dado": "Até 2 períodos anuais, nenhum inferior a 10 dias; cópia ao sindicato e aviso afixado no mesmo prazo",
+   "fonte": "CLT (Decreto-Lei 5.452/1943), art. 139, §1º a §3º — texto comentado pela Aurum (o site do Planalto bloqueou a leitura automática)",
+   "frase": "\"As férias poderão ser gozadas em 2 (dois) períodos anuais\" (§1º); §3º: cópia aos sindicatos da categoria e afixação de aviso nos locais de trabalho, em igual prazo",
+   "url": "https://www.aurum.com.br/blog/clt-comentado/art-139-a-141-clt/"
+  },
+  {
+   "dado": "22/12/2026 − 15 dias = 7/12/2026",
+   "fonte": "Conta de calendário (datas de exemplo)",
+   "frase": "Datas de exemplo marcadas na arte",
+   "url": "https://eleandrogr.github.io/mentor-midias/materiais/checklist-ferias-coletivas.pdf"
+  }
+ ],
+ "p3": [
+  {
+   "dado": "Selic mantida em 13,75% ao ano pelo Copom (decisão unânime, novembro de 2026)",
+   "fonte": "Agência Brasil (EBC), 04/11/2026 — Banco Central surpreende e mantém juros básicos em 13,75% ao ano",
+   "frase": "\"manteve a Taxa Selic, juros básicos da economia, em 13,75% ao ano\"",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bc-surpreende-e-mantem-juros-basicos-em-1375-ao-ano"
+  },
+  {
+   "dado": "R$ 50.000 × 13,75% = R$ 6.875 em 12 meses; ÷ 12 ≈ R$ 573 por mês",
+   "fonte": "Conta de exemplo (itens A, B e C = R$ 18 mil + R$ 20 mil + R$ 12 mil)",
+   "frase": "Valores de exemplo marcados na arte e na legenda",
+   "url": "https://eleandrogr.github.io/mentor-midias/materiais/planilha-estoque-parado.xlsx"
+  }
+ ]
+}
