@@ -1,0 +1,23 @@
+{
+ "data": "2026-11-20", "versao": 1, "regras": "v2", "volume": "v3",
+ "contexto": "19/11: story blue Vendas, carrossel cloud Pessoas, reel night Estoque (pauta ainda pendente). 18/11: carrossel Vendas, reel Contratos. Último post previsto (19/11 18:30) night -> 20/11 abre em blue. 20/11 é feriado nacional (Lei 14.759/2023). Carrossel e reel fora de Pessoas e Estoque.",
+ "teste": {"peca": "p3", "descricao": "Reel curto (~15 s, 5 cenas) abrindo com pergunta direta no quadro 0, sugestão do analista após o reel de 17/11 ficar em 15% de tempo assistido"},
+ "pecas": [
+  {"id": "p1", "formato": "story", "horario_ig": "08:40", "horario_fb": "08:45", "fundo": "blue", "modulo": "Pessoas",
+   "brief": {"angulo": "educativo", "tema": "Pessoas: feriado de 20/11 trabalhado — remuneração em dobro, salvo outro dia de folga (Lei 605/1949, art. 9º)",
+     "cliente_ideal": "Dono de comércio, clínica ou indústria que abriu ou chamou parte da equipe no feriado de hoje",
+     "objetivo": "lead (resposta FERIADO)", "cta": "Responda este story com FERIADO que eu te mando o checklist do feriado trabalhado",
+     "teste_do_envio": "Mandaria para quem fecha a folha ou para o contador, para anotar hoje quem trabalhou e decidir folga ou pagamento"}},
+  {"id": "p2", "formato": "carrossel", "horario_ig": "12:15", "horario_fb": "12:30", "horario_li": "12:45", "fundo": "cloud", "modulo": "Contratos", "linkedin": true,
+   "brief": {"angulo": "dor", "tema": "Contratos: o que o contrato precisa dizer sobre atraso de pagamento; multa de até 2% em venda parcelada ao consumidor (CDC, art. 52, §1º)",
+     "cliente_ideal": "Dono de serviço recorrente, escola, clínica ou loja que vende parcelado e descobre no atraso que o contrato não prevê nada",
+     "objetivo": "salvamento", "cta": "Comente CONTRATO que eu te mando o checklist das cláusulas de atraso",
+     "teste_do_envio": "Mandaria para o sócio ou para o advogado, para revisar o modelo de contrato antes da próxima venda"}},
+  {"id": "p3", "formato": "reel", "horario_ig": "18:30", "horario_fb": "18:45", "fundo": "night", "modulo": "Financeiro",
+   "brief": {"angulo": "educativo", "tema": "Financeiro: lucro não é caixa — para onde vai o dinheiro do mês que deu lucro (venda a prazo, estoque, parcela)",
+     "cliente_ideal": "Dono de PME que vê lucro no relatório do contador e não tem dinheiro para pagar as contas do começo do mês",
+     "objetivo": "lead (comentário CAIXA)", "cta": "Comente CAIXA que eu te mando a planilha de fluxo de caixa de 30 dias",
+     "teste_do_envio": "Mandaria para o sócio, para entender por que o lucro não virou dinheiro no banco"},
+   "aprendizado": "reel encurtado para ~15 s e aberto com pergunta direta (sugestão do analista em 19/11)"}
+ ]
+}

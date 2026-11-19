@@ -1,0 +1,51 @@
+{
+ "p1": [
+  {
+   "dado": "Feriado trabalhado: remuneração em dobro, salvo outro dia de folga",
+   "fonte": "Lei 605/1949, art. 9º (texto atualizado, Câmara dos Deputados)",
+   "ano": 1949,
+   "url": "https://www2.camara.leg.br/legin/fed/lei/1940-1949/lei-605-5-janeiro-1949-367115-normaatualizada-pl.pdf",
+   "frase": "a remuneração será paga em dôbro, salvo se o empregador determinar outro dia de folga"
+  },
+  {
+   "dado": "20 de novembro é feriado nacional",
+   "fonte": "Lei 14.759/2023, art. 1º (Câmara dos Deputados)",
+   "ano": 2023,
+   "url": "https://www2.camara.leg.br/legin/fed/lei/2023/lei-14759-21-dezembro-2023-795091-publicacaooriginal-170522-pl.html",
+   "frase": "Fica declarado feriado nacional o dia 20 de novembro, para a celebração do Dia Nacional de Zumbi e da Consciência Negra."
+  }
+ ],
+ "p2": [
+  {
+   "dado": "Multa de mora em venda parcelada/financiada ao consumidor: até 2% da prestação",
+   "fonte": "Código de Defesa do Consumidor (Lei 8.078/1990), art. 52, §1º (texto atualizado, Câmara dos Deputados)",
+   "ano": 1990,
+   "url": "https://www2.camara.leg.br/legin/fed/lei/1990/lei-8078-11-setembro-1990-365086-normaatualizada-pl.html",
+   "frase": "não poderão ser superiores a dois por cento do valor da prestação"
+  },
+  {
+   "dado": "Liquidação antecipada com redução proporcional de juros (usado no checklist)",
+   "fonte": "CDC, art. 52, §2º",
+   "ano": 1990,
+   "url": "https://www2.camara.leg.br/legin/fed/lei/1990/lei-8078-11-setembro-1990-365086-normaatualizada-pl.html",
+   "frase": "É assegurado ao consumidor a liquidação antecipada do débito"
+  },
+  {
+   "dado": "R$ 500 de parcela e R$ 10 de multa",
+   "fonte": "exemplo (2% de 500)",
+   "ano": null,
+   "url": null,
+   "frase": "valor de exemplo, marcado na arte"
+  }
+ ],
+ "p3": [
+  {
+   "dado": "Lucro R$ 12.000, a receber R$ 6.500, estoque R$ 3.000, parcela R$ 700, caixa R$ 1.800; vendido R$ 60.000, recebido R$ 53.500",
+   "fonte": "exemplo (conta: 12.000 − 6.500 − 3.000 − 700 = 1.800)",
+   "ano": null,
+   "url": null,
+   "frase": "valores de exemplo, marcados na arte e na legenda"
+  }
+ ],
+ "obs": "planalto.gov.br bloqueou a leitura (acesso negado); textos conferidos na versão da Câmara dos Deputados"
+}

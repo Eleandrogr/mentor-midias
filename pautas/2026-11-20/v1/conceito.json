@@ -1,0 +1,21 @@
+{
+ "p1": {"big_ideas": {"segura": "Pergunta do feriado com a regra da lei", "ousada": "Folha de ponto do feriado com carimbo EM DOBRO OU FOLGA nos nomes", "estranha": "Calendário de novembro com o dia 20 riscado e uma conta de cobrança chegando", "escolhida": "ousada", "por_que": "a folha de ponto mostra a situação do dono em 1 segundo; a segura não tem imagem e a estranha pede explicação"},
+  "quebra_de_padrao": "carimbo na própria lista de exemplo, inclinado, antes da pergunta (a resposta antes da pergunta)",
+  "formato": "story", "fundo_inicial": "blue", "destaque": "Night sobre azul"},
+ "p2": {"big_ideas": {"segura": "Lista de cláusulas que todo contrato precisa", "ousada": "Parcela de exemplo com a fatia de 2% recortada: o tamanho real da multa", "estranha": "Contrato em branco com o campo ATRASO vazio piscando", "escolhida": "ousada", "por_que": "mostra o limite em reais e não em artigo de lei; a estranha não ensina nada e a segura é a lista que já existe em todo blog"},
+  "quebra_de_padrao": "slide 2 com a fatia de 2% quase invisível na barra da parcela: o vazio é a mensagem",
+  "formato": "carrossel", "fundo_inicial": "cloud",
+  "capa": {"fundo": "cloud", "titulo": "O cliente atrasou e meu contrato não dizia nada", "apoio": "O que eu escrevo hoje em todo contrato.", "previa": {"tipo": "linha", "pontos": [4, 6, 9, 13, 18, 24, 31, 39], "rotulo_fim": "atraso"}, "chamada": "Arraste para ver as cláusulas"},
+  "slides": ["capa (estática)", "s2 night animado: parcela de exemplo R$ 500 com fatia de 2% = R$ 10; fonte CDC art. 52 §1º", "s3 blue animado: 4 coisas que o contrato precisa dizer", "s4 cloud estático: checklist para salvar", "s5 blue estático: CTA CONTRATO"],
+  "sem_print": "marca/telas e marca/telas-site não existem no repositório: sem slide de tela do Mentor"},
+ "p3": {"big_ideas": {"segura": "Lucro × caixa explicado com duas barras", "ousada": "O lucro de R$ 12 mil sendo comido, parcela por parcela, até sobrar R$ 1,8 mil no caixa", "estranha": "Um cofrinho com o rótulo LUCRO vazio", "escolhida": "ousada", "por_que": "o valor despencando mostra a dor em movimento; o cofrinho é infantil e a segura é estática"},
+  "quebra_de_padrao": "a resposta (caixa R$ 1,8 mil) aparece já na cena 1, antes da explicação",
+  "formato": "reel", "fundo_inicial": "night",
+  "cenas": [
+   {"n": 1, "papel": "gancho (pergunta no quadro 0)", "fundo": "night", "dur": 3.0, "camera": "aproxima", "elementos": ["título 'Deu lucro. Cadê o dinheiro?' com palavras desde -0,6", "cards Lucro R$ 12.000 × Caixa R$ 1.800 (exemplo), caixa com data-desce"]},
+   {"n": 2, "papel": "a diferença", "fundo": "blue", "dur": 3.2, "trans": "empurra", "camera": "desliza", "elementos": ["título 'Lucro é o que vendeu. Caixa é o que entrou.'", "barras Vendido R$ 60 mil × Recebido R$ 53,5 mil (exemplo)"]},
+   {"n": 3, "papel": "para onde foi (conta pronta)", "fundo": "cloud", "dur": 3.6, "trans": "mascara", "camera": "aproxima", "elementos": ["linhas: lucro 12.000; a receber -6.500; estoque -3.000; parcela -700; sobra 1.800"]},
+   {"n": 4, "papel": "na prática", "fundo": "night", "dur": 3.2, "trans": "sobe", "camera": "aproxima", "elementos": ["3 passos"]},
+   {"n": 5, "papel": "CTA", "fundo": "cloud", "dur": 2.8, "trans": "zoom", "camera": "aproxima", "elementos": ["Comente CAIXA"]}],
+  "semente_trilha": 3243}
+}

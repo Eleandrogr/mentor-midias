@@ -1,0 +1,7 @@
+{
+ "fundo": "cloud",
+ "titulo": "O cliente atrasou e meu contrato não dizia nada",
+ "apoio": "O que eu escrevo hoje em todo contrato.",
+ "previa": {"tipo": "linha", "pontos": [4, 6, 9, 13, 18, 24, 31, 39], "rotulo_fim": "atraso"},
+ "chamada": "Arraste para ver as cláusulas"
+}

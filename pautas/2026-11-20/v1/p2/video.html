@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css">
+<style>
+.linha{margin-top:44px;border-radius:22px;background:rgba(30,39,46,.08);padding:30px 34px}
+.parc{margin-top:44px}
+.parc .lb{display:flex;justify-content:space-between;font-size:38px;margin-bottom:14px}
+.parc .bar{height:120px;border-radius:14px;background:rgba(245,246,250,.14);position:relative;overflow:hidden}
+.parc .bar i{position:absolute;inset:0 auto 0 0;width:100%;background:rgba(245,246,250,.32);border-radius:14px}
+.parc .bar b{position:absolute;inset:0 0 0 auto;width:2%;background:var(--cyan)}
+.multa{display:flex;align-items:center;gap:22px;margin-top:22px;font-size:40px}
+.multa .sw{width:34px;height:34px;border-radius:8px;background:var(--cyan)}
+.multa strong{color:var(--cyan);font-weight:700}
+.q{display:flex;flex-direction:column;gap:26px;margin-top:40px}
+.qi{display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:start}
+.qi .n{width:80px;height:80px;border-radius:16px;background:var(--night);color:#fff;font:800 44px "Saira";display:flex;align-items:center;justify-content:center}
+.qi b{display:block;font-size:46px;font-weight:700;line-height:1.1}.qi small{display:block;font-size:34px;line-height:1.25;color:rgba(255,255,255,.9);margin-top:6px}
+.ck{display:flex;flex-direction:column;gap:30px;margin-top:44px}.it{display:grid;grid-template-columns:72px 1fr;gap:24px;align-items:center;font-size:46px;line-height:1.2}
+.ck .n{width:72px;height:72px;border-radius:14px;background:var(--blue);color:#fff;font:800 40px "Saira";display:flex;align-items:center;justify-content:center}
+</style></head><body>
+<section class="cena cloud" data-dur="3.0" data-camera="aproxima"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="-1">
+  <div class="t1" style="font-size:104px" data-palavras data-in="-0.8" data-ritmo="0.1">O cliente atrasou e meu contrato não dizia nada</div>
+  <div class="linha" data-in="-0.2"><svg width="760" height="220" viewBox="-10 -10 780 240"><polyline points="0,200 100,190 200,175 300,155 400,128 500,95 600,55 680,10" fill="none" stroke="#0984E3" stroke-width="10" stroke-linecap="round"/><circle cx="680" cy="10" r="16" fill="#0984E3"/><text x="560" y="70" font-family="Geist" font-weight="600" font-size="36" fill="#1E272E">atraso</text></svg></div>
+  <p class="ap" style="color:var(--muted-light);font-size:46px" data-in="1.2">O que eu escrevo hoje em todo contrato.</p>
+</div></section>
+<section class="cena night" data-dur="4.4" data-trans="empurra" data-camera="desliza"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="0">
+  <div class="t2" style="font-size:90px" data-palavras data-in="0" data-ritmo="0.08">Vendeu parcelado ao consumidor? Multa de até 2%</div>
+  <div class="parc mono" data-in="0.3">
+    <div class="lb"><span>Parcela de exemplo</span><span>R$ 500</span></div>
+    <div class="bar"><i data-growx="0.4" data-dur="0.9"></i><b data-in="1.3" data-pulsa="1.9" data-som="impacto"></b></div>
+  </div>
+  <div class="multa" data-in="1.4" data-from="left"><span class="sw"></span><span>Multa máxima: <strong>R$ 10</strong></span></div>
+  <p class="fn" data-in="2.0">Fonte: CDC (Lei 8.078/1990), art. 52, §1º</p>
+</div></section>
+<section class="cena blue" data-dur="4.6" data-trans="mascara" data-camera="aproxima"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0">
+  <div class="t2" style="font-size:90px" data-palavras data-in="0" data-ritmo="0.1">O contrato precisa dizer</div>
+  <div class="q">
+    <div class="qi" data-in="0.4" data-from="left"><span class="n">1</span><span><b>Dia e forma de pagamento</b></span></div>
+    <div class="qi" data-in="1.0" data-from="left"><span class="n">2</span><span><b>Multa por atraso</b><small>Consumidor: até 2%.</small></span></div>
+    <div class="qi" data-in="1.6" data-from="left"><span class="n">3</span><span><b>Juros por mês de atraso</b></span></div>
+    <div class="qi" data-in="2.2" data-from="left" data-pulsa="2.9"><span class="n">4</span><span><b>O que acontece depois</b></span></div>
+  </div>
+</div></section>
+<section class="cena cloud" data-dur="4.2" data-trans="sobe" data-camera="aproxima"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="0">
+  <div class="rot" data-in="0"><span class="marcador acc-bg"></span>Na prática, nesta semana</div>
+  <div class="ck">
+    <div class="it" data-in="0.3" data-from="left"><span class="n">1</span><span>Separe os modelos</span></div>
+    <div class="it" data-in="0.9" data-from="left"><span class="n">2</span><span>Confira a multa</span></div>
+    <div class="it" data-in="1.5" data-from="left"><span class="n">3</span><span>Escreva juros e prazos</span></div>
+    <div class="it" data-in="2.1" data-from="left"><span class="n">4</span><span>Peça revisão jurídica</span></div>
+  </div>
+</div></section>
+<section class="cena blue" data-dur="3.0" data-trans="zoom" data-camera="aproxima"><div class="camera">
+  <img src="marca/logos/mentor-logo-sobre-azul.svg" style="height:96px;align-self:flex-start" data-in="0">
+  <div class="fala" style="font-size:96px;margin-top:48px" data-palavras data-in="0.15">Comente</div>
+  <div class="t1" style="font-size:160px;line-height:.9;color:var(--night)" data-in="0.4" data-from="zoom" data-pulsa="1.2" data-som="impacto">CONTRATO</div>
+  <div class="fala" style="font-size:62px;margin-top:20px" data-palavras data-in="0.7" data-ritmo="0.06">que eu te mando o checklist das cláusulas.</div>
+</div></section></body></html>
