@@ -1,0 +1,7 @@
+{
+ "fundo": "cloud",
+ "titulo": "No fim de ano faltou justo o produto que mais vende",
+ "apoio": "A conta que eu faço antes de comprar.",
+ "previa": {"tipo": "linha", "pontos": [100, 88, 75, 62, 48, 34, 20, 8], "rotulo_fim": "faltou"},
+ "chamada": "Arraste para ver a conta"
+}

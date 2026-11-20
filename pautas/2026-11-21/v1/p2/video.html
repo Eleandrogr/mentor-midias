@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css">
+<style>
+.graf{margin-top:44px;border-radius:22px;background:rgba(30,39,46,.08);padding:30px 34px}
+.conta{margin-top:44px;display:flex;flex-direction:column;gap:22px}
+.linha{display:flex;justify-content:space-between;align-items:baseline;font-size:44px;border-bottom:2px solid rgba(245,246,250,.16);padding-bottom:14px}
+.linha.total{font-size:52px;border:0;color:var(--cyan);font-weight:600}
+.bars{margin-top:44px;display:flex;flex-direction:column;gap:26px}
+.r .lb{display:flex;justify-content:space-between;font-size:38px;margin-bottom:10px}
+.r .b{height:76px;border-radius:12px;background:rgba(255,255,255,.18);position:relative;overflow:hidden}
+.r .b i{position:absolute;inset:0 auto 0 0;border-radius:12px;background:rgba(255,255,255,.55)}
+.r.d .b i{background:var(--night)}
+.ck{display:flex;flex-direction:column;gap:30px;margin-top:44px}.it{display:grid;grid-template-columns:72px 1fr;gap:24px;align-items:center;font-size:46px;line-height:1.2}
+.ck .n{width:72px;height:72px;border-radius:14px;background:var(--blue);color:#fff;font:800 40px "Saira";display:flex;align-items:center;justify-content:center}
+</style></head><body>
+<section class="cena cloud" data-dur="3.0" data-camera="aproxima"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="-1">
+  <div class="t1" style="font-size:100px" data-palavras data-in="-0.8" data-ritmo="0.1">No fim de ano faltou justo o produto que mais vende</div>
+  <div class="graf" data-in="-0.2" data-pulsa="2.0"><svg width="760" height="220" viewBox="-10 -10 780 240"><polyline points="0,10 100,40 200,70 300,100 400,130 500,160 600,190 680,210" fill="none" stroke="#0984E3" stroke-width="10" stroke-linecap="round"/><circle cx="680" cy="210" r="16" fill="#0984E3"/><text x="520" y="160" font-family="Geist" font-weight="600" font-size="36" fill="#1E272E">faltou</text></svg></div>
+  <p class="ap" style="color:var(--muted-light);font-size:46px" data-in="1.2">A conta que eu faço antes de comprar.</p>
+</div></section>
+<section class="cena night" data-dur="3.8" data-trans="empurra" data-camera="desliza"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="0">
+  <div class="t2" style="font-size:90px" data-palavras data-in="0" data-ritmo="0.08">Quando pedir? Faça esta conta</div>
+  <div class="conta mono">
+    <div class="linha" data-in="0.4" data-from="left"><span>Venda por dia</span><b>10 un</b></div>
+    <div class="linha" data-in="0.9" data-from="left"><span>× Prazo do fornecedor</span><b>12 dias</b></div>
+    <div class="linha" data-in="1.4" data-from="left"><span>+ Segurança</span><b>30 un</b></div>
+    <div class="linha total" data-in="2.0" data-from="left" data-pulsa="2.6" data-som="impacto"><span>Pedir em</span><b>150 un</b></div>
+  </div>
+  <p class="fn" data-in="2.2">Valores de exemplo.</p>
+</div></section>
+<section class="cena blue" data-dur="4.0" data-trans="mascara" data-camera="aproxima"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0">
+  <div class="t2" style="font-size:90px" data-palavras data-in="0" data-ritmo="0.1">No fim de ano, refaça a conta</div>
+  <div class="bars mono">
+    <div class="r" data-in="0.5"><div class="lb"><span>Ponto de pedido normal</span><span>150 un</span></div><div class="b"><i style="width:47%" data-growx="0.6" data-dur="0.8" data-pulsa="1.5"></i></div></div>
+    <div class="r d" data-in="1.1"><div class="lb"><span>No fim de ano</span><span data-count="318" data-suffix=" un" data-in="1.1">318 un</span></div><div class="b"><i style="width:100%" data-growx="1.2" data-dur="0.9" data-pulsa="2.2" data-som="impacto"></i></div></div>
+  </div>
+  <div class="mud mono" style="margin-top:44px;display:flex;flex-direction:column;gap:20px">
+    <div class="mi" data-in="1.7" data-from="left" style="display:flex;justify-content:space-between;font-size:42px;border-bottom:2px solid rgba(255,255,255,.25);padding-bottom:12px"><span>Venda por dia</span><b>10 → 16 un</b></div>
+    <div class="mi" data-in="2.2" data-from="left" style="display:flex;justify-content:space-between;font-size:42px;border-bottom:2px solid rgba(255,255,255,.25);padding-bottom:12px"><span>Prazo do fornecedor</span><b>12 → 18 dias</b></div>
+  </div>
+  <p class="fn" style="color:rgba(255,255,255,.88)" data-in="2.7">Valores de exemplo: 16 × 18 + 30 = 318.</p>
+</div></section>
+<section class="cena cloud" data-dur="4.2" data-trans="sobe" data-camera="aproxima"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="0">
+  <div class="rot" data-in="0"><span class="marcador acc-bg"></span>Na prática, nesta semana</div>
+  <div class="ck">
+    <div class="it" data-in="0.3" data-from="left"><span class="n">1</span><span>Liste os 10 que mais vendem</span></div>
+    <div class="it" data-in="0.9" data-from="left"><span class="n">2</span><span>Ache a venda por dia</span></div>
+    <div class="it" data-in="1.5" data-from="left"><span class="n">3</span><span>Pergunte o prazo ao fornecedor</span></div>
+    <div class="it" data-in="2.1" data-from="left" data-pulsa="2.8"><span class="n">4</span><span>Anote o ponto de pedido</span></div>
+  </div>
+</div></section>
+<section class="cena blue" data-dur="2.6" data-trans="zoom" data-camera="aproxima"><div class="camera">
+  <img src="marca/logos/mentor-logo-sobre-azul.svg" style="height:96px;align-self:flex-start" data-in="0">
+  <div class="fala" style="font-size:96px;margin-top:48px" data-palavras data-in="0.15">Comente</div>
+  <div class="t1" style="font-size:160px;line-height:.9;color:var(--night)" data-in="0.4" data-from="zoom" data-pulsa="1.2" data-som="impacto">PEDIDO</div>
+  <div class="fala" style="font-size:62px;margin-top:20px" data-palavras data-in="0.7" data-ritmo="0.06">que eu te mando a planilha de ponto de pedido.</div>
+</div></section></body></html>

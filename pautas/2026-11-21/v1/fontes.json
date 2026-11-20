@@ -1,0 +1,45 @@
+{
+ "p1": [
+  {
+   "dado": "Compra fora do estabelecimento comercial: o consumidor pode desistir em 7 dias, a contar da assinatura ou do recebimento",
+   "fonte": "CDC (Lei 8.078/1990), art. 49, texto citado pelo TJDFT (Direito Fácil)",
+   "frase": "O consumidor pode desistir do contrato, no prazo de 7 dias a contar de sua assinatura ou do ato de recebimento do produto ou serviço, sempre que a contratação de fornecimento de produtos e serviços ocorrer fora do estabelecimento comercial",
+   "url": "https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/direito-ao-arrependimento-de-compra"
+  },
+  {
+   "dado": "Valores pagos devolvidos de imediato, atualizados (usado no checklist)",
+   "fonte": "CDC, art. 49, parágrafo único (TJDFT)",
+   "frase": "serão devolvidos, de imediato, monetariamente atualizados",
+   "url": "https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/direito-ao-arrependimento-de-compra"
+  },
+  {
+   "dado": "Pedido entregue 27/11, prazo até 04/12",
+   "fonte": "exemplo (27/11 + 7 dias)",
+   "frase": "pedido de exemplo, marcado na arte",
+   "url": null
+  }
+ ],
+ "p2": [
+  {
+   "dado": "Venda 10 un/dia, prazo 12 dias, segurança 30 un, ponto de pedido 150 un; fim de ano 16 un/dia, 18 dias, 318 un",
+   "fonte": "exemplo (10 × 12 + 30 = 150; 16 × 18 + 30 = 318)",
+   "frase": "valores de exemplo, marcados na arte e na legenda",
+   "url": null
+  }
+ ],
+ "p3": [
+  {
+   "dado": "Hora extra: no mínimo 50% a mais que a hora normal",
+   "fonte": "Constituição Federal, art. 7º, XVI (texto atualizado, Câmara dos Deputados)",
+   "frase": "XVI - remuneração do serviço extraordinário superior, no mínimo, em cinqüenta por cento à do normal;",
+   "url": "https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html"
+  },
+  {
+   "dado": "Hora normal R$ 10, hora extra R$ 15; 3 pessoas × 20 h × R$ 15 = R$ 900",
+   "fonte": "exemplo",
+   "frase": "valores de exemplo, marcados na arte e na legenda",
+   "url": null
+  }
+ ],
+ "obs": "Câmara (CDC) não respondeu ao pedido de leitura nesta execução; art. 49 conferido no texto citado pelo TJDFT. CF art. 7º lido no texto atualizado da Câmara; a página registra que o inciso XIII (jornada) foi alterado pela EC 141/2026 (40 horas semanais) — não usado no post."
+}

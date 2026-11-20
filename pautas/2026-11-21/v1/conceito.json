@@ -1,0 +1,25 @@
+{
+ "p1": {
+  "modelo": "story estático (render.py)",
+  "fundo": "blue",
+  "destaque": "Night sobre azul",
+  "visual": "cartão de pedido online com 7 casas de dias, a 7ª em Night; título-pergunta; regra com fonte; caixa de resposta BLACK"
+ },
+ "p2": {
+  "modelo": "carrossel v2: capa.py (linha caindo até 'faltou') + s2 night animado (conta pronta) + s3 blue animado (barras 150 × 318) + s4 checklist cloud + s5 CTA blue",
+  "fundo": "cloud",
+  "destaque": "Blue no claro, Cyan no escuro, Night no azul"
+ },
+ "p3": {
+  "modelo": "reel 5 cenas, 15,6 s, pergunta no quadro 0",
+  "fundo": "night",
+  "cenas": [
+   "night: pergunta + cartões R$ 10 × R$ 15 (contador)",
+   "blue: 50% com barras 100% × 150% e fonte",
+   "cloud: conta 3 × 20 h × R$ 15 = R$ 900",
+   "night: 3 passos",
+   "cloud: CTA HORA"
+  ]
+ },
+ "sem_tela_mentor": "marca/telas e marca/telas-site não estão no repositório"
+}
