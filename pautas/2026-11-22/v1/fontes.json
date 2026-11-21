@@ -1,0 +1,50 @@
+{
+ "p1": [
+  {
+   "dado": "Contas da semana (R$ 2.400, R$ 3.000, R$ 1.100; total R$ 6.500)",
+   "fonte": "exemplo",
+   "frase": "valores de exemplo, marcados na arte",
+   "url": null
+  }
+ ],
+ "p2": [
+  {
+   "dado": "Semana 1: R$ 5.000 ÷ 100 vendas = R$ 50; semana 4: R$ 5.000 ÷ 125 = R$ 40",
+   "fonte": "exemplo (conta)",
+   "frase": "valores de exemplo, marcados na arte e na legenda",
+   "url": null
+  }
+ ],
+ "p3": [
+  {
+   "dado": "Sem estipulação em contrário, o valor orçado vale 10 dias a partir do recebimento pelo consumidor",
+   "fonte": "CDC (Lei 8.078/1990), art. 40, §1º, texto reproduzido pelo TJDFT (Direito Fácil, 2019)",
+   "frase": "Salvo estipulação em contrário, o valor orçado terá validade pelo prazo de dez dias, contado de seu recebimento pelo consumidor.",
+   "url": "https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/pratica-abusiva-servico-sem-orcamento"
+  },
+  {
+   "dado": "Aprovado, o orçamento obriga os contraentes e só muda por livre negociação",
+   "fonte": "CDC, art. 40, §2º (TJDFT)",
+   "frase": "Uma vez aprovado pelo consumidor, o orçamento obriga os contraentes e somente pode ser alterado mediante livre negociação das partes.",
+   "url": "https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/pratica-abusiva-servico-sem-orcamento"
+  },
+  {
+   "dado": "Orçamento discrimina mão de obra, materiais, pagamento e datas (checklist)",
+   "fonte": "CDC, art. 40, caput (TJDFT)",
+   "frase": "orçamento prévio discriminando o valor da mão-de-obra, dos materiais e equipamentos a serem empregados, as condições de pagamento, bem como as datas de início e término dos serviços",
+   "url": "https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/pratica-abusiva-servico-sem-orcamento"
+  },
+  {
+   "dado": "Executar serviço sem orçamento e autorização é prática abusiva (checklist)",
+   "fonte": "CDC, art. 39, VI (TJDFT)",
+   "frase": "executar serviços sem a prévia elaboração de orçamento e autorização expressa do consumidor",
+   "url": "https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/pratica-abusiva-servico-sem-orcamento"
+  },
+  {
+   "dado": "Datas 05/08 e 20/11",
+   "fonte": "exemplo",
+   "frase": "marcado na arte",
+   "url": null
+  }
+ ]
+}

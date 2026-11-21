@@ -1,0 +1,7 @@
+{
+ "fundo": "cloud",
+ "titulo": "Vendi para mais gente e o faturamento não saiu do lugar",
+ "apoio": "A conta que eu olho toda semana.",
+ "previa": {"tipo": "barras", "series": [{"rotulo": "Vendas na semana 1", "valor": 100}, {"rotulo": "Vendas na semana 4", "valor": 125, "destaque": true}], "sufixo": ""},
+ "chamada": "Arraste para ver a conta"
+}

@@ -1,0 +1,45 @@
+{
+ "p1": {
+  "modelo": "story estático (render.py)",
+  "fundo": "blue",
+  "destaque": "Night sobre azul",
+  "big_ideas": {
+   "segura": "pergunta + dica em texto",
+   "ousada": "agenda da semana com as contas de exemplo e o total que sai até sexta",
+   "estranha": "story em branco com só 'R$ ?' e a pergunta",
+   "escolhida": "ousada",
+   "por_que": "a agenda mostra a tarefa pronta; a estranha não ensina nada sem legenda"
+  },
+  "quebra_de_padrao": "resposta (o total) desenhada antes da dica do caixa"
+ },
+ "p2": {
+  "modelo": "carrossel v2: capa.py (barras 100 × 125 vendas) + s2 night animado (conta do ticket) + s3 blue animado (vendas sobem, ticket cai, faturamento igual) + s4 checklist cloud + s5 CTA blue",
+  "fundo": "cloud",
+  "destaque": "Blue no claro, Cyan no escuro, Night no azul",
+  "big_ideas": {
+   "segura": "conta do ticket médio",
+   "ousada": "capa mostra a barra que sobe (vendas) e esconde a que não sobe (faturamento)",
+   "estranha": "carrossel contado pelo cupom fiscal",
+   "escolhida": "ousada",
+   "por_que": "a capa cria a dúvida que o slide 3 responde"
+  },
+  "quebra_de_padrao": "a capa mostra só a barra boa; a ruim aparece no slide 3"
+ },
+ "p3": {
+  "modelo": "reel 5 cenas, 15,6 s, situação em 1ª pessoa no quadro 0",
+  "fundo": "night",
+  "cenas": [
+   "night: 'Mandei o orçamento em agosto. Aprovaram agora.' + cartão com validade não escrita",
+   "blue: 10 casas de dia, a 10ª em Night; fonte CDC art. 40 §1º",
+   "cloud: 'Aprovou? O orçamento obriga os dois' com dois cartões; fonte §2º",
+   "night: 3 passos",
+   "cloud: CTA ORÇAMENTO"
+  ],
+  "semente_trilha": 3265
+ },
+ "aprendizados_seguidos": [
+  "story diário com CTA de resposta (regra média)",
+  "reel curto ~15 s com pergunta/situação no quadro 0"
+ ],
+ "sem_tela_mentor": "marca/telas e marca/telas-site não estão no repositório"
+}

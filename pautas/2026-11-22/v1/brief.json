@@ -1,0 +1,56 @@
+{
+ "data": "2026-11-22",
+ "versao": 1,
+ "regras": "v2",
+ "volume": "v3",
+ "contexto": "21/11: story blue Vendas, carrossel cloud Estoque, reel night Pessoas. Último post previsto (21/11 18:30) night -> 22/11 abre em blue. Carrossel e reel fora de Estoque e Pessoas. 22/11 é domingo; Black Friday na sexta, 27/11.",
+ "teste": {
+  "peca": "p1",
+  "descricao": "Story com chamada explícita para o carrossel do dia ('Hoje, 12h15, no feed: a conta do ticket médio') para ver se o alcance do story puxa o carrossel (sugestão do analista)"
+ },
+ "pecas": [
+  {
+   "id": "p1",
+   "formato": "story",
+   "fundo": "blue",
+   "modulo": "Financeiro",
+   "brief": {
+    "angulo": "educativo",
+    "tema": "Financeiro: domingo, 10 minutos para listar o que vence e o que entra até sexta",
+    "cliente_ideal": "Dono de comércio ou serviço que descobre a conta do dia na hora de pagar e vive apagando incêndio no caixa",
+    "objetivo": "lead (resposta CAIXA)",
+    "cta": "Responda este story com CAIXA que eu te mando a planilha de caixa de 30 dias",
+    "teste_do_envio": "Mandaria para o sócio ou para quem paga as contas, para fazer a lista juntos no domingo"
+   }
+  },
+  {
+   "id": "p2",
+   "formato": "carrossel",
+   "fundo": "cloud",
+   "modulo": "Vendas",
+   "linkedin": true,
+   "brief": {
+    "angulo": "dor",
+    "tema": "Vendas: ticket médio caindo — mais vendas com o mesmo faturamento; conta (faturamento ÷ número de vendas) e kit antes da Black Friday",
+    "cliente_ideal": "Dono de loja, mercado ou restaurante que vê o movimento subir e o faturamento parado e não sabe por quê",
+    "objetivo": "salvamento",
+    "cta": "Comente TICKET que eu te mando a planilha de ticket médio por semana",
+    "teste_do_envio": "Mandaria para o gerente da loja ou para quem fica no caixa, para montar o kit da Black Friday"
+   }
+  },
+  {
+   "id": "p3",
+   "formato": "reel",
+   "fundo": "night",
+   "modulo": "Contratos",
+   "brief": {
+    "angulo": "educativo",
+    "tema": "Contratos: orçamento sem prazo escrito vale 10 dias (CDC, art. 40, §1º); aprovado, obriga os dois lados (§2º)",
+    "cliente_ideal": "Prestador de serviço ao consumidor (reforma, manutenção, oficina, instalação) que manda orçamento por WhatsApp sem validade",
+    "objetivo": "lead (comentário ORÇAMENTO)",
+    "cta": "Comente ORÇAMENTO que eu te mando o checklist do orçamento",
+    "teste_do_envio": "Mandaria para quem faz os orçamentos na empresa, para colocar a validade no modelo"
+   }
+  }
+ ]
+}

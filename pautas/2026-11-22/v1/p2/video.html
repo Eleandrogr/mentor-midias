@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css"><style>.conta{margin-top:44px;display:flex;flex-direction:column;gap:22px}
+.linha{display:flex;justify-content:space-between;align-items:baseline;font-size:44px;border-bottom:2px solid rgba(245,246,250,.16);padding-bottom:14px}
+.linha b{font-weight:500}
+.linha.total{font-size:52px;border:0;color:var(--cyan);font-weight:600}
+.bars{margin-top:40px;display:flex;flex-direction:column;gap:24px}
+.r .lb{display:flex;justify-content:space-between;font-size:38px;margin-bottom:10px}
+.r .b{height:72px;border-radius:12px;background:rgba(255,255,255,.18);position:relative;overflow:hidden}
+.r .b i{position:absolute;inset:0 auto 0 0;border-radius:12px;background:rgba(255,255,255,.55)}
+.r.d .b i{background:var(--night)}
+.ck{display:flex;flex-direction:column;gap:30px;margin-top:44px}.it{display:grid;grid-template-columns:72px 1fr;gap:24px;align-items:center;font-size:46px;line-height:1.2}
+.ck .n{width:72px;height:72px;border-radius:14px;background:var(--blue);color:#fff;font:800 40px "Saira";display:flex;align-items:center;justify-content:center}
+.grp{font-size:34px;margin-top:30px;color:rgba(255,255,255,.92)}</style></head><body>
+<section class="cena cloud" data-dur="3.0" data-camera="aproxima"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="-1">
+  <div class="t1" style="font-size:100px" data-palavras data-in="-0.8" data-ritmo="0.1">Vendi para mais gente e o faturamento não saiu do lugar</div>
+  <div class="bars mono" style="margin-top:40px">
+    <div class="r" data-in="-0.3"><div class="lb" style="color:var(--night)"><span>Vendas na semana 1</span><span>100</span></div><div class="b" style="background:rgba(30,39,46,.08)"><i style="width:80%;background:#C5CBD3" data-growx="0" data-dur="0.7"></i></div></div>
+    <div class="r" data-in="0.4"><div class="lb" style="color:var(--night)"><span>Vendas na semana 4</span><span>125</span></div><div class="b" style="background:rgba(30,39,46,.08)"><i style="width:100%;background:var(--blue)" data-growx="0.5" data-dur="0.8" data-pulsa="1.6" data-som="impacto"></i></div></div>
+  </div>
+  <p class="ap" style="color:var(--muted-light);font-size:46px" data-in="1.2">A conta que eu olho toda semana.</p>
+</div></section>
+<section class="cena night" data-dur="4.0" data-trans="empurra" data-camera="desliza"><div class="camera" style="justify-content:space-between">
+  <img class="logo" src="marca/logos/mentor-logo-escuro.svg" data-in="0" style="align-self:flex-start">
+  <div>
+    <div class="t2" style="font-size:90px" data-palavras data-in="0" data-ritmo="0.08">Ticket médio: quanto cada venda deixa</div>
+    <div class="conta mono">
+      <div class="linha" data-in="0.4" data-from="left"><span>Faturamento da semana</span><b>R$ 5.000</b></div>
+      <div class="linha" data-in="0.9" data-from="left"><span>÷ Número de vendas</span><b>100</b></div>
+      <div class="linha total" data-in="1.5" data-from="left" data-pulsa="2.3" data-som="impacto"><span>Ticket médio</span><b>R$ 50</b></div>
+    </div>
+    <p class="ap" style="font-size:40px;margin-top:26px" data-in="2.2">Na prática: faça a conta de cada semana.</p>
+  </div>
+  <p class="fn" style="margin:0" data-in="2.6">Valores de exemplo. Conta: faturamento ÷ número de vendas.</p>
+</div></section>
+<section class="cena blue" data-dur="4.2" data-trans="mascara" data-camera="aproxima"><div class="camera" style="justify-content:space-between">
+  <img class="logo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0" style="align-self:flex-start">
+  <div>
+    <div class="t2" style="font-size:90px" data-palavras data-in="0" data-ritmo="0.1">Mais vendas, cada uma menor</div>
+    <div class="bars mono">
+      <div class="r" data-in="0.4"><div class="lb"><span>Vendas: semana 1 → 4</span><span>100 → 125</span></div><div class="b"><i style="width:100%" data-growx="0.5" data-dur="0.8"></i></div></div>
+      <div class="r d" data-in="1.0"><div class="lb"><span>Ticket médio</span><span>R$ 50 → R$ 40</span></div><div class="b"><i style="width:80%" data-growx="1.1" data-dur="0.9" data-pulsa="2.0" data-som="impacto"></i></div></div>
+      <div class="r" data-in="1.6"><div class="lb"><span>Faturamento</span><span>R$ 5.000 = R$ 5.000</span></div><div class="b"><i style="width:100%" data-growx="1.7" data-dur="0.8"></i></div></div>
+    </div>
+    <p class="grp" data-in="2.3">Na prática: monte um kit com o que sai junto.</p>
+  </div>
+  <p class="fn" style="margin:0;color:rgba(255,255,255,.88)" data-in="2.8">Valores de exemplo: 125 × R$ 40 = R$ 5.000.</p>
+</div></section>
+<section class="cena cloud" data-dur="4.2" data-trans="sobe" data-camera="aproxima"><div class="camera">
+  <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="0">
+  <div class="rot" data-in="0"><span class="marcador acc-bg"></span>Na prática, nesta semana</div>
+  <div class="ck">
+    <div class="it" data-in="0.3" data-from="left"><span class="n">1</span><span>Calcule o ticket de 4 semanas</span></div>
+    <div class="it" data-in="0.9" data-from="left"><span class="n">2</span><span>Veja se ele está caindo</span></div>
+    <div class="it" data-in="1.5" data-from="left"><span class="n">3</span><span>Ache o que sai junto</span></div>
+    <div class="it" data-in="2.1" data-from="left" data-pulsa="2.8"><span class="n">4</span><span>Monte um kit para o caixa</span></div>
+  </div>
+</div></section>
+<section class="cena blue" data-dur="2.6" data-trans="zoom" data-camera="aproxima"><div class="camera">
+  <img src="marca/logos/mentor-logo-sobre-azul.svg" style="height:96px;align-self:flex-start" data-in="0">
+  <div class="fala" style="font-size:96px;margin-top:48px" data-palavras data-in="0.15">Comente</div>
+  <div class="t1" style="font-size:160px;line-height:.9;color:var(--night)" data-in="0.4" data-from="zoom" data-pulsa="1.2" data-som="impacto">TICKET</div>
+  <div class="fala" style="font-size:62px;margin-top:20px" data-palavras data-in="0.7" data-ritmo="0.06">que eu te mando a planilha de ticket médio.</div>
+</div></section></body></html>
