@@ -1,0 +1,38 @@
+{
+ "p1": [
+  {
+   "dado": "Banco de horas por acordo individual escrito, com compensação em até 6 meses",
+   "fonte": "CLT, art. 59, §5º, na redação da Lei 13.467/2017 (texto da Câmara dos Deputados)",
+   "frase": "O banco de horas de que trata o § 2º deste artigo poderá ser pactuado por acordo individual escrito, desde que a compensação ocorra no período máximo de seis meses.",
+   "url": "https://www2.camara.leg.br/legin/fed/lei/2017/lei-13467-13-julho-2017-785204-normaatualizada-pl.pdf"
+  },
+  {
+   "dado": "Compensação no mesmo mês por acordo individual, tácito ou escrito (checklist)",
+   "fonte": "CLT, art. 59, §6º (Lei 13.467/2017)",
+   "frase": "É lícito o regime de compensação de jornada estabelecido por acordo individual, tácito ou escrito, para a compensação no mesmo mês.",
+   "url": "https://www2.camara.leg.br/legin/fed/lei/2017/lei-13467-13-julho-2017-785204-normaatualizada-pl.pdf"
+  },
+  {
+   "dado": "Saldo DEZ +20 h, FEV 12 h, MAI 0 h",
+   "fonte": "exemplo",
+   "frase": "horas de exemplo, marcadas na arte",
+   "url": null
+  }
+ ],
+ "p2": [
+  {
+   "dado": "20 no sistema, 14 na prateleira, 6 × R$ 35 = R$ 210; 10 itens por dia = 50 na semana",
+   "fonte": "exemplo (conta)",
+   "frase": "valores de exemplo, marcados na arte e na legenda",
+   "url": null
+  }
+ ],
+ "p3": [
+  {
+   "dado": "Preço R$ 100, custo R$ 60, sobra R$ 40; com 20% sobra R$ 20 → vender o dobro; com 10% → +33%",
+   "fonte": "exemplo (conta: sobra ÷ (sobra − desconto))",
+   "frase": "valores de exemplo, sem taxa do cartão e impostos, marcados na arte e na legenda",
+   "url": null
+  }
+ ]
+}

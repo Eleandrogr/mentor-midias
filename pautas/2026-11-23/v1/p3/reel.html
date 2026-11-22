@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css">
+<style>
+  .preco { margin-top: 50px; border-radius: 22px; background: rgba(245,246,250,.08); border: 2px solid rgba(245,246,250,.2); padding: 30px 34px; display: flex; flex-direction: column; gap: 16px; }
+  .preco .l { display: flex; justify-content: space-between; font-size: 44px; }
+  .preco .l span:first-child { color: var(--muted-dark); }
+  .preco .l.s { border-top: 2px solid rgba(245,246,250,.2); padding-top: 14px; }
+  .preco .val { color: var(--cyan); font-weight: 600; }
+  .bars { margin-top: 46px; display: flex; flex-direction: column; gap: 30px; }
+  .r .lb { display: flex; justify-content: space-between; font-size: 40px; margin-bottom: 10px; }
+  .r .b { height: 84px; border-radius: 14px; background: rgba(255,255,255,.18); position: relative; overflow: hidden; }
+  .r .b i { position: absolute; inset: 0 auto 0 0; border-radius: 14px; background: rgba(255,255,255,.6); }
+  .r.d .b i { background: var(--night); }
+  .cl .r .b { background: rgba(30,39,46,.08); }
+  .cl .r .b i { background: #C5CBD3; }
+  .cl .r.d .b i { background: var(--blue); }
+  .cl .r.d .lb { color: var(--blue); font-weight: 600; }
+  .formula { margin-top: 46px; font: 600 64px "Geist Mono", monospace; line-height: 1.2; }
+  .formula .acc { color: var(--cyan); }
+  .tab { margin-top: 40px; display: flex; flex-direction: column; gap: 14px; font-size: 42px; }
+  .tab .l { display: flex; justify-content: space-between; border-bottom: 2px solid rgba(245,246,250,.16); padding-bottom: 12px; }
+  .tab .l b { font-weight: 600; color: var(--cyan); }
+  .passos { margin-top: 44px; display: flex; flex-direction: column; gap: 36px; }
+  .passos .p { display: grid; grid-template-columns: 76px 1fr; gap: 24px; align-items: center; font-size: 52px; line-height: 1.15; }
+  .passos .n { width: 76px; height: 76px; border-radius: 14px; background: var(--cyan); color: var(--night); font: 800 42px "Saira"; display: flex; align-items: center; justify-content: center; }
+  .cta { font-family: "Saira", sans-serif; font-weight: 800; font-size: 120px; line-height: .9; color: var(--blue); }
+</style></head>
+<body>
+<section class="cena night" data-dur="2.9" data-camera="aproxima">
+  <div class="quadrado livre" style="width:460px;height:460px;right:-200px;top:1120px;background:rgba(0,206,201,.10)" data-flutua></div>
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="-1">
+    <div class="t1" style="font-size:108px" data-palavras data-in="-0.6" data-ritmo="0.1">Vai dar 20% na Black Friday? Faz esta conta.</div>
+    <div class="preco mono" data-in="-0.2">
+      <div class="l"><span>Preço</span><span>R$ 100</span></div>
+      <div class="l"><span>Custo</span><span>R$ 60</span></div>
+      <div class="l s" data-in="0.9" data-pulsa="1.6" data-som="impacto"><span>Sobra por peça</span><span class="val">R$ 40</span></div>
+    </div>
+    <p class="fn" data-in="1.3">Valores de exemplo.</p>
+  </div>
+</section>
+<section class="cena blue" data-dur="3.0" data-trans="empurra" data-camera="desliza">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0">
+    <div class="t2" style="font-size:96px" data-palavras data-in="0" data-ritmo="0.08">Com 20% de desconto, sobra a metade</div>
+    <div class="bars mono">
+      <div class="r" data-in="0.4"><div class="lb"><span>Sobra sem desconto</span><span>R$ 40</span></div><div class="b"><i style="width:100%" data-growx="0.4" data-dur="0.6"></i></div></div>
+      <div class="r d" data-in="1.0"><div class="lb"><span>Sobra com 20%</span><span>R$ 20</span></div><div class="b"><i style="width:50%" data-growx="1.0" data-dur="0.7" data-pulsa="1.9" data-som="impacto"></i></div></div>
+    </div>
+    <p class="fn" style="color:rgba(255,255,255,.9)" data-in="2.0">Exemplo: R$ 80 de preço − R$ 60 de custo.</p>
+  </div>
+</section>
+<section class="cena cloud cl" data-dur="3.0" data-trans="mascara" data-camera="aproxima">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="0">
+    <div class="t2" style="font-size:96px" data-palavras data-in="0" data-ritmo="0.1">Para lucrar o mesmo, venda o dobro</div>
+    <div class="bars mono">
+      <div class="r" data-in="0.4"><div class="lb"><span>100 peças × R$ 40</span><span>R$ 4.000</span></div><div class="b"><i style="width:50%" data-growx="0.4" data-dur="0.6"></i></div></div>
+      <div class="r d" data-in="1.0"><div class="lb"><span>200 peças × R$ 20</span><span>R$ 4.000</span></div><div class="b"><i style="width:100%" data-growx="1.0" data-dur="0.7" data-pulsa="1.9" data-som="impacto"></i></div></div>
+    </div>
+    <p class="fn" style="color:#5B6670" data-in="2.0">Barras = peças vendidas. Valores de exemplo.</p>
+  </div>
+</section>
+<section class="cena night" data-dur="3.1" data-trans="sobe" data-camera="desliza">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="0">
+    <div class="rot" data-in="0"><span class="marcador acc-bg"></span>A conta pronta</div>
+    <div class="formula" data-in="0.2">sobra ÷ (sobra − desconto)</div>
+    <div class="tab mono">
+      <div class="l" data-in="0.8" data-from="left"><span>40 ÷ (40 − 20)</span><b>2× as vendas</b></div>
+      <div class="l" data-in="1.4" data-from="left" data-pulsa="2.1"><span>40 ÷ (40 − 10)</span><b>+33%</b></div>
+    </div>
+    <p class="fn" data-in="1.9">Sobra e desconto em R$ por peça. Sem taxas e impostos.</p>
+  </div>
+</section>
+<section class="cena night" data-dur="2.8" data-trans="empurra" data-camera="desliza">
+  <div class="quadrado livre" style="width:380px;height:380px;right:-160px;top:1180px;background:rgba(0,206,201,.10)" data-flutua></div>
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="0">
+    <div class="rot" data-in="0"><span class="marcador acc-bg"></span>Na prática, antes de sexta</div>
+    <div class="passos">
+      <div class="p" data-in="0.2" data-from="left"><span class="n">1</span><span>Ache a <span class="acc">sobra</span> de cada item</span></div>
+      <div class="p" data-in="0.8" data-from="left"><span class="n">2</span><span>Faça a conta do desconto</span></div>
+      <div class="p" data-in="1.4" data-from="left"><span class="n">3</span><span>Corte onde a sobra não aguenta</span></div>
+    </div>
+  </div>
+</section>
+<section class="cena cloud" data-dur="2.7" data-trans="zoom" data-camera="aproxima">
+  <div class="camera">
+    <img src="marca/logos/mentor-logo-claro.svg" style="height:96px;align-self:flex-start" data-in="0">
+    <div class="fala" style="font-size:90px;margin-top:48px" data-palavras data-in="0.1">Comente</div>
+    <div class="cta" data-in="0.3" data-from="zoom" data-pulsa="1.1" data-som="impacto">DESCONTO</div>
+    <div class="fala" style="font-size:60px;margin-top:20px" data-palavras data-in="0.6" data-ritmo="0.06">que eu te mando a planilha do desconto.</div>
+  </div>
+</section>
+</body></html>

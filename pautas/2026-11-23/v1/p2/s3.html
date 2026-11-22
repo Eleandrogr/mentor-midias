@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css"><style>.conta{margin-top:44px;display:flex;flex-direction:column;gap:22px}
+.linha{display:flex;justify-content:space-between;align-items:baseline;font-size:44px;border-bottom:2px solid rgba(245,246,250,.16);padding-bottom:14px}
+.linha b{font-weight:500}
+.linha.total{font-size:52px;border:0;color:var(--cyan);font-weight:600}
+.dias{margin-top:44px;display:flex;flex-direction:column;gap:20px}
+.dia{display:grid;grid-template-columns:110px 1fr 200px;gap:20px;align-items:center;font-size:40px}
+.dia .d{font:600 36px "Geist Mono",monospace}
+.dia .b{height:60px;border-radius:12px;background:rgba(255,255,255,.18);position:relative;overflow:hidden}
+.dia .b i{position:absolute;inset:0 auto 0 0;border-radius:12px;background:rgba(255,255,255,.55)}
+.dia.t .b i{background:var(--night)}
+.dia .v{font:600 38px "Geist Mono",monospace;text-align:right}
+.grp{font-size:40px;margin-top:30px;color:rgba(255,255,255,.95)}
+.bars{margin-top:40px;display:flex;flex-direction:column;gap:24px}
+.r .lb{display:flex;justify-content:space-between;font-size:38px;margin-bottom:10px}
+.r .b{height:72px;border-radius:12px;position:relative;overflow:hidden}
+.r .b i{position:absolute;inset:0 auto 0 0;border-radius:12px}
+</style></head><body><section class="cena blue" data-dur="5.5" data-camera="desliza"><div class="camera" style="justify-content:space-between">
+  <img class="logo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="-1" style="align-self:flex-start">
+  <div>
+    <div class="t2" style="font-size:90px" data-palavras data-in="-1.2" data-ritmo="0.1">Conte um pouco por dia</div>
+    <div class="dias">
+      <div class="dia" data-in="-0.6"><span class="d">SEG</span><span class="b"><i style="width:20%" data-growx="0" data-dur="0.5"></i></span><span class="v">10</span></div>
+      <div class="dia" data-in="-0.2"><span class="d">TER</span><span class="b"><i style="width:40%" data-growx="0.1" data-dur="0.5"></i></span><span class="v">20</span></div>
+      <div class="dia" data-in="0.3"><span class="d">QUA</span><span class="b"><i style="width:60%" data-growx="0.3" data-dur="0.5"></i></span><span class="v">30</span></div>
+      <div class="dia" data-in="0.8"><span class="d">QUI</span><span class="b"><i style="width:80%" data-growx="0.8" data-dur="0.5"></i></span><span class="v">40</span></div>
+      <div class="dia t" data-in="1.3"><span class="d">SEX</span><span class="b"><i style="width:100%" data-growx="1.3" data-dur="0.6" data-pulsa="2.0" data-som="impacto"></i></span><span class="v">50</span></div>
+    </div>
+    <p class="grp" data-in="2.2" data-pulsa="3.6">10 itens por dia, antes de abrir. Sem fechar a loja.</p>
+  </div>
+  <p class="fn" style="margin:0;color:rgba(255,255,255,.9)" data-in="2.6">Itens contados na semana (acumulado). Exemplo.</p>
+</div></section></body></html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css"><style>.conta{margin-top:44px;display:flex;flex-direction:column;gap:22px}
+.linha{display:flex;justify-content:space-between;align-items:baseline;font-size:44px;border-bottom:2px solid rgba(245,246,250,.16);padding-bottom:14px}
+.linha b{font-weight:500}
+.linha.total{font-size:52px;border:0;color:var(--cyan);font-weight:600}
+.dias{margin-top:44px;display:flex;flex-direction:column;gap:20px}
+.dia{display:grid;grid-template-columns:110px 1fr 200px;gap:20px;align-items:center;font-size:40px}
+.dia .d{font:600 36px "Geist Mono",monospace}
+.dia .b{height:60px;border-radius:12px;background:rgba(255,255,255,.18);position:relative;overflow:hidden}
+.dia .b i{position:absolute;inset:0 auto 0 0;border-radius:12px;background:rgba(255,255,255,.55)}
+.dia.t .b i{background:var(--night)}
+.dia .v{font:600 38px "Geist Mono",monospace;text-align:right}
+.grp{font-size:40px;margin-top:30px;color:rgba(255,255,255,.95)}
+.bars{margin-top:40px;display:flex;flex-direction:column;gap:24px}
+.r .lb{display:flex;justify-content:space-between;font-size:38px;margin-bottom:10px}
+.r .b{height:72px;border-radius:12px;position:relative;overflow:hidden}
+.r .b i{position:absolute;inset:0 auto 0 0;border-radius:12px}
+</style></head><body><section class="cena night" data-dur="5.5" data-camera="aproxima"><div class="camera" style="justify-content:space-between">
+  <img class="logo" src="marca/logos/mentor-logo-escuro.svg" data-in="-1" style="align-self:flex-start">
+  <div>
+    <div class="t2" style="font-size:90px" data-palavras data-in="-1.4" data-ritmo="0.08">Diferença no estoque é dinheiro sumindo</div>
+    <div class="conta mono">
+      <div class="linha" data-in="-0.6" data-from="left"><span>No sistema</span><b>20 un.</b></div>
+      <div class="linha" data-in="0.0" data-from="left"><span>Na prateleira</span><b>14 un.</b></div>
+      <div class="linha" data-in="0.6" data-from="left"><span>Diferença × custo R$ 35</span><b>6 × 35</b></div>
+      <div class="linha total" data-in="1.2" data-from="left" data-pulsa="2.0" data-som="impacto"><span>Sumiu do estoque</span><b>R$ 210</b></div>
+    </div>
+    <p class="ap" style="font-size:40px;margin-top:26px" data-in="2.4">Na prática: conte hoje os 10 itens mais caros.</p>
+  </div>
+  <p class="fn" style="margin:0" data-in="2.8">Valores de exemplo, de 1 produto.</p>
+</div></section></body></html>

@@ -1,0 +1,63 @@
+{
+ "data": "2026-11-23",
+ "versao": 1,
+ "regras": "v2",
+ "volume": "v3",
+ "contexto": "22/11: story blue Financeiro, carrossel cloud Vendas, reel night Contratos. Último post previsto (22/11 18:30) night -> 23/11 abre em blue. Carrossel e reel fora de Vendas e Contratos. 23/11 é segunda-feira (dia de pedir os 2 vídeos de gente real); Black Friday na sexta, 27/11. Sem vídeo de gente real novo no repositório.",
+ "teste": {
+  "peca": "p1",
+  "descricao": "Story com chamada explícita para o carrossel do dia ('Hoje, 12h15, no feed: a contagem que acha o furo no estoque'): 2º post do teste story → feed aberto em 22/11 (sugestão do analista)"
+ },
+ "pecas": [
+  {
+   "id": "p1",
+   "formato": "story",
+   "horario_ig": "08:40",
+   "horario_fb": "08:45",
+   "fundo": "blue",
+   "modulo": "Pessoas",
+   "brief": {
+    "angulo": "educativo",
+    "tema": "Pessoas: hora extra de dezembro que vira folga — banco de horas por acordo individual escrito, compensação em até 6 meses (CLT, art. 59, §5º)",
+    "cliente_ideal": "Dono de comércio, clínica ou indústria que vai esticar a jornada da equipe em dezembro e não quer (ou não pode) pagar tudo como hora extra",
+    "objetivo": "lead (resposta BANCO)",
+    "cta": "Responda este story com BANCO que eu te mando o checklist do banco de horas",
+    "teste_do_envio": "Mandaria para o contador ou para quem fecha a folha, para fazer o acordo escrito antes de dezembro"
+   }
+  },
+  {
+   "id": "p2",
+   "formato": "carrossel",
+   "horario_ig": "12:15",
+   "horario_fb": "12:30",
+   "horario_li": "12:45",
+   "fundo": "cloud",
+   "modulo": "Estoque",
+   "linkedin": true,
+   "brief": {
+    "angulo": "dor",
+    "tema": "Estoque: o sistema diz uma quantidade e a prateleira tem outra — contagem rotativa de 10 itens por dia antes de dezembro",
+    "cliente_ideal": "Dono de loja, distribuidora ou indústria que já perdeu venda porque o sistema mostrava produto que não estava na prateleira",
+    "objetivo": "salvamento",
+    "cta": "Comente CONTAGEM que eu te mando a planilha de contagem rotativa",
+    "teste_do_envio": "Mandaria para o estoquista ou para o gerente, para começar a contagem dos itens mais caros nesta semana"
+   }
+  },
+  {
+   "id": "p3",
+   "formato": "reel",
+   "horario_ig": "18:30",
+   "horario_fb": "18:45",
+   "fundo": "night",
+   "modulo": "Financeiro",
+   "brief": {
+    "angulo": "educativo",
+    "tema": "Financeiro: desconto da Black Friday — com 20% de desconto e sobra de 40% por peça, é preciso vender o dobro para lucrar o mesmo; conta pronta sobra ÷ (sobra − desconto)",
+    "cliente_ideal": "Dono de loja ou e-commerce que vai dar desconto na sexta, 27/11, sem saber quanto precisa vender a mais",
+    "objetivo": "lead (comentário DESCONTO)",
+    "cta": "Comente DESCONTO que eu te mando a planilha do desconto",
+    "teste_do_envio": "Mandaria para o sócio ou para quem define os preços, para cortar o desconto dos itens que não aguentam antes de sexta"
+   }
+  }
+ ]
+}

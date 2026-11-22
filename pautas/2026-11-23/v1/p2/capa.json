@@ -1,0 +1,7 @@
+{
+ "fundo": "cloud",
+ "titulo": "Fui vender e o produto do sistema não estava na prateleira",
+ "apoio": "A contagem de 15 minutos que eu faria antes de dezembro.",
+ "previa": {"tipo": "barras", "series": [{"rotulo": "No sistema", "valor": 20}, {"rotulo": "Na prateleira", "valor": 14, "destaque": true}], "sufixo": " un."},
+ "chamada": "Arraste para ver a contagem"
+}

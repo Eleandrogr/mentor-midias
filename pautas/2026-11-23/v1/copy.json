@@ -1,0 +1,47 @@
+{
+ "p1": {
+  "titulo": "Hora extra em dezembro? Dá para virar folga.",
+  "textos_na_arte": [
+   "Com banco de horas, a hora a mais vira folga depois.",
+   "Saldo de 1 pessoa: DEZ +20 h, FEV 12 h, MAI 0 h",
+   "Acordo individual escrito: compensar em até 6 meses.",
+   "Horas de exemplo. Fonte: CLT, art. 59, §5º (Lei 13.467/2017).",
+   "Responda este story com BANCO e eu te mando o checklist do banco de horas.",
+   "Hoje, 12h15, no feed: a contagem que acha o furo no estoque."
+  ]
+ },
+ "p2": {
+  "instagram": "Fui vender e o produto do sistema não estava na prateleira.\n\nNo sistema, 20 unidades. Na prateleira, 14. Seis unidades de R$ 35 são R$ 210 sumindo de um item só. (Valores de exemplo.)\n\nContagem rotativa resolve sem fechar a loja: 10 itens por dia, antes de abrir.\n\nNa prática, nesta semana:\n1. Liste os 50 itens que mais valem em estoque\n2. Conte 10 por dia, começando pelos mais caros\n3. Anote sistema × prateleira\n4. Ache o motivo de cada diferença\n5. Ajuste o sistema e anote o motivo\n\nComente CONTAGEM que eu te mando a planilha de contagem rotativa.",
+  "ig_tags": [
+   "#gestaodeestoque",
+   "#inventario",
+   "#varejo",
+   "#pequenasempresas",
+   "#controledeestoque"
+  ],
+  "facebook": "O estoque do seu sistema bate com o da prateleira?\n\nNo exemplo do vídeo: 20 no sistema, 14 na prateleira. Seis unidades de R$ 35 são R$ 210 sumindo de um item só. (Valores de exemplo.)\n\nNa prática: conte 10 itens por dia, antes de abrir, começando pelos mais caros. Anote a diferença e o motivo, e ajuste o sistema.\n\nComente CONTAGEM que eu te mando a planilha de contagem rotativa.",
+  "fb_tags": [
+   "#gestaodeestoque"
+  ],
+  "linkedin": "Quando foi a última vez que o estoque do sistema bateu com a prateleira?\n\nNo exemplo do vídeo: 20 unidades no sistema e 14 na prateleira. Com custo de R$ 35, são R$ 210 de diferença em um item só. (Valores de exemplo.)\n\nO que eu faria antes de dezembro:\n1. Listar os 50 itens que mais valem em estoque\n2. Contar 10 por dia, antes de abrir\n3. Anotar sistema × prateleira, em unidades e em reais\n4. Achar o motivo de cada diferença: venda sem baixa, entrada sem nota, perda\n5. Ajustar o sistema e registrar o motivo\n\nComente CONTAGEM que eu te mando a planilha de contagem rotativa.",
+  "li_tags": [
+   "#GestaoDeEstoque",
+   "#PME",
+   "#Varejo"
+  ]
+ },
+ "p3": {
+  "instagram": "Vai dar 20% na Black Friday? Faz esta conta antes.\n\nNo exemplo: preço R$ 100, custo R$ 60. Sobram R$ 40 por peça.\nCom 20% de desconto, o preço vai a R$ 80 e sobram R$ 20.\nPara lucrar o mesmo, você precisa vender o dobro. (Valores de exemplo, sem taxa do cartão e impostos.)\n\nA conta pronta: sobra ÷ (sobra − desconto).\n40 ÷ (40 − 20) = 2 → o dobro de vendas\n40 ÷ (40 − 10) = 1,33 → 33% a mais\n\nNa prática, antes de sexta:\n1. Ache a sobra de cada item\n2. Faça a conta do desconto\n3. Corte o desconto onde a sobra não aguenta\n\nComente DESCONTO que eu te mando a planilha do desconto.",
+  "ig_tags": [
+   "#blackfriday",
+   "#precificacao",
+   "#gestaofinanceira",
+   "#pequenasempresas",
+   "#varejo"
+  ],
+  "facebook": "Quanto a mais você precisa vender para o desconto da Black Friday valer a pena?\n\nNo exemplo do vídeo: preço R$ 100, custo R$ 60, sobra R$ 40. Com 20% de desconto, sobram R$ 20 por peça: é preciso vender o dobro para lucrar o mesmo. (Valores de exemplo, sem taxa do cartão e impostos.)\n\nNa prática: faça a conta sobra ÷ (sobra − desconto) em cada item antes de sexta.\n\nComente DESCONTO que eu te mando a planilha do desconto.",
+  "fb_tags": [
+   "#blackfriday"
+  ]
+ }
+}

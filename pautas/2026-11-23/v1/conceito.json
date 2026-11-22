@@ -1,0 +1,79 @@
+[
+ {
+  "peca": "p1",
+  "big_ideas": {
+   "segura": "Pergunta + regra dos 6 meses em texto",
+   "ousada": "Saldo de horas de 1 pessoa esvaziando de dezembro a maio, em barras",
+   "estranha": "Relógio de ponto que cospe folgas",
+   "escolhida": "ousada",
+   "por_que": "Mostra o mecanismo (hora vira folga e zera) em 1 olhar; a segura não tem gráfico e a estranha não cabe em story estático"
+  },
+  "quebra_de_padrao": "Barra de maio quase vazia, na cor de destaque (Night), contrasta com dezembro cheio",
+  "formato": "story PNG",
+  "fundo_inicial": "blue",
+  "semente_trilha": null
+ },
+ {
+  "peca": "p2",
+  "big_ideas": {
+   "segura": "Lista de passos de inventário",
+   "ousada": "Capa com sistema × prateleira lado a lado (20 × 14) e a diferença virando reais no slide 2",
+   "estranha": "Prateleira fotografada com etiquetas do sistema flutuando",
+   "escolhida": "ousada",
+   "por_que": "A diferença é a dor; a segura não para o scroll e a estranha depende de foto que não temos"
+  },
+  "quebra_de_padrao": "A resposta antes da pergunta: a capa já mostra a diferença; o slide 2 traduz em R$ 210",
+  "formato": "carrossel",
+  "fundo_inicial": "cloud",
+  "capa": {
+   "fundo": "cloud",
+   "titulo": "Fui vender e o produto do sistema não estava na prateleira",
+   "apoio": "A contagem de 15 minutos que eu faria antes de dezembro.",
+   "previa": {
+    "tipo": "barras",
+    "series": [
+     {
+      "rotulo": "No sistema",
+      "valor": 20
+     },
+     {
+      "rotulo": "Na prateleira",
+      "valor": 14,
+      "destaque": true
+     }
+    ],
+    "sufixo": " un."
+   },
+   "chamada": "Arraste para ver a contagem"
+  },
+  "cenas": [
+   "s2 night animado: conta sistema 20 − prateleira 14 = 6 × R$ 35 = R$ 210 (exemplo)",
+   "s3 blue animado: barras acumuladas SEG 10 → SEX 50 itens contados",
+   "s4 cloud estático: checklist de 5 passos (vale salvar)",
+   "s5 blue: CTA CONTAGEM"
+  ],
+  "semente_trilha": 3272
+ },
+ {
+  "peca": "p3",
+  "big_ideas": {
+   "segura": "Fórmula em tela",
+   "ousada": "Sobra por peça cortada pela metade e a barra de vendas dobrando",
+   "estranha": "Etiqueta de preço que encolhe enquanto a pilha de caixas dobra",
+   "escolhida": "ousada",
+   "por_que": "Mostra causa e consequência com 2 gráficos simples; a estranha exigiria ilustração fora da marca"
+  },
+  "quebra_de_padrao": "Barra das 200 peças ocupa a largura toda: o dobro ocupa o quadro",
+  "formato": "reel",
+  "fundo_inicial": "night",
+  "cenas": [
+   "1 night gancho: 'Vai dar 20% na Black Friday? Faz esta conta.' + preço/custo/sobra",
+   "2 blue: sobra R$ 40 → R$ 20",
+   "3 cloud (máscara): 100 × R$ 40 = 200 × R$ 20",
+   "4 night: sobra ÷ (sobra − desconto); 2× e +33%",
+   "5 night: 3 passos",
+   "6 cloud: CTA DESCONTO"
+  ],
+  "semente_trilha": 3273
+ }
+]
