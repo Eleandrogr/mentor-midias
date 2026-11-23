@@ -1,0 +1,89 @@
+{
+ "p1": [
+  {
+   "dado": "Diferenciação de preço por prazo ou instrumento de pagamento é autorizada",
+   "valor": "autorizada",
+   "fonte": "Lei 13.455/2017, art. 1º (Planalto)",
+   "ano": 2017,
+   "url": "https://planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13455.htm",
+   "trecho": "Fica autorizada a diferenciação de preços de bens e serviços oferecidos ao público em função do prazo ou do instrumento de pagamento utilizado."
+  },
+  {
+   "dado": "Desconto por forma de pagamento deve ser informado de forma visível",
+   "fonte": "Lei 10.962/2004, art. 5º-A, incluído pela Lei 13.455/2017, art. 2º (Planalto)",
+   "ano": 2017,
+   "url": "https://planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13455.htm",
+   "trecho": "O fornecedor deve informar, em local e formato visíveis ao consumidor, eventuais descontos oferecidos em função do prazo ou do instrumento de pagamento utilizado."
+  },
+  {
+   "dado": "Contrato da maquininha não pode proibir a diferença (checklist)",
+   "fonte": "Lei 13.455/2017, art. 1º, parágrafo único",
+   "url": "https://planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13455.htm",
+   "trecho": "É nula a cláusula contratual ... que proíba ou restrinja a diferenciação de preços facultada no caput deste artigo."
+  },
+  {
+   "dado": "Pix R$ 95 × cartão R$ 100",
+   "fonte": "exemplo",
+   "trecho": "valores de exemplo, marcados na arte",
+   "url": null
+  }
+ ],
+ "p2": [
+  {
+   "dado": "Férias concedidas nos 12 meses seguintes à aquisição do direito",
+   "fonte": "CLT, art. 134 (Planalto, texto compilado)",
+   "url": "https://www.planalto.gov.br/ccivil_03/decreto-Lei/Del5452compilado.htm",
+   "trecho": "As férias serão concedidas por ato do empregador, em um só período, nos 12 (doze) meses subseqüentes à data em que o empregado tiver adquirido o direito."
+  },
+  {
+   "dado": "Fora do prazo, remuneração em dobro",
+   "fonte": "CLT, art. 137",
+   "url": "https://www.planalto.gov.br/ccivil_03/decreto-Lei/Del5452compilado.htm",
+   "trecho": "Sempre que as férias forem concedidas após o prazo de que trata o art. 134, o empregador pagará em dobro a respectiva remuneração."
+  },
+  {
+   "dado": "Aviso por escrito com 30 dias de antecedência",
+   "fonte": "CLT, art. 135",
+   "url": "https://www.planalto.gov.br/ccivil_03/decreto-Lei/Del5452compilado.htm",
+   "trecho": "A concessão das férias será participada, por escrito, ao empregado, com antecedência de, no mínimo, 30 (trinta) dias."
+  },
+  {
+   "dado": "Pagamento até 2 dias antes do início",
+   "fonte": "CLT, art. 145",
+   "url": "https://www.planalto.gov.br/ccivil_03/decreto-Lei/Del5452compilado.htm",
+   "trecho": "O pagamento da remuneração das férias ... serão efetuados até 2 (dois) dias antes do início do respectivo período."
+  },
+  {
+   "dado": "Férias com pelo menos 1/3 a mais que o salário",
+   "fonte": "Constituição Federal, art. 7º, XVII (Câmara, publicação original)",
+   "url": "https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-publicacaooriginal-1-pl.html",
+   "trecho": "gozo de férias anuais remuneradas com, pelo menos, um terço a mais do que o salário normal;"
+  },
+  {
+   "dado": "Salário R$ 2.000 → R$ 2.667 no prazo, R$ 5.333 em dobro",
+   "fonte": "exemplo (conta)",
+   "trecho": "valores de exemplo, marcados na arte e na legenda",
+   "url": null
+  }
+ ],
+ "p3": [
+  {
+   "dado": "Em regra, o contrato não depende de forma especial",
+   "fonte": "Código Civil, art. 107 (Planalto)",
+   "url": "https://planalto.gov.br/ccivil_03/leis/2002/l10406.htm",
+   "trecho": "A validade da declaração de vontade não dependerá de forma especial, senão quando a lei expressamente a exigir."
+  },
+  {
+   "dado": "Exceção: imóvel acima de 30 salários mínimos exige escritura pública",
+   "fonte": "Código Civil, art. 108",
+   "url": "https://planalto.gov.br/ccivil_03/leis/2002/l10406.htm",
+   "trecho": "a escritura pública é essencial à validade dos negócios jurídicos que visem à constituição, transferência, modificação ou renúncia de direitos reais sobre imóveis de valor superior a trinta vezes o maior salário mínimo vigente no País."
+  },
+  {
+   "dado": "Conversa de exemplo: R$ 1.800 em 3 vezes, início 07/12",
+   "fonte": "exemplo",
+   "trecho": "marcado como exemplo na arte",
+   "url": null
+  }
+ ]
+}

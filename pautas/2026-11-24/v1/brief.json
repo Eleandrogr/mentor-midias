@@ -1,0 +1,63 @@
+{
+ "data": "2026-11-24",
+ "versao": 1,
+ "regras": "v2",
+ "volume": "v3",
+ "contexto": "23/11: story blue Pessoas, carrossel cloud Estoque, reel night Financeiro. Último post previsto (23/11 18:30) night -> 24/11 abre em blue. Carrossel e reel fora de Estoque e Financeiro. 24/11 é terça; Black Friday na sexta, 27/11. Sem vídeo de gente real novo no repositório (marca/telas não existe).",
+ "teste": {
+  "peca": "p1",
+  "descricao": "Story com chamada explícita para o carrossel do dia ('Hoje, 12h15, no feed: férias vencendo custam em dobro'): 3º post do teste story → feed aberto em 22/11 (1º: story 15 × carrossel 4)"
+ },
+ "pecas": [
+  {
+   "id": "p1",
+   "formato": "story",
+   "horario_ig": "08:40",
+   "horario_fb": "08:45",
+   "fundo": "blue",
+   "modulo": "Vendas",
+   "brief": {
+    "angulo": "educativo",
+    "tema": "Vendas: preço diferente no Pix e no cartão é permitido (Lei 13.455/2017), desde que o desconto esteja visível (Lei 10.962/2004, art. 5º-A)",
+    "cliente_ideal": "Dono de loja ou comércio que quer dar desconto no Pix na Black Friday e não sabe se pode cobrar preço diferente no cartão",
+    "objetivo": "lead (resposta PIX)",
+    "cta": "Responda este story com PIX que eu te mando o checklist do preço por forma de pagamento",
+    "teste_do_envio": "Mandaria para o gerente da loja ou para quem faz as etiquetas, para deixar os dois preços visíveis antes de sexta"
+   }
+  },
+  {
+   "id": "p2",
+   "formato": "carrossel",
+   "horario_ig": "12:15",
+   "horario_fb": "12:30",
+   "horario_li": "12:45",
+   "fundo": "cloud",
+   "modulo": "Pessoas",
+   "linkedin": true,
+   "brief": {
+    "angulo": "dor",
+    "tema": "Pessoas: férias concedidas depois do prazo de 12 meses são pagas em dobro (CLT, art. 134 e 137); conferir a data de cada funcionário antes do fim do ano",
+    "cliente_ideal": "Dono de comércio, clínica ou pequena indústria com 3 a 30 funcionários que controla férias de cabeça ou na planilha e vai segurar a equipe em dezembro",
+    "objetivo": "salvamento",
+    "cta": "Comente FÉRIAS que eu te mando a planilha de controle de férias",
+    "teste_do_envio": "Mandaria para o contador ou para quem cuida do RH, para conferir juntos quem tem férias vencendo"
+   }
+  },
+  {
+   "id": "p3",
+   "formato": "reel",
+   "horario_ig": "18:30",
+   "horario_fb": "18:45",
+   "fundo": "night",
+   "modulo": "Contratos",
+   "brief": {
+    "angulo": "educativo",
+    "tema": "Contratos: acordo fechado pelo WhatsApp, em regra, vale (Código Civil, art. 107); o risco é a conversa não dizer o que foi combinado — mandar um resumo e pedir o 'de acordo'",
+    "cliente_ideal": "Prestador de serviço ou dono de pequena empresa que fecha serviço e pedido pelo WhatsApp, sem contrato assinado",
+    "objetivo": "lead (comentário RESUMO)",
+    "cta": "Comente RESUMO que eu te mando o modelo de resumo do acordo",
+    "teste_do_envio": "Mandaria para o sócio ou para o vendedor que fecha pelo WhatsApp, para começar a mandar o resumo em todo pedido"
+   }
+  }
+ ]
+}

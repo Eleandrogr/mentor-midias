@@ -1,0 +1,78 @@
+[
+ {
+  "peca": "p1",
+  "big_ideas": {
+   "segura": "Pergunta + texto da lei",
+   "ousada": "Etiqueta de preço de exemplo com Pix R$ 95 × cartão R$ 100, em barras, e a regra 'visível' logo abaixo",
+   "estranha": "Maquininha de cartão que cospe um carimbo 'pode'",
+   "escolhida": "ousada",
+   "por_que": "Mostra a resposta em 1 olhar; a segura não tem gráfico e a estranha exige ilustração fora da marca"
+  },
+  "quebra_de_padrao": "A resposta antes da explicação: 'Pode.' em Night logo abaixo da pergunta",
+  "formato": "story PNG",
+  "fundo_inicial": "blue",
+  "semente_trilha": null
+ },
+ {
+  "peca": "p2",
+  "big_ideas": {
+   "segura": "Lista de prazos de férias",
+   "ousada": "Capa com a mesma férias em duas barras: no prazo × em dobro; slide 2 mostra a conta dobrando",
+   "estranha": "Calendário com a página de dezembro pegando fogo",
+   "escolhida": "ousada",
+   "por_que": "A dor é o valor dobrado; a segura não para o scroll e a estranha é alarmista e fora da marca"
+  },
+  "quebra_de_padrao": "A barra 'em dobro' ocupa a largura toda e empurra a de 'no prazo' para metade",
+  "formato": "carrossel",
+  "fundo_inicial": "cloud",
+  "capa": {
+   "fundo": "cloud",
+   "titulo": "Conferi as férias da equipe. Uma vencia em dezembro",
+   "apoio": "Passou do prazo, a lei manda pagar em dobro.",
+   "previa": {
+    "tipo": "barras",
+    "series": [
+     {
+      "rotulo": "No prazo",
+      "valor": 2667
+     },
+     {
+      "rotulo": "Em dobro",
+      "valor": 5333,
+      "destaque": true
+     }
+    ],
+    "sufixo": " reais"
+   },
+   "chamada": "Arraste para ver a conta"
+  },
+  "cenas": [
+   "s2 night animado: salário R$ 2.000 + 1/3 = R$ 2.667 → fora do prazo × 2 = R$ 5.333 (exemplo); fontes CF art. 7º XVII e CLT art. 137",
+   "s3 blue animado: linha do tempo — 12 meses ganha o direito, 12 meses para dar, depois paga em dobro (datas de exemplo)",
+   "s4 cloud estático: checklist de 5 passos (vale salvar)",
+   "s5 blue: CTA FÉRIAS"
+  ],
+  "semente_trilha": 3282
+ },
+ {
+  "peca": "p3",
+  "big_ideas": {
+   "segura": "Texto do art. 107 em tela",
+   "ousada": "Conversa de WhatsApp de exemplo em bolhas; depois a mesma conversa com o que falta marcado",
+   "estranha": "Aperto de mão virando print de conversa",
+   "escolhida": "ousada",
+   "por_que": "O dono reconhece a própria conversa no quadro 0; a segura é jurídica demais e a estranha não cabe no motor"
+  },
+  "quebra_de_padrao": "As bolhas da conversa entram no quadro 0 como notificações, e na cena 3 as linhas que faltam aparecem riscadas em cima da conversa",
+  "formato": "reel",
+  "fundo_inicial": "night",
+  "cenas": [
+   "1 night gancho: 'Fechei pelo WhatsApp. Vale como contrato?' + 2 bolhas de exemplo",
+   "2 blue: 'Em regra, vale.' + CC art. 107 (exceções, como imóvel, art. 108)",
+   "3 cloud (máscara): o que a conversa não disse: prazo, o que está incluso, atraso",
+   "4 night: o resumo de 4 linhas + pedir 'de acordo'",
+   "5 cloud: CTA RESUMO"
+  ],
+  "semente_trilha": 3283
+ }
+]

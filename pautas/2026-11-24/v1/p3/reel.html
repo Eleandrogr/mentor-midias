@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css">
+<style>
+  .chat { margin-top: 46px; display: flex; flex-direction: column; gap: 20px; }
+  .bol { max-width: 760px; border-radius: 28px; padding: 22px 30px; font-size: 42px; line-height: 1.2; }
+  .bol small { display: block; font: 500 26px "Geist Mono", monospace; opacity: .75; margin-top: 8px; }
+  .ele { background: rgba(245,246,250,.10); border: 2px solid rgba(245,246,250,.18); align-self: flex-start; border-bottom-left-radius: 8px; }
+  .eu { background: rgba(0,206,201,.16); border: 2px solid var(--cyan); align-self: flex-end; border-bottom-right-radius: 8px; }
+  .lei { margin-top: 44px; background: rgba(255,255,255,.14); border-radius: 24px; padding: 30px 34px; font-size: 44px; line-height: 1.25; }
+  .lei b { color: var(--night); }
+  .falta { margin-top: 44px; display: flex; flex-direction: column; gap: 22px; }
+  .falta .l { display: grid; grid-template-columns: 76px 1fr; gap: 22px; align-items: center; font-size: 50px; }
+  .falta .ok { width: 76px; height: 76px; border-radius: 14px; background: #C5CBD3; color: var(--night); font: 800 44px "Saira"; display: flex; align-items: center; justify-content: center; }
+  .falta .x { width: 76px; height: 76px; border-radius: 14px; background: var(--blue); color: #fff; font: 800 44px "Saira"; display: flex; align-items: center; justify-content: center; }
+  .falta .l.n span:last-child { color: var(--blue); font-weight: 600; }
+  .passos { margin-top: 40px; display: flex; flex-direction: column; gap: 28px; }
+  .passos .p { display: grid; grid-template-columns: 76px 1fr; gap: 24px; align-items: center; font-size: 50px; line-height: 1.15; }
+  .passos .n { width: 76px; height: 76px; border-radius: 14px; background: var(--cyan); color: var(--night); font: 800 42px "Saira"; display: flex; align-items: center; justify-content: center; }
+  .acordo { margin-top: 36px; font-size: 46px; }
+  .acordo b { color: var(--cyan); }
+  .cta { font-family: "Saira", sans-serif; font-weight: 800; font-size: 150px; line-height: .9; color: var(--blue); }
+</style></head>
+<body>
+<section class="cena night" data-dur="3.0" data-camera="aproxima">
+  <div class="quadrado livre" style="width:460px;height:460px;right:-200px;top:1120px;background:rgba(0,206,201,.10)" data-flutua></div>
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="-1">
+    <div class="t1" style="font-size:100px" data-palavras data-in="-0.6" data-ritmo="0.09">Fechei pelo WhatsApp. Vale como contrato?</div>
+    <div class="chat">
+      <div class="bol ele" data-in="-0.2" data-from="left">Pode fazer. R$ 1.800 em 3 vezes.<small>cliente · 14:02</small></div>
+      <div class="bol eu" data-in="0.8" data-from="right" data-som="pop">Fechado. Começo dia 07/12.<small>eu · 14:05</small></div>
+    </div>
+    <p class="fn" data-in="1.4">Conversa de exemplo.</p>
+  </div>
+</section>
+<section class="cena blue" data-dur="3.2" data-trans="empurra" data-camera="desliza">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0">
+    <div class="t2" style="font-size:110px;color:var(--night)" data-palavras data-in="0" data-ritmo="0.1">Em regra, vale.</div>
+    <div class="lei" data-in="0.6" data-pulsa="1.8">A lei <b>não exige forma especial</b>, a não ser quando ela mesma pede.</div>
+    <p class="fn" style="color:rgba(255,255,255,.92)" data-in="1.4">Fonte: Código Civil, art. 107. Exceção comum: imóvel acima de 30 salários mínimos pede escritura (art. 108).</p>
+  </div>
+</section>
+<section class="cena cloud" data-dur="3.4" data-trans="mascara" data-camera="aproxima">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="0">
+    <div class="t2" style="font-size:96px" data-palavras data-in="0" data-ritmo="0.08">O risco é a conversa não dizer tudo</div>
+    <div class="falta">
+      <div class="l" data-in="0.5" data-from="left"><span class="ok">✓</span><span>Preço e parcelas</span></div>
+      <div class="l n" data-in="1.0" data-from="left" data-som="pop"><span class="x">?</span><span>Quando termina</span></div>
+      <div class="l n" data-in="1.5" data-from="left" data-som="pop"><span class="x">?</span><span>O que está incluso</span></div>
+      <div class="l n" data-in="2.0" data-from="left" data-som="impacto"><span class="x" data-pulsa="2.6">?</span><span>E se atrasar</span></div>
+    </div>
+  </div>
+</section>
+<section class="cena night" data-dur="3.6" data-trans="sobe" data-camera="desliza">
+  <div class="quadrado livre" style="width:380px;height:380px;right:-160px;top:1180px;background:rgba(0,206,201,.10)" data-flutua></div>
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="0">
+    <div class="rot" data-in="0"><span class="marcador acc-bg"></span>Na prática, no próximo pedido</div>
+    <div class="passos">
+      <div class="p" data-in="0.2" data-from="left"><span class="n">1</span><span>O que vai ser feito</span></div>
+      <div class="p" data-in="0.6" data-from="left"><span class="n">2</span><span>Preço e pagamento</span></div>
+      <div class="p" data-in="1.0" data-from="left"><span class="n">3</span><span>Início e fim</span></div>
+      <div class="p" data-in="1.4" data-from="left"><span class="n">4</span><span>O que não está incluso</span></div>
+    </div>
+    <p class="acordo" data-in="2.0">Mande o resumo e peça: <b data-pulsa="2.7" style="display:inline-block">"De acordo"</b>.</p>
+  </div>
+</section>
+<section class="cena cloud" data-dur="2.8" data-trans="zoom" data-camera="aproxima">
+  <div class="camera">
+    <img src="marca/logos/mentor-logo-claro.svg" style="height:96px;align-self:flex-start" data-in="0">
+    <div class="fala" style="font-size:90px;margin-top:48px" data-palavras data-in="0.1">Comente</div>
+    <div class="cta" data-in="0.3" data-from="zoom" data-pulsa="1.1" data-som="impacto">RESUMO</div>
+    <div class="fala" style="font-size:60px;margin-top:20px" data-palavras data-in="0.6" data-ritmo="0.06">que eu te mando o modelo de resumo do acordo.</div>
+  </div>
+</section>
+</body></html>

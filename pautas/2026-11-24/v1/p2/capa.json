@@ -1,0 +1,21 @@
+{
+ "fundo": "cloud",
+ "titulo": "Conferi as férias da equipe. Uma vencia em dezembro",
+ "apoio": "Passou do prazo, paga em dobro. Em R$, valores de exemplo.",
+ "previa": {
+  "tipo": "barras",
+  "series": [
+   {
+    "rotulo": "No prazo",
+    "valor": 2667
+   },
+   {
+    "rotulo": "Em dobro",
+    "valor": 5333,
+    "destaque": true
+   }
+  ],
+  "sufixo": ""
+ },
+ "chamada": "Arraste para ver a conta"
+}
