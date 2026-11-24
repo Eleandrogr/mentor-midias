@@ -1,0 +1,21 @@
+{
+ "fundo": "cloud",
+ "titulo": "Vendi bem no parcelado e faltou dinheiro para o fornecedor",
+ "apoio": "Paguei antes de receber. Dias de exemplo do Sebrae.",
+ "previa": {
+  "tipo": "barras",
+  "series": [
+   {
+    "rotulo": "Pago",
+    "valor": 30
+   },
+   {
+    "rotulo": "Recebo",
+    "valor": 95,
+    "destaque": true
+   }
+  ],
+  "sufixo": "º dia"
+ },
+ "chamada": "Arraste para ver a conta"
+}

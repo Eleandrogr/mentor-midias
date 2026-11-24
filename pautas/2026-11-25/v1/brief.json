@@ -1,0 +1,25 @@
+{
+ "data": "2026-11-25",
+ "versao": 1,
+ "regras": "v2",
+ "volume": "v3",
+ "contexto": "24/11: story blue Vendas, carrossel cloud Pessoas, reel night Contratos. Último post previsto (24/11 18:30) night -> 25/11 abre em blue. Carrossel e reel fora de Pessoas e Contratos. 25/11 é quarta; Black Friday na sexta, 27/11, e Natal em seguida. Sem vídeo de gente real novo (marca/telas não existe).",
+ "teste": {"peca": "p1", "descricao": "Story com chamada explícita para o carrossel do dia ('Hoje, 12h15, no feed: vendi no parcelado e faltou caixa'): 4º post do teste story → feed aberto em 22/11 (22/11 story 20 × carrossel 5; 23/11 12 × 4, preliminar)"},
+ "pecas": [
+  {"id": "p1", "formato": "story", "horario_ig": "08:40", "horario_fb": "08:45", "fundo": "blue", "modulo": "Pessoas",
+   "brief": {"angulo": "educativo", "tema": "Pessoas: contrato de experiência de quem entra no fim de ano: até 90 dias (CLT, art. 445, parágrafo único), prorrogado no máximo uma vez (art. 451), carteira anotada em até 5 dias úteis (art. 29)",
+    "cliente_ideal": "Dono de loja, clínica ou pequena indústria que vai contratar gente nova em dezembro e combina tudo de boca",
+    "objetivo": "lead (resposta REFORÇO)", "cta": "Responda este story com REFORÇO que eu te mando o checklist da contratação",
+    "teste_do_envio": "Mandaria para o contador ou para quem faz a admissão, para acertar o contrato antes do primeiro dia"}},
+  {"id": "p2", "formato": "carrossel", "horario_ig": "12:15", "horario_fb": "12:30", "horario_li": "12:45", "fundo": "cloud", "modulo": "Financeiro", "linkedin": true,
+   "brief": {"angulo": "dor", "tema": "Financeiro: ciclo financeiro (Sebrae) — o tempo entre pagar o fornecedor e receber a venda; vender mais no parcelado alonga esse buraco e falta caixa",
+    "cliente_ideal": "Dono de comércio ou distribuidora que compra estoque para a Black Friday e o Natal, paga o fornecedor em 30 dias e vende parcelado no cartão",
+    "objetivo": "salvamento", "cta": "Comente CICLO que eu te mando a planilha do ciclo de caixa",
+    "teste_do_envio": "Mandaria para o sócio ou para o contador, para decidir juntos o parcelamento da Black Friday e o prazo com o fornecedor"}},
+  {"id": "p3", "formato": "reel", "horario_ig": "18:30", "horario_fb": "18:45", "fundo": "night", "modulo": "Vendas",
+   "brief": {"angulo": "educativo", "tema": "Vendas: troca de presente no fim de ano — com defeito, o cliente tem 30 ou 90 dias para reclamar (CDC, art. 26) e a loja tem até 30 dias para resolver (art. 18, §1º); sem defeito, vale o que a loja prometeu (art. 30)",
+    "cliente_ideal": "Dono de loja física (roupa, calçado, utilidades, eletrônicos) que vai vender presente no Natal e não tem regra de troca escrita",
+    "objetivo": "lead (comentário TROCA)", "cta": "Comente TROCA que eu te mando o checklist da política de troca",
+    "teste_do_envio": "Mandaria para o gerente ou para quem fica no caixa, para todo mundo responder igual sobre troca em dezembro"}}
+ ]
+}

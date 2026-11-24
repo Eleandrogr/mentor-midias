@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css">
+<style>
+  .etq { margin-top: 50px; display: flex; gap: 26px; align-items: center; }
+  .etq .tag { background: rgba(245,246,250,.10); border: 2px solid rgba(245,246,250,.22); border-radius: 26px; padding: 26px 34px; font-size: 42px; line-height: 1.2; }
+  .etq .tag small { display: block; font: 500 28px "Geist Mono", monospace; opacity: .75; margin-top: 8px; }
+  .etq .def { background: rgba(0,206,201,.16); border: 2px solid var(--cyan); border-radius: 26px; padding: 26px 34px; font-size: 42px; color: var(--cyan); font-weight: 600; }
+  .bars { margin-top: 50px; display: flex; flex-direction: column; gap: 30px; }
+  .bars .r .lb { display: flex; justify-content: space-between; font-size: 42px; margin-bottom: 12px; }
+  .bars .r .lb span:last-child { font: 600 44px "Geist Mono", monospace; }
+  .bars .r .b { height: 78px; border-radius: 14px; background: rgba(255,255,255,.16); position: relative; overflow: hidden; }
+  .bars .r .b i { position: absolute; inset: 0 auto 0 0; border-radius: 14px; background: rgba(255,255,255,.6); }
+  .bars .r.t .b i { background: var(--night); }
+  .ex { font-size: 38px; margin-top: 30px; line-height: 1.25; }
+  .ops { margin-top: 44px; display: flex; flex-direction: column; gap: 22px; }
+  .ops .o { display: grid; grid-template-columns: 76px 1fr; gap: 22px; align-items: center; font-size: 50px; }
+  .ops .n { width: 76px; height: 76px; border-radius: 14px; background: var(--blue); color: #fff; font: 800 42px "Saira"; display: flex; align-items: center; justify-content: center; }
+  .relogio { margin-top: 40px; font-size: 46px; line-height: 1.2; }
+  .relogio b { color: var(--blue); }
+  .passos { margin-top: 40px; display: flex; flex-direction: column; gap: 28px; }
+  .passos .p { display: grid; grid-template-columns: 76px 1fr; gap: 24px; align-items: center; font-size: 50px; line-height: 1.15; }
+  .passos .n { width: 76px; height: 76px; border-radius: 14px; background: var(--cyan); color: var(--night); font: 800 42px "Saira"; display: flex; align-items: center; justify-content: center; }
+  .prom { margin-top: 36px; font-size: 46px; line-height: 1.2; }
+  .prom b { color: var(--cyan); }
+  .cta { font-family: "Saira", sans-serif; font-weight: 800; font-size: 150px; line-height: .9; color: var(--blue); }
+</style></head>
+<body>
+<section class="cena night" data-dur="3.0" data-camera="aproxima">
+  <div class="quadrado livre" style="width:460px;height:460px;right:-200px;top:1120px;background:rgba(0,206,201,.10)" data-flutua></div>
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="-1">
+    <div class="t1" style="font-size:100px" data-palavras data-in="-0.6" data-ritmo="0.09">O cliente voltou com o presente com defeito. Troco?</div>
+    <div class="etq">
+      <div class="tag" data-in="-0.2" data-from="left">Liquidificador<small>vendido em 20/12</small></div>
+      <div class="def" data-in="0.8" data-from="right" data-som="pop" data-pulsa="1.6">não liga</div>
+    </div>
+    <p class="fn" data-in="1.4">Situação de exemplo.</p>
+  </div>
+</section>
+<section class="cena blue" data-dur="3.4" data-trans="empurra" data-camera="desliza">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0">
+    <div class="t2" style="font-size:96px" data-palavras data-in="0" data-ritmo="0.08">Prazo do cliente para reclamar</div>
+    <div class="bars">
+      <div class="r" data-in="0.5"><div class="lb"><span>Não durável (comida, cosmético)</span><span>30 dias</span></div><div class="b"><i style="width:33%" data-growx="0.5" data-dur="0.6"></i></div></div>
+      <div class="r t" data-in="1.2"><div class="lb"><span>Durável (roupa, aparelho)</span><span>90 dias</span></div><div class="b"><i style="width:100%" data-growx="1.2" data-dur="0.8" data-pulsa="2.2" data-som="impacto"></i></div></div>
+    </div>
+    <p class="ex" data-in="2.0">Conta a partir da entrega.</p>
+    <p class="fn" style="color:rgba(255,255,255,.92)" data-in="2.4">Fonte: Código de Defesa do Consumidor, art. 26.</p>
+  </div>
+</section>
+<section class="cena cloud" data-dur="3.6" data-trans="mascara" data-camera="aproxima">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="0">
+    <div class="t2" style="font-size:96px" data-palavras data-in="0" data-ritmo="0.08">A loja tem até 30 dias para resolver</div>
+    <p class="relogio" data-in="0.8">Não resolveu? <b>O cliente escolhe:</b></p>
+    <div class="ops">
+      <div class="o" data-in="1.2" data-from="left" data-som="pop"><span class="n">1</span><span>Produto novo</span></div>
+      <div class="o" data-in="1.7" data-from="left" data-som="pop"><span class="n">2</span><span>Dinheiro de volta</span></div>
+      <div class="o" data-in="2.2" data-from="left" data-som="impacto"><span class="n" data-pulsa="2.8">3</span><span>Desconto no preço</span></div>
+    </div>
+    <p class="fn" style="color:var(--muted-light)" data-in="2.6">Fonte: CDC, art. 18, §1º.</p>
+  </div>
+</section>
+<section class="cena night" data-dur="3.8" data-trans="sobe" data-camera="desliza">
+  <div class="quadrado livre" style="width:380px;height:380px;right:-160px;top:1180px;background:rgba(0,206,201,.10)" data-flutua></div>
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="0">
+    <p class="prom" style="margin-top:0" data-in="0">Sem defeito? Vale <b>a regra que você anunciou</b>.</p>
+    <div class="rot" style="margin-top:36px" data-in="0.6"><span class="marcador acc-bg"></span>Na prática, antes do Natal</div>
+    <div class="passos">
+      <div class="p" data-in="0.9" data-from="left"><span class="n">1</span><span>Escreva sua regra de troca</span></div>
+      <div class="p" data-in="1.4" data-from="left"><span class="n">2</span><span>Ponha no caixa e na nota</span></div>
+      <div class="p" data-in="1.9" data-from="left"><span class="n">3</span><span>Anote a data de cada venda</span></div>
+    </div>
+    <p class="fn" data-in="2.6">Fonte: CDC, art. 30.</p>
+  </div>
+</section>
+<section class="cena cloud" data-dur="2.8" data-trans="zoom" data-camera="aproxima">
+  <div class="camera">
+    <img src="marca/logos/mentor-logo-claro.svg" style="height:96px;align-self:flex-start" data-in="0">
+    <div class="fala" style="font-size:90px;margin-top:48px" data-palavras data-in="0.1">Comente</div>
+    <div class="cta" data-in="0.3" data-from="zoom" data-pulsa="1.1" data-som="impacto">TROCA</div>
+    <div class="fala" style="font-size:60px;margin-top:20px" data-palavras data-in="0.6" data-ritmo="0.06">que eu te mando o checklist da política de troca.</div>
+  </div>
+</section>
+</body></html>

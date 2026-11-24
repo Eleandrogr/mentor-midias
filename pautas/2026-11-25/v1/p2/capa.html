@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/base.css">
+<style>
+  .peca { background: var(--cloud); color: #1E272E; justify-content: space-between; }
+  .logo { height: 60px; }
+  .miolo { display: flex; flex-direction: column; gap: 44px; }
+  .titulo { font-size: 92px; line-height: .98; color: #1E272E; max-width: 904px; }
+  .titulo .ponto { color: #0984E3; }
+  .apoio { font-size: 40px; color: #5B6670; max-width: 880px; margin-top: -12px; }
+  .previa { border-radius: 22px; padding: 34px 36px; }
+  .barras { display: flex; flex-direction: column; gap: 22px; }
+  .pb { display: grid; grid-template-columns: 230px 1fr; align-items: center; gap: 20px; }
+  .pr { font-size: 34px; font-weight: 600; }
+  .pt { position: relative; height: 64px; display: flex; align-items: center; }
+  .pf { height: 100%; border-radius: 8px; flex-shrink: 0; }
+  .pv { font-size: 38px; font-weight: 500; margin-left: 16px; white-space: nowrap; }
+  .tela { padding: 0; }
+  .moldura { border-radius: 22px; overflow: hidden; border: 3px solid #0984E3; max-height: 420px; }
+  .moldura img { width: 100%; display: block; }
+  .leg { font-size: 28px; color: #5B6670; margin-top: 14px; }
+  .chamada { font-size: 34px; font-weight: 600; display: flex; align-items: center; }
+  .marcador { display: inline-block; width: 26px; height: 26px; border-radius: 5px; background: #0984E3; margin-right: 18px; }
+</style></head>
+<body><div class="peca">
+  <img class="logo" src="marca/logos/mentor-logo-claro.svg" alt="Mentor">
+  <div class="miolo">
+    <div class="display titulo">Vendi bem no parcelado e faltou dinheiro para o fornecedor<span class="ponto">.</span></div>
+    <p class="apoio">Paguei antes de receber. Dias de exemplo do Sebrae.</p>
+    <div class="previa barras" style="background:rgba(30,39,46,.08)"><div class="pb"><div class="pr">Pago</div>
+              <div class="pt"><div class="pf" style="width:calc((100% - 200px) * 0.316);background:#C5CBD3"></div>
+              <span class="pv mono" style="color:#1E272E">30º dia</span></div></div><div class="pb"><div class="pr">Recebo</div>
+              <div class="pt"><div class="pf" style="width:calc((100% - 200px) * 1.000);background:#0984E3"></div>
+              <span class="pv mono" style="color:#0984E3">95º dia</span></div></div></div>
+  </div>
+  <div class="chamada"><span class="marcador"></span>Arraste para ver a conta &rarr;</div>
+</div></body></html>
