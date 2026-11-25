@@ -1,0 +1,208 @@
+[
+ {
+  "peca": "p1",
+  "big_ideas": {
+   "segura": "Lista de 10 itens com caixas de seleção",
+   "ousada": "Tabela sistema × prateleira com a coluna da prateleira em '?' — a pergunta vira a própria arte",
+   "estranha": "Prateleira vazia desenhada com etiqueta 'confia no sistema?'",
+   "escolhida": "ousada",
+   "por_que": "a segura é genérica; a estranha fica sem a ação de 1 passo"
+  },
+  "quebra_de_padrao": "coluna inteira de '?' em Night sobre o azul: a resposta que falta é o convite para contar",
+  "formato": "story",
+  "fundo_inicial": "blue",
+  "capa": null,
+  "cenas": [
+   {
+    "n": 1,
+    "papel": "pergunta + mini-dica + CTA + chamada para o feed",
+    "fundo": "blue",
+    "elementos": [
+     {
+      "tipo": "titulo",
+      "texto": "Amanhã é Black Friday."
+     },
+     {
+      "tipo": "apoio",
+      "texto": "Já contou os 10 que mais vendem?"
+     },
+     {
+      "tipo": "tabela",
+      "linhas": [
+       [
+        "Fone bluetooth",
+        "12",
+        "?"
+       ],
+       [
+        "Garrafa térmica",
+        "30",
+        "?"
+       ],
+       [
+        "Kit toalhas",
+        "8",
+        "?"
+       ]
+      ],
+      "nota": "Itens e quantidades de exemplo"
+     },
+     {
+      "tipo": "cta",
+      "texto": "Responda este story com VÉSPERA"
+     }
+    ]
+   }
+  ],
+  "semente_trilha": 3301
+ },
+ {
+  "peca": "p2",
+  "big_ideas": {
+   "segura": "Checklist do pedido de compra com ícones",
+   "ousada": "Calendário de dezembro com a entrega caindo depois do Natal: a barra do 'chegou' passa do dia 25",
+   "estranha": "Print de conversa de WhatsApp com 'chega semana que vem' riscado",
+   "escolhida": "ousada",
+   "por_que": "a conversa de WhatsApp repete o reel de 24/11; o checklist sozinho não para o scroll"
+  },
+  "quebra_de_padrao": "slide 3 com a linha do Natal cortando a barra da entrega: a resposta (recusar) antes da regra",
+  "formato": "carrossel",
+  "fundo_inicial": "cloud",
+  "capa": {
+   "fundo": "cloud",
+   "titulo": "Encomendei para o Natal e o fornecedor atrasou",
+   "apoio": "O pedido tinha data? Datas de exemplo.",
+   "previa": {
+    "tipo": "barras",
+    "series": [
+     {
+      "rotulo": "Combinado",
+      "valor": 5
+     },
+     {
+      "rotulo": "Chegou",
+      "valor": 28,
+      "destaque": true
+     }
+    ],
+    "sufixo": "/12"
+   },
+   "chamada": "Arraste para ver o que fazer"
+  },
+  "cenas": [
+   {
+    "n": 2,
+    "papel": "dado + fonte",
+    "fundo": "night",
+    "elementos": [
+     {
+      "tipo": "titulo",
+      "texto": "Sem data escrita, o atraso nem começa"
+     },
+     {
+      "tipo": "comparacao",
+      "linhas": [
+       "Com data no pedido: em atraso no dia seguinte",
+       "Sem data: só depois de cobrar por escrito"
+      ]
+     },
+     {
+      "tipo": "fonte",
+      "texto": "Fonte: Código Civil, art. 397."
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "papel": "virada",
+    "fundo": "blue",
+    "elementos": [
+     {
+      "tipo": "titulo",
+      "texto": "Chegou depois do Natal? Dá para recusar"
+     },
+     {
+      "tipo": "grafico",
+      "forma": "linha do tempo",
+      "series": [
+       {
+        "rotulo": "Natal",
+        "valor": 25
+       },
+       {
+        "rotulo": "Entrega",
+        "valor": 28,
+        "destaque": true
+       }
+      ]
+     },
+     {
+      "tipo": "apoio",
+      "texto": "Multa combinada: cobro junto com a entrega, até o valor do pedido."
+     },
+     {
+      "tipo": "fonte",
+      "texto": "Fonte: Código Civil, arts. 395, 411 e 412."
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "papel": "checklist que vale salvar",
+    "fundo": "cloud"
+   },
+   {
+    "n": 5,
+    "papel": "CTA PRAZO",
+    "fundo": "blue"
+   }
+  ],
+  "semente_trilha": 3302
+ },
+ {
+  "peca": "p3",
+  "big_ideas": {
+   "segura": "Pergunta e resposta em texto",
+   "ousada": "Recibo de vale de exemplo no quadro 0 que vira a conta do holerite (R$ 2.000 − R$ 500)",
+   "estranha": "Cofrinho que esvazia",
+   "escolhida": "ousada",
+   "por_que": "o recibo é o próprio passo a passo; o cofrinho não mostra o papel que protege"
+  },
+  "quebra_de_padrao": "o recibo entra torto e é carimbado 'assinado' no meio da cena 1",
+  "formato": "reel",
+  "fundo_inicial": "night",
+  "cenas": [
+   {
+    "n": 1,
+    "papel": "gancho",
+    "fundo": "night",
+    "dur": 3.0
+   },
+   {
+    "n": 2,
+    "papel": "dado + fonte (art. 462) + conta de exemplo",
+    "fundo": "blue",
+    "dur": 3.6
+   },
+   {
+    "n": 3,
+    "papel": "limite: dano só com acordo ou dolo",
+    "fundo": "cloud",
+    "dur": 3.4
+   },
+   {
+    "n": 4,
+    "papel": "na prática",
+    "fundo": "night",
+    "dur": 3.8
+   },
+   {
+    "n": 5,
+    "papel": "CTA VALE",
+    "fundo": "cloud",
+    "dur": 2.8
+   }
+  ],
+  "semente_trilha": 3303
+ }
+]

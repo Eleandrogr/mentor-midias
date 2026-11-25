@@ -1,0 +1,21 @@
+{
+ "fundo": "cloud",
+ "titulo": "Encomendei para o Natal e o fornecedor atrasou",
+ "apoio": "O pedido tinha data? Datas de exemplo.",
+ "previa": {
+  "tipo": "barras",
+  "series": [
+   {
+    "rotulo": "Combinado",
+    "valor": 5
+   },
+   {
+    "rotulo": "Chegou",
+    "valor": 28,
+    "destaque": true
+   }
+  ],
+  "sufixo": "/12"
+ },
+ "chamada": "Arraste para ver o que fazer"
+}

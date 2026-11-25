@@ -1,0 +1,63 @@
+{
+ "data": "2026-11-26",
+ "versao": 1,
+ "regras": "v2",
+ "volume": "v3",
+ "contexto": "25/11: story blue Pessoas, carrossel cloud Financeiro, reel night Vendas. Último post previsto (25/11 18:30) night -> 26/11 abre em blue. Carrossel e reel fora de Financeiro e Vendas. 26/11 é quinta, véspera da Black Friday (27/11); dezembro chega com encomendas de Natal e pedidos de adiantamento. Sem vídeo de gente real novo (marca/telas não existe).",
+ "teste": {
+  "peca": "p1",
+  "descricao": "Story com chamada explícita para o carrossel do dia ('Hoje, 12h15, no feed: o fornecedor atrasou minha encomenda'): 5º e último post do teste story → feed aberto em 22/11 (22/11 20×5; 23/11 15×5; 24/11 14×3 preliminar). Veredito na leitura de 28/11."
+ },
+ "pecas": [
+  {
+   "id": "p1",
+   "formato": "story",
+   "horario_ig": "08:40",
+   "horario_fb": "08:45",
+   "fundo": "blue",
+   "modulo": "Estoque",
+   "brief": {
+    "angulo": "educativo",
+    "tema": "Estoque: véspera da Black Friday — contar hoje os 10 itens que mais vendem e acertar o sistema antes de abrir (mini-dica de 1 passo, sem número)",
+    "cliente_ideal": "Dono de loja ou distribuidora que vai anunciar ofertas amanhã e confia no saldo do sistema sem conferir a prateleira",
+    "objetivo": "lead (resposta VÉSPERA)",
+    "cta": "Responda este story com VÉSPERA que eu te mando o checklist da véspera da Black Friday",
+    "teste_do_envio": "Mandaria para o gerente ou o estoquista, para contar os 10 itens hoje à noite"
+   }
+  },
+  {
+   "id": "p2",
+   "formato": "carrossel",
+   "horario_ig": "12:15",
+   "horario_fb": "12:30",
+   "horario_li": "12:45",
+   "fundo": "cloud",
+   "modulo": "Contratos",
+   "linkedin": true,
+   "brief": {
+    "angulo": "dor",
+    "tema": "Contratos: encomenda de Natal atrasada — com data escrita no pedido o fornecedor entra em atraso sozinho (Código Civil, art. 397); sem data, só depois de cobrar formalmente (parágrafo único); entrega inútil pode ser recusada com perdas e danos (art. 395, par. único); multa por atraso combinada vale junto com a entrega (art. 411) e até o valor do pedido (art. 412)",
+    "cliente_ideal": "Dono de loja, distribuidora ou pequena indústria que encomendou mercadoria ou insumo para dezembro por WhatsApp, sem data de entrega nem multa escritas",
+    "objetivo": "salvamento",
+    "cta": "Comente PRAZO que eu te mando o checklist do pedido de compra",
+    "teste_do_envio": "Mandaria para quem faz as compras ou para o sócio, para padronizar o pedido antes das encomendas de dezembro"
+   }
+  },
+  {
+   "id": "p3",
+   "formato": "reel",
+   "horario_ig": "18:30",
+   "horario_fb": "18:45",
+   "fundo": "night",
+   "modulo": "Pessoas",
+   "brief": {
+    "angulo": "educativo",
+    "tema": "Pessoas: adiantamento de salário em dezembro — a CLT proíbe desconto no salário salvo adiantamento, lei ou contrato coletivo (art. 462); dano causado só com acordo ou dolo (§1º); recibo assinado e desconto no holerite",
+    "cliente_ideal": "Dono de comércio, clínica ou pequena indústria com 3 a 30 funcionários que adianta dinheiro de boca em dezembro e desconta sem papel",
+    "objetivo": "lead (comentário VALE)",
+    "cta": "Comente VALE que eu te mando o modelo de recibo de adiantamento",
+    "teste_do_envio": "Mandaria para quem faz a folha ou para o contador, para padronizar o recibo antes dos pedidos de dezembro"
+   }
+  }
+ ]
+}

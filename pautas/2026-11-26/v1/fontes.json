@@ -1,0 +1,75 @@
+{
+ "p1": [
+  {
+   "dado": "Itens e quantidades (12, 30, 8)",
+   "fonte": "exemplo",
+   "frase": "marcado na arte",
+   "url": null
+  }
+ ],
+ "p2": [
+  {
+   "dado": "Obrigação com data: atraso (mora) automático no vencimento",
+   "fonte": "Código Civil, art. 397, caput (texto conferido em projuris.com.br; Planalto não abriu nesta execução)",
+   "frase": "O inadimplemento da obrigação, positiva e líquida, no seu termo, constitui de pleno direito em mora o devedor.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+   "conferido_em": "https://www.projuris.com.br/ccc/cc-comentado-da-mora-art-394-ao-art-401/"
+  },
+  {
+   "dado": "Sem data: mora depende de interpelação judicial ou extrajudicial",
+   "fonte": "Código Civil, art. 397, parágrafo único",
+   "frase": "Não havendo termo, a mora se constitui mediante interpelação judicial ou extrajudicial.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+   "conferido_em": "https://www.projuris.com.br/ccc/cc-comentado-da-mora-art-394-ao-art-401/"
+  },
+  {
+   "dado": "Prestação inútil por causa do atraso pode ser recusada, com perdas e danos",
+   "fonte": "Código Civil, art. 395, parágrafo único",
+   "frase": "[...] se tornar inútil ao credor, este poderá enjeitá-la [...] (paráfrase conferida: e exigir a satisfação das perdas e danos)",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+   "conferido_em": "https://www.projuris.com.br/ccc/cc-comentado-da-mora-art-394-ao-art-401/"
+  },
+  {
+   "dado": "Multa para o caso de atraso: cobrada junto com o cumprimento",
+   "fonte": "Código Civil, art. 411",
+   "frase": "Quando se estipular a cláusula penal para o caso de mora, ou em segurança especial de outra cláusula determinada, [...] (paráfrase conferida: o credor pode exigir a pena junto com o cumprimento da obrigação principal)",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+   "conferido_em": "https://www.projuris.com.br/ccc/cc-comentado-da-clausula-penal-art-408-ao-416/"
+  },
+  {
+   "dado": "Multa não pode passar do valor da obrigação principal",
+   "fonte": "Código Civil, art. 412",
+   "frase": "O valor da cominação imposta na cláusula penal não pode exceder o da obrigação principal.",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+   "conferido_em": "https://www.projuris.com.br/ccc/cc-comentado-da-clausula-penal-art-408-ao-416/"
+  },
+  {
+   "dado": "Datas 05/12 e 28/12",
+   "fonte": "exemplo",
+   "frase": "marcado na arte",
+   "url": null
+  }
+ ],
+ "p3": [
+  {
+   "dado": "Desconto no salário só de adiantamento, lei ou contrato coletivo",
+   "fonte": "CLT, art. 462, caput (texto conferido em legjur.com, 'norma em vigor'; Planalto não abriu nesta execução)",
+   "frase": "Ao empregador é vedado efetuar qualquer desconto nos salários do empregado, salvo quando este resultar de adiantamentos, de dispositivos de lei ou de contrato coletivo.",
+   "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452compilado.htm",
+   "conferido_em": "https://www.legjur.com/legislacao/art/dcl_00054521943-462"
+  },
+  {
+   "dado": "Dano causado pelo empregado: desconto lícito só se acordado ou com dolo",
+   "fonte": "CLT, art. 462, §1º",
+   "frase": "Em caso de dano causado pelo empregado, o desconto será lícito, [...] (paráfrase do restante conferido: desde que a possibilidade tenha sido acordada ou haja dolo do empregado)",
+   "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452compilado.htm",
+   "conferido_em": "https://www.legjur.com/legislacao/art/dcl_00054521943-462"
+  },
+  {
+   "dado": "Salário R$ 2.000 − adiantamento R$ 500 = R$ 1.500",
+   "fonte": "exemplo (conta)",
+   "frase": "marcado na arte",
+   "url": null
+  }
+ ]
+}

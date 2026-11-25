@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css">
+<style>
+  .rec { margin-top: 50px; background: var(--cloud); color: var(--night); border-radius: 22px; padding: 30px 36px; transform: rotate(-2deg); position: relative; }
+  .rec .h { font: 800 40px "Saira"; text-transform: uppercase; letter-spacing: .02em; }
+  .rec .v { font: 600 64px "Geist Mono", monospace; margin-top: 8px; }
+  .rec .d { font-size: 32px; color: #5B6670; margin-top: 6px; }
+  .rec .ass { position: absolute; right: 30px; top: 22px; border: 4px solid var(--blue); color: var(--blue); border-radius: 12px; padding: 6px 16px; font: 800 34px "Saira"; text-transform: uppercase; transform: rotate(-8deg); }
+  .conta { margin-top: 44px; display: flex; flex-direction: column; gap: 20px; }
+  .conta .l { display: flex; justify-content: space-between; font-size: 44px; border-bottom: 2px solid rgba(255,255,255,.25); padding-bottom: 12px; }
+  .conta .l b { font: 600 46px "Geist Mono", monospace; }
+  .conta .l.t { border: 0; font-weight: 600; }
+  .conta .l.t b { color: var(--night); }
+  .lim { margin-top: 40px; display: flex; flex-direction: column; gap: 26px; }
+  .lim .o { border-radius: 22px; padding: 24px 30px; font-size: 44px; line-height: 1.2; background: rgba(30,39,46,.06); border: 2px solid rgba(30,39,46,.14); }
+  .lim .o small { display: block; font: 600 30px "Geist Mono", monospace; color: var(--blue); text-transform: uppercase; margin-bottom: 8px; }
+  .passos { margin-top: 40px; display: flex; flex-direction: column; gap: 26px; }
+  .passos .p { display: grid; grid-template-columns: 76px 1fr; gap: 24px; align-items: center; font-size: 48px; line-height: 1.15; }
+  .passos .n { width: 76px; height: 76px; border-radius: 14px; background: var(--cyan); color: var(--night); font: 800 42px "Saira"; display: flex; align-items: center; justify-content: center; }
+  .cta { font-family: "Saira", sans-serif; font-weight: 800; font-size: 170px; line-height: .9; color: var(--blue); }
+</style></head>
+<body>
+<section class="cena night" data-dur="3.0" data-camera="aproxima">
+  <div class="quadrado livre" style="width:460px;height:460px;right:-200px;top:1120px;background:rgba(0,206,201,.10)" data-flutua></div>
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="-1">
+    <div class="t1" style="font-size:100px" data-palavras data-in="-0.6" data-ritmo="0.09">Adiantei R$&nbsp;500 para um funcionário. Posso descontar?</div>
+    <div class="rec" data-in="-0.2" data-from="left">
+      <div class="h">Recibo de adiantamento</div>
+      <div class="v">R$ 500,00</div>
+      <div class="d">10/12 · desconto no salário de dezembro</div>
+      <div class="ass" data-in="1.0" data-from="zoom" data-som="impacto" data-pulsa="1.8">Assinado</div>
+    </div>
+    <p class="fn" data-in="1.4">Situação e valores de exemplo.</p>
+  </div>
+</section>
+<section class="cena blue" data-dur="3.6" data-trans="empurra" data-camera="desliza">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0">
+    <div class="t2" style="font-size:96px" data-palavras data-in="0" data-ritmo="0.08">Pode. Adiantamento pode ser descontado</div>
+    <div class="conta">
+      <div class="l" data-in="0.6" data-from="left"><span>Salário de dezembro</span><b>R$ 2.000</b></div>
+      <div class="l" data-in="1.1" data-from="left"><span>− Adiantamento</span><b>R$ 500</b></div>
+      <div class="l t" data-in="1.7" data-from="left" data-pulsa="2.4" data-som="impacto"><span>A pagar</span><b>R$ 1.500</b></div>
+    </div>
+    <p class="fn" style="color:rgba(255,255,255,.92)" data-in="2.2">Valores de exemplo. Fonte: CLT, art. 462.</p>
+  </div>
+</section>
+<section class="cena cloud" data-dur="3.6" data-trans="mascara" data-camera="aproxima">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="0">
+    <div class="t2" style="font-size:96px" data-palavras data-in="0" data-ritmo="0.08">Outro desconto? Aí tem limite</div>
+    <div class="lim">
+      <div class="o" data-in="0.8" data-from="left" data-som="pop"><small>Só se a lei ou a convenção mandar</small>Fora isso, nada sai do salário.</div>
+      <div class="o" data-in="1.6" data-from="left" data-som="pop" data-pulsa="2.6"><small>Estrago que ele causou</small>Só se estava combinado ou se foi de propósito.</div>
+    </div>
+    <p class="fn" style="color:var(--muted-light)" data-in="2.4">Fonte: CLT, art. 462 e §1º.</p>
+  </div>
+</section>
+<section class="cena night" data-dur="3.8" data-trans="sobe" data-camera="desliza">
+  <div class="quadrado livre" style="width:380px;height:380px;right:-160px;top:1180px;background:rgba(0,206,201,.10)" data-flutua></div>
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="0">
+    <div class="rot" data-in="0"><span class="marcador acc-bg"></span>Na prática, antes de adiantar</div>
+    <div class="passos">
+      <div class="p" data-in="0.4" data-from="left"><span class="n">1</span><span>Recibo com valor e data</span></div>
+      <div class="p" data-in="0.9" data-from="left"><span class="n">2</span><span>Escrito "adiantamento de salário"</span></div>
+      <div class="p" data-in="1.4" data-from="left"><span class="n">3</span><span>Mês do desconto combinado</span></div>
+      <div class="p" data-in="1.9" data-from="left"><span class="n">4</span><span>Desconto visível no holerite</span></div>
+    </div>
+  </div>
+</section>
+<section class="cena cloud" data-dur="2.8" data-trans="zoom" data-camera="aproxima">
+  <div class="camera">
+    <img src="marca/logos/mentor-logo-claro.svg" style="height:96px;align-self:flex-start" data-in="0">
+    <div class="fala" style="font-size:90px;margin-top:48px" data-palavras data-in="0.1">Comente</div>
+    <div class="cta" data-in="0.3" data-from="zoom" data-pulsa="1.1" data-som="impacto">VALE</div>
+    <div class="fala" style="font-size:60px;margin-top:20px" data-palavras data-in="0.6" data-ritmo="0.06">que eu te mando o modelo de recibo de adiantamento.</div>
+  </div>
+</section>
+</body></html>
