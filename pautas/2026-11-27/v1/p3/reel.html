@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css">
+<style>
+  .cad { margin-top: 46px; background: var(--cloud); color: var(--night); border-radius: 22px; padding: 26px 34px; transform: rotate(-2deg); }
+  .cad .h { font: 800 38px "Saira"; text-transform: uppercase; letter-spacing: .02em; color: var(--blue); border-bottom: 3px solid rgba(30,39,46,.15); padding-bottom: 10px; margin-bottom: 6px; }
+  .cad .l { display: grid; grid-template-columns: 1fr 120px; font-size: 42px; padding: 10px 0; border-bottom: 2px dashed rgba(30,39,46,.18); }
+  .cad .l b { font: 600 42px "Geist Mono", monospace; text-align: right; }
+  .cmp { margin-top: 46px; display: flex; flex-direction: column; gap: 26px; }
+  .cmp .o { border-radius: 22px; padding: 26px 30px; font-size: 46px; line-height: 1.2; background: rgba(255,255,255,.12); border: 2px solid rgba(255,255,255,.3); }
+  .cmp .o.d { background: rgba(30,39,46,.85); border-color: var(--night); }
+  .cmp .o small { display: block; font: 600 30px "Geist Mono", monospace; text-transform: uppercase; margin-bottom: 8px; opacity: .9; }
+  .tres { margin-top: 44px; padding-left: 16px; padding-right: 80px; display: flex; flex-direction: column; gap: 24px; }
+  .tres .o { display: grid; grid-template-columns: 76px 1fr; gap: 24px; align-items: center; font-size: 50px; line-height: 1.15; }
+  .tres .n { width: 76px; height: 76px; border-radius: 14px; background: var(--blue); color: #fff; font: 800 42px "Saira"; display: flex; align-items: center; justify-content: center; }
+  .passos { margin-top: 40px; display: flex; flex-direction: column; gap: 26px; }
+  .passos .p { display: grid; grid-template-columns: 76px 1fr; gap: 24px; align-items: center; font-size: 48px; line-height: 1.15; }
+  .passos .n { width: 76px; height: 76px; border-radius: 14px; background: var(--cyan); color: var(--night); font: 800 42px "Saira"; display: flex; align-items: center; justify-content: center; }
+  .cta { font-family: "Saira", sans-serif; font-weight: 800; font-size: 170px; line-height: .9; color: var(--blue); }
+</style></head>
+<body>
+<section class="cena night" data-dur="3.2" data-camera="aproxima">
+  <div class="quadrado livre" style="width:460px;height:460px;right:-200px;top:1120px;background:rgba(0,206,201,.10)" data-flutua></div>
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="-1">
+    <div class="t1" style="font-size:100px" data-palavras data-in="-0.6" data-ritmo="0.09">O cliente pediu e eu não tinha. Anotei?</div>
+    <div class="cad" data-in="-0.2" data-from="left">
+      <div class="h">Faltas de hoje</div>
+      <div class="l" data-in="0.3" data-from="left" data-som="pop"><span>Air fryer 4 L</span><b>3</b></div>
+      <div class="l" data-in="0.8" data-from="left" data-som="pop"><span>Pilha AA</span><b>5</b></div>
+      <div class="l" data-in="1.3" data-from="left" data-som="pop" data-pulsa="2.0"><span>Ventilador</span><b>2</b></div>
+    </div>
+    <p class="fn" data-in="1.6">Itens e quantidades de exemplo.</p>
+  </div>
+</section>
+<section class="cena blue" data-dur="3.4" data-trans="empurra" data-camera="desliza">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0">
+    <div class="t2" style="font-size:96px" data-palavras data-in="0" data-ritmo="0.08">Venda perdida não aparece no caixa</div>
+    <div class="cmp">
+      <div class="o" data-in="0.7" data-from="left"><small>O caixa mostra</small>O que eu vendi.</div>
+      <div class="o d" data-in="1.4" data-from="left" data-pulsa="2.2" data-som="impacto"><small>O caixa não mostra</small>O que o cliente pediu e não levou.</div>
+    </div>
+  </div>
+</section>
+<section class="cena cloud" data-dur="3.2" data-trans="mascara" data-camera="afasta">
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-claro.svg" data-in="0">
+    <div class="t2" style="font-size:96px" data-palavras data-in="0" data-ritmo="0.08">Anote três coisas na hora</div>
+    <div class="tres">
+      <div class="o" data-in="0.6" data-from="left" data-som="pop"><span class="n">1</span><span>O produto pedido</span></div>
+      <div class="o" data-in="1.1" data-from="left" data-som="pop"><span class="n">2</span><span>Quantas unidades</span></div>
+      <div class="o" data-in="1.6" data-from="left" data-som="pop" data-pulsa="2.4"><span class="n">3</span><span>O dia</span></div>
+    </div>
+  </div>
+</section>
+<section class="cena night" data-dur="3.8" data-trans="sobe" data-camera="desliza">
+  <div class="quadrado livre" style="width:380px;height:380px;right:-160px;top:1180px;background:rgba(0,206,201,.10)" data-flutua></div>
+  <div class="camera">
+    <img class="logo topo" src="marca/logos/mentor-logo-escuro.svg" data-in="0">
+    <div class="rot" data-in="0"><span class="marcador acc-bg"></span>Na prática, a partir de hoje</div>
+    <div class="passos">
+      <div class="p" data-in="0.4" data-from="left"><span class="n">1</span><span>Uma lista de faltas no balcão</span></div>
+      <div class="p" data-in="0.9" data-from="left"><span class="n">2</span><span>Todo vendedor anota</span></div>
+      <div class="p" data-in="1.4" data-from="left"><span class="n">3</span><span>Na sexta, some por produto</span></div>
+      <div class="p" data-in="1.9" data-from="left"><span class="n">4</span><span>O que mais falta entra no pedido</span></div>
+    </div>
+  </div>
+</section>
+<section class="cena cloud" data-dur="2.8" data-trans="zoom" data-camera="aproxima">
+  <div class="camera">
+    <img src="marca/logos/mentor-logo-claro.svg" style="height:96px;align-self:flex-start" data-in="0">
+    <div class="fala" style="font-size:90px;margin-top:48px" data-palavras data-in="0.1">Comente</div>
+    <div class="cta" data-in="0.3" data-from="zoom" data-pulsa="1.1" data-som="impacto">FALTA</div>
+    <div class="fala" style="font-size:60px;margin-top:20px" data-palavras data-in="0.6" data-ritmo="0.06">que eu te mando a planilha de registro de faltas.</div>
+  </div>
+</section>
+</body></html>

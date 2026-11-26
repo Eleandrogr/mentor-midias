@@ -1,0 +1,21 @@
+{
+ "fundo": "cloud",
+ "titulo": "Vendi bem na Black Friday. Meu Simples vai subir?",
+ "apoio": "Faturamento de 12 meses no comércio. Valores de exemplo.",
+ "previa": {
+  "tipo": "barras",
+  "series": [
+   {
+    "rotulo": "R$ 340 mil",
+    "valor": 5.6
+   },
+   {
+    "rotulo": "R$ 380 mil",
+    "valor": 5.9,
+    "destaque": true
+   }
+  ],
+  "sufixo": "%"
+ },
+ "chamada": "Arraste para ver a conta"
+}

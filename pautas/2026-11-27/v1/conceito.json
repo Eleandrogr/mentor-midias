@@ -1,0 +1,28 @@
+{
+ "p1": {
+  "modelo": "story PNG 1080x1920 (render.py)",
+  "fundo": "blue",
+  "destaque": "Night sobre azul",
+  "visual": "tabela anúncio × caixa com '?' no caixa, regra em negrito, CTA OFERTA em caixa vazada, chamada para o carrossel"
+ },
+ "p2": {
+  "modelo": "carrossel v2 (capa.py + 2 slides animados 1350 + checklist + CTA)",
+  "capa": "cloud, situação em 1ª pessoa + barras 5,6% × 5,9% (exemplo)",
+  "s2": "night, fórmula da alíquota efetiva montando (traço da fração cresce), RBT12 pulsa em cyan",
+  "s3": "blue, barras crescendo 340 mil × 380 mil, destaque Night",
+  "s4": "cloud, checklist de 5 passos",
+  "s5": "blue, CTA SIMPLES",
+  "facebook_linkedin": "video.html com as 5 cenas (1920 e 1350)"
+ },
+ "p3": {
+  "modelo": "reel v2 (reel.py), 16,4 s, 5 cenas",
+  "abertura": "night, frase + caderno 'Faltas de hoje' com linhas entrando no quadro 0",
+  "cenas": [
+   "night caderno de faltas",
+   "blue caixa mostra × não mostra",
+   "cloud 3 coisas para anotar",
+   "night passo a passo",
+   "cloud CTA FALTA"
+  ]
+ }
+}

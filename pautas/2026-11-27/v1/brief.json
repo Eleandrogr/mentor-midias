@@ -1,0 +1,60 @@
+{
+ "data": "2026-11-27",
+ "versao": 1,
+ "regras": "v2",
+ "volume": "v3",
+ "contexto": "26/11: story blue Estoque, carrossel cloud Contratos, reel night Pessoas. Último post previsto (26/11 18:30) night -> 27/11 abre em blue. Carrossel e reel fora de Contratos e Pessoas. 27/11 é a Black Friday (sexta). Sem vídeo de gente real novo (marca/telas não existe). Teste story → feed fechou o 5º post em 26/11 (veredito 28/11); 1 teste a cada 2 dias: 27/11 sem teste.",
+ "teste": null,
+ "pecas": [
+  {
+   "id": "p1",
+   "formato": "story",
+   "horario_ig": "08:40",
+   "horario_fb": "08:45",
+   "fundo": "blue",
+   "modulo": "Vendas",
+   "brief": {
+    "angulo": "educativo",
+    "tema": "Vendas: dia da Black Friday — conferir antes de abrir se o preço do anúncio bate com o do caixa; a oferta precisa obriga a loja (CDC, art. 30) e, se a loja recusar, o cliente pode exigir o cumprimento (art. 35)",
+    "cliente_ideal": "Dono de loja que anunciou ofertas no Instagram, WhatsApp e etiqueta e não sabe se o sistema do caixa foi atualizado",
+    "objetivo": "lead (resposta OFERTA)",
+    "cta": "Responda este story com OFERTA que eu te mando o checklist para conferir as ofertas",
+    "teste_do_envio": "Mandaria para quem cuida do caixa ou das redes, para conferir os preços antes de abrir"
+   }
+  },
+  {
+   "id": "p2",
+   "formato": "carrossel",
+   "horario_ig": "12:15",
+   "horario_fb": "12:30",
+   "horario_li": "12:45",
+   "fundo": "cloud",
+   "modulo": "Financeiro",
+   "linkedin": true,
+   "brief": {
+    "angulo": "educativo",
+    "tema": "Financeiro: o Simples olha a receita dos 12 meses anteriores (LC 123/2006, art. 18, §§1º e 1º-A); no comércio, passar de R$ 360 mil em 12 meses muda de faixa (Anexo I); exemplo R$ 340 mil → 5,6% e R$ 380 mil → 5,9%",
+    "cliente_ideal": "Dono de comércio no Simples, faturando perto de R$ 30 mil por mês, que vendeu acima da média na Black Friday e no Natal e precifica sem olhar a alíquota efetiva",
+    "objetivo": "salvamento",
+    "cta": "Comente SIMPLES que eu te mando a planilha da alíquota efetiva",
+    "teste_do_envio": "Mandaria para o contador ou para o sócio, para conferir a faixa antes do DAS de dezembro"
+   }
+  },
+  {
+   "id": "p3",
+   "formato": "reel",
+   "horario_ig": "18:30",
+   "horario_fb": "18:45",
+   "fundo": "night",
+   "modulo": "Estoque",
+   "brief": {
+    "angulo": "dor",
+    "tema": "Estoque: venda perdida não aparece no caixa — lista de faltas no balcão (produto, quantidade, dia), soma semanal por produto e o que mais falta entra no pedido",
+    "cliente_ideal": "Dono de loja ou distribuidora que, no fim da Black Friday, ouviu 'não tem' várias vezes e compra pelo que vendeu, sem saber o que deixou de vender",
+    "objetivo": "lead (comentário FALTA)",
+    "cta": "Comente FALTA que eu te mando a planilha de registro de faltas",
+    "teste_do_envio": "Mandaria para o gerente ou os vendedores, para começar a anotar as faltas hoje"
+   }
+  }
+ ]
+}

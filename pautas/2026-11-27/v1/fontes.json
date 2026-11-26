@@ -1,0 +1,47 @@
+[
+ {
+  "peca": "p2",
+  "dado": "Alíquota efetiva = (RBT12 × Aliq − PD) ÷ RBT12; RBT12 = receita bruta acumulada nos 12 meses anteriores",
+  "fonte": "Lei Complementar 123/2006, art. 18, §§ 1º e 1º-A",
+  "ano": 2006,
+  "url": "https://planalto.gov.br/ccivil_03/leis/lcp/Lcp123.htm",
+  "frase": "\"I - RBT12: receita bruta acumulada nos doze meses anteriores ao período de apuração;\" (conferido no Planalto em 26/11/2026)"
+ },
+ {
+  "peca": "p2",
+  "dado": "Anexo I (Comércio): até 180.000,00 4,00%; 180.000,01 a 360.000,00 7,30% deduzir 5.940,00; 360.000,01 a 720.000,00 9,50% deduzir 13.860,00",
+  "fonte": "Lei Complementar 123/2006, Anexo I (vigência 01/01/2018)",
+  "ano": 2018,
+  "url": "https://planalto.gov.br/ccivil_03/leis/lcp/Lcp123.htm",
+  "frase": "\"De 180.000,01 a 360.000,00 | 7,30% | 5.940,00\" (conferido no Planalto em 26/11/2026)"
+ },
+ {
+  "peca": "p2",
+  "dado": "R$ 340 mil → 5,55% (5,6%); R$ 380 mil → 5,85% (5,9%); R$ 555 → R$ 585 por R$ 10 mil",
+  "fonte": "exemplo calculado com o Anexo I",
+  "url": null,
+  "frase": "(340000×7,3%−5940)/340000 = 5,553%; (380000×9,5%−13860)/380000 = 5,853%"
+ },
+ {
+  "peca": "p1",
+  "dado": "Oferta suficientemente precisa obriga o fornecedor (art. 30); se recusar cumprir, o consumidor pode exigir o cumprimento forçado, aceitar equivalente ou rescindir (art. 35)",
+  "fonte": "Código de Defesa do Consumidor (Lei 8.078/1990), arts. 30 e 35",
+  "ano": 1990,
+  "url": "https://www2.camara.leg.br/legin/fed/lei/1990/lei-8078-11-setembro-1990-365086-normaatualizada-pl.html",
+  "frase": "\"Toda informação ou publicidade, suficientemente precisa... obriga o fornecedor que a fizer veicular\"; art. 35, I: \"exigir o cumprimento forçado da obrigação, nos termos da oferta, apresentação ou publicidade;\" (conferido em https://www.legjur.com/legislacao/nivel/lei_00080781990/-secao-ii-da-oferta; página da Câmara não abriu nesta execução)"
+ },
+ {
+  "peca": "p1",
+  "dado": "Itens e preços (299,90; 189,90; 149,90)",
+  "fonte": "exemplo",
+  "url": null,
+  "frase": "marcado na arte"
+ },
+ {
+  "peca": "p3",
+  "dado": "Itens e quantidades (3, 5, 2)",
+  "fonte": "exemplo",
+  "url": null,
+  "frase": "marcado na arte"
+ }
+]
