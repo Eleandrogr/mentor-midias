@@ -1,0 +1,75 @@
+{
+ "p1": {
+  "big_ideas": {
+   "segura": "story PNG com calendário e regra",
+   "ousada": "story em vídeo: o calendário '30 SEGUNDA' entra pulsando no quadro 0, a barra do salário vira metade",
+   "estranha": "story que só mostra um calendário arrancando folhas até o 30",
+   "escolhida": "ousada",
+   "por_que": "é o teste do dia (story em vídeo); a estranha não diz a regra e a segura repete o formato de sempre"
+  },
+  "quebra_de_padrao": "calendário gigante de papel em cima do azul, como bilhete na geladeira",
+  "formato": "story vídeo 10,8 s (reel.py)",
+  "fundo_inicial": "blue",
+  "destaque": "Night sobre azul; Blue no claro",
+  "cenas": [
+   "blue: 'Segunda é dia 30.' + 'A 1ª parcela do 13º já saiu?' + calendário NOVEMBRO 30 SEGUNDA (pulsa)",
+   "cloud: 'Metade do salário do mês anterior' — barras R$ 2.400 × R$ 1.200 (exemplo) + 'A 2ª parcela vence até 20 de dezembro' + fonte",
+   "blue: CTA PARCELA em caixa vazada + chamada para o carrossel das 12h15"
+  ],
+  "semente_trilha": 3321
+ },
+ "p2": {
+  "big_ideas": {
+   "segura": "lista do que o CDC diz",
+   "ousada": "régua de 7 dias acendendo um a um, como contagem regressiva",
+   "estranha": "print falso de conversa de WhatsApp com o cliente desistindo",
+   "escolhida": "ousada",
+   "por_que": "a estranha simularia uma conversa real (fora da regra de não inventar); a segura não para o scroll"
+  },
+  "quebra_de_padrao": "slide 2 é só uma régua de 7 quadrados que acendem em cyan, com pop a cada dia",
+  "capa": {
+   "fundo": "cloud",
+   "titulo": "Vendi pelo WhatsApp e o cliente desistiu. Tenho que aceitar?",
+   "apoio": "Venda fora da loja, produto sem defeito.",
+   "previa": {
+    "tipo": "barras",
+    "series": [
+     {
+      "rotulo": "Prazo para desistir",
+      "valor": 7,
+      "destaque": true
+     }
+    ],
+    "sufixo": " dias"
+   },
+   "chamada": "Arraste para ver o que fazer"
+  },
+  "s2": "night, '7 dias para desistir', 7 quadrados acendendo, 'Contam da entrega', 'Site, WhatsApp, telefone', Na prática + fonte",
+  "s3": "blue, 'Desistiu? O dinheiro volta na hora', 3 cartões (devolvo tudo com correção; cartão: aviso a operadora; confirmo na hora), destaque Night",
+  "s4": "cloud, checklist de 5 itens 'O que eu deixo pronto na venda online'",
+  "s5": "blue, CTA ONLINE",
+  "facebook_linkedin": "video.html com as 5 cenas (1920 e 1350)",
+  "semente_trilha": 3322
+ },
+ "p3": {
+  "big_ideas": {
+   "segura": "lista das 3 condições",
+   "ousada": "linha do tempo até 2027 com a janela azul crescendo e a faixa 'tarde demais'",
+   "estranha": "cadeado se fechando na porta da loja",
+   "escolhida": "ousada",
+   "por_que": "a janela é a informação que o dono não sabe; o cadeado assusta sem ensinar"
+  },
+  "quebra_de_padrao": "a resposta (a janela) aparece antes da explicação do prazo: a barra 'JANELA × tarde demais' entra antes do texto de alerta",
+  "formato": "reel 17 s, 5 cenas",
+  "fundo_inicial": "night",
+  "cenas": [
+   "night: 'O aluguel da loja vence em 2027. Já me mexo?' + linha do tempo Hoje → Fim 30/11/2027 (exemplo)",
+   "blue: 'A lei dá direito à renovação se:' 3 condições + fonte art. 51",
+   "cloud (máscara): 'A janela: de 1 ano a 6 meses antes do fim', barra JANELA × tarde demais, datas de exemplo, 'Fora da janela, perde o direito de pedir a renovação' + fonte §5º",
+   "night: Na prática, 4 passos",
+   "cloud: CTA PONTO"
+  ],
+  "semente_trilha": 3323
+ },
+ "sem_print_do_mentor": "marca/telas e marca/telas-site não existem: nenhuma peça mostra o sistema"
+}

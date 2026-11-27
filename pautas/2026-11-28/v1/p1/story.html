@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="marca/reel.css">
+<style>
+  .cena .camera { padding: 250px 150px 450px 88px; justify-content: space-between; }
+  .q { font-family: "Saira", sans-serif; font-weight: 800; text-transform: uppercase; font-size: 110px; line-height: .95; }
+  .r { font-family: "Saira", sans-serif; font-weight: 800; text-transform: uppercase; font-size: 72px; line-height: 1; color: var(--night); margin-top: 18px; }
+  .cal { align-self: flex-start; width: 420px; border-radius: 30px; overflow: hidden; background: var(--cloud); color: var(--night); text-align: center; box-shadow: 0 24px 60px rgba(30,39,46,.25); }
+  .cal .m { background: var(--night); color: #fff; font: 800 48px "Saira"; letter-spacing: .1em; padding: 14px 0; }
+  .cal .d { font: 800 220px "Saira"; line-height: 1; padding: 18px 0 0; }
+  .cal .s { font: 600 40px "Geist"; padding: 0 0 26px; color: #5B6670; text-transform: uppercase; letter-spacing: .08em; }
+  .ex { font-size: 42px; font-weight: 600; color: rgba(255,255,255,.92); }
+  .t2c { font-family: "Saira", sans-serif; font-weight: 800; text-transform: uppercase; font-size: 92px; line-height: .98; }
+  .bars { display: flex; flex-direction: column; gap: 34px; margin-top: 50px; }
+  .r2 .lb { display: flex; justify-content: space-between; font-size: 42px; margin-bottom: 12px; }
+  .r2 .lb b { font: 600 46px "Geist Mono", monospace; }
+  .r2 .b { height: 90px; border-radius: 14px; position: relative; overflow: hidden; background: rgba(30,39,46,.08); }
+  .r2 .b i { position: absolute; inset: 0 auto 0 0; border-radius: 14px; }
+  .nota { margin-top: 44px; font-size: 46px; line-height: 1.22; padding-left: 30px; border-left: 8px solid var(--blue); }
+  .resp { border: 4px solid rgba(255,255,255,.6); border-radius: 30px; padding: 30px 44px; }
+  .resp .p1 { font-size: 46px; font-weight: 600; }
+  .resp .k { font-family: "Saira", sans-serif; font-weight: 800; font-size: 132px; line-height: .9; margin: 8px 0; color: var(--night); }
+  .resp .s { font-size: 42px; line-height: 1.25; }
+  .chama { font-size: 42px; line-height: 1.3; color: rgba(255,255,255,.95); }
+</style></head><body>
+<section class="cena blue" data-dur="3.6" data-camera="aproxima">
+  <div class="quadrado livre" style="width:440px;height:440px;right:-200px;top:1040px;background:rgba(30,39,46,.14)" data-flutua></div>
+  <div class="camera">
+    <img class="logo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="-1" style="height:64px;align-self:flex-start">
+    <div>
+      <div class="q" data-palavras data-in="-1.2" data-ritmo="0.08">Segunda é dia 30.</div>
+      <div class="r" data-palavras data-in="-0.5" data-ritmo="0.08">A 1ª parcela do 13º já saiu?</div>
+    </div>
+    <div class="cal" data-in="-0.2" data-from="zoom" data-pulsa="1.6" data-som="impacto">
+      <div class="m">NOVEMBRO</div><div class="d">30</div><div class="s">segunda-feira</div>
+    </div>
+    <p class="ex" data-in="1.0">Último dia para a 1ª parcela.</p>
+  </div>
+</section>
+<section class="cena cloud" data-dur="3.8" data-trans="empurra" data-camera="desliza">
+  <div class="camera">
+    <img class="logo" src="marca/logos/mentor-logo-claro.svg" data-in="0" style="height:64px;align-self:flex-start">
+    <div>
+      <div class="t2c" data-palavras data-in="0" data-ritmo="0.07">Metade do salário do mês anterior</div>
+      <div class="bars">
+        <div class="r2" data-in="0.6"><div class="lb"><span>Salário de outubro</span><b>R$ 2.400</b></div><div class="b"><i style="width:100%;background:#C5CBD3" data-growx="0.7" data-dur="0.6"></i></div></div>
+        <div class="r2" data-in="1.2"><div class="lb" style="color:var(--blue)"><span>1ª parcela do 13º</span><b>R$ 1.200</b></div><div class="b"><i style="width:50%;background:var(--blue)" data-growx="1.3" data-dur="0.7" data-pulsa="2.2" data-som="impacto"></i></div></div>
+      </div>
+      <div class="nota" data-in="2.0" data-from="left">A 2ª parcela vence até 20 de dezembro.</div>
+    </div>
+    <p class="fn" style="margin:0;color:#5B6670;opacity:1" data-in="2.4">Valores de exemplo. Fonte: Lei 4.749/1965, arts. 1º e 2º.</p>
+  </div>
+</section>
+<section class="cena blue" data-dur="3.4" data-trans="zoom" data-camera="aproxima">
+  <div class="camera">
+    <img class="logo" src="marca/logos/mentor-logo-sobre-azul.svg" data-in="0" style="height:80px;align-self:flex-start">
+    <div class="resp" data-in="0.1" data-from="zoom">
+      <div class="p1" data-palavras data-in="0.2">Responda este story com</div>
+      <div class="k" data-in="0.6" data-from="zoom" data-pulsa="1.4" data-som="impacto">PARCELA</div>
+      <div class="s" data-palavras data-in="1.0" data-ritmo="0.06">e eu te mando o checklist do 13º.</div>
+    </div>
+    <p class="chama" data-in="1.8">Hoje, 12h15, no feed: vendi pelo WhatsApp e o cliente desistiu.</p>
+  </div>
+</section>
+</body></html>

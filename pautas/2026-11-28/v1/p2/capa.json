@@ -1,0 +1,7 @@
+{
+ "fundo": "cloud",
+ "titulo": "Vendi pelo WhatsApp e o cliente desistiu. Tenho que aceitar?",
+ "apoio": "Venda fora da loja, produto sem defeito.",
+ "previa": {"tipo": "barras", "series": [{"rotulo": "Prazo para desistir", "valor": 7, "destaque": true}], "sufixo": " dias"},
+ "chamada": "Arraste para ver o que fazer"
+}

@@ -1,0 +1,62 @@
+{
+ "p1": [
+  {
+   "dado": "1ª parcela (adiantamento) do 13º: metade do salário do mês anterior, paga entre fevereiro e novembro",
+   "fonte": "Lei 4.749/1965, art. 2º",
+   "ano": 1965,
+   "frase": "\"Entre os meses de fevereiro e novembro de cada ano, o empregador pagará\" (... como adiantamento, metade do salário recebido no mês anterior) — conferido no Planalto em 27/11/2026",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l4749.htm"
+  },
+  {
+   "dado": "13º pago até 20 de dezembro, compensado o adiantamento",
+   "fonte": "Lei 4.749/1965, art. 1º",
+   "ano": 1965,
+   "frase": "\"será paga pelo empregador até o dia 20 de dezembro de cada ano\" — conferido no Planalto em 27/11/2026",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l4749.htm"
+  },
+  {
+   "dado": "Salário de outubro R$ 2.400 → 1ª parcela R$ 1.200",
+   "fonte": "exemplo calculado",
+   "frase": "2.400 ÷ 2 = 1.200 (valores de exemplo)",
+   "url": null
+  }
+ ],
+ "p2": [
+  {
+   "dado": "7 dias para desistir, contados da assinatura ou do recebimento, em contratação fora do estabelecimento; valores devolvidos de imediato e atualizados",
+   "fonte": "Código de Defesa do Consumidor (Lei 8.078/1990), art. 49 e parágrafo único",
+   "ano": 1990,
+   "frase": "\"O consumidor pode desistir do contrato, no prazo de 7 dias a contar de sua assinatura ou do ato de recebimento\" / \"serão devolvidos, de imediato, monetariamente atualizados\" — conferido no Planalto em 27/11/2026",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm"
+  },
+  {
+   "dado": "Canal claro para desistir; desistência pela mesma ferramenta da compra; aviso à operadora do cartão para não lançar ou estornar; confirmação imediata",
+   "fonte": "Decreto 7.962/2013, art. 5º, caput e §§ 1º, 3º e 4º",
+   "ano": 2013,
+   "frase": "\"O fornecedor deve enviar ao consumidor confirmação imediata do recebimento da manifestação de arrependimento.\" (§4º) — conferido no Planalto em 27/11/2026; sem revogação indicada",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d7962.htm"
+  }
+ ],
+ "p3": [
+  {
+   "dado": "Direito à renovação: contrato escrito com prazo determinado; prazo mínimo ou soma ininterrupta de 5 anos; 3 anos no mesmo ramo",
+   "fonte": "Lei 8.245/1991, art. 51, I a III",
+   "ano": 1991,
+   "frase": "\"o prazo mínimo do contrato a renovar ou a soma dos prazos ininterruptos dos contratos escritos seja de cinco anos;\" — conferido no Planalto em 27/11/2026",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l8245.htm"
+  },
+  {
+   "dado": "Janela da ação renovatória: de 1 ano a 6 meses antes do fim do contrato",
+   "fonte": "Lei 8.245/1991, art. 51, §5º",
+   "ano": 1991,
+   "frase": "\"Do direito a renovação decai aquele que não propuser a ação no interregno de um ano, no máximo,\" (até seis meses, no mínimo, anteriores ao fim do contrato) — conferido no Planalto em 27/11/2026",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l8245.htm"
+  },
+  {
+   "dado": "Fim 30/11/2027 → janela 30/11/2026 a 30/05/2027",
+   "fonte": "exemplo calculado com o §5º",
+   "frase": "datas de exemplo",
+   "url": null
+  }
+ ]
+}

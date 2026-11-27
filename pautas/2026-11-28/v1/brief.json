@@ -1,0 +1,63 @@
+{
+ "data": "2026-11-28",
+ "versao": 1,
+ "regras": "v2",
+ "volume": "v3",
+ "contexto": "27/11: story blue Vendas, carrossel cloud Financeiro, reel night Estoque. Último post previsto (27/11 18:30) night → 28/11 abre em blue. Carrossel e reel fora de Financeiro e Estoque. 28/11 é sábado; 30/11 (segunda) é o último dia da 1ª parcela do 13º. Sem vídeo de gente real (marca/telas não existe). Teste story → feed descartado em 27/11. 27/11 sem teste → 28/11 com teste: story em vídeo.",
+ "teste": {
+  "peca": "p1",
+  "descricao": "Story em vídeo (10,8 s, 3 cenas, palavras entrando e som desde o quadro 0) em vez de PNG, mesmo CTA de resposta. Base: stories PNG do IG com 24h+ desde 22/11 = 20, 15, 16 (26/11 13 preliminar). 1º de 5 posts."
+ },
+ "pecas": [
+  {
+   "id": "p1",
+   "formato": "story",
+   "fundo": "blue",
+   "modulo": "Pessoas",
+   "horario_ig": "08:40",
+   "horario_fb": "08:45",
+   "brief": {
+    "angulo": "educativo",
+    "tema": "Pessoas: a 1ª parcela do 13º (metade do salário do mês anterior) vence até 30/11, segunda-feira; a 2ª até 20/12 (Lei 4.749/1965, arts. 1º e 2º)",
+    "cliente_ideal": "Dono de comércio ou serviço com 3 a 20 funcionários que cuida da folha com o contador e pode deixar o prazo de novembro passar no fim de semana",
+    "objetivo": "lead (resposta PARCELA)",
+    "cta": "Responda este story com PARCELA e eu te mando o checklist do 13º",
+    "teste_do_envio": "Mandaria para quem cuida do financeiro ou para o contador, para confirmar o pagamento até segunda"
+   }
+  },
+  {
+   "id": "p2",
+   "formato": "carrossel",
+   "fundo": "cloud",
+   "modulo": "Vendas",
+   "linkedin": true,
+   "horario_ig": "12:15",
+   "horario_fb": "12:30",
+   "horario_li": "12:45",
+   "brief": {
+    "angulo": "educativo",
+    "tema": "Vendas: venda fora da loja (site, WhatsApp, telefone) dá ao cliente 7 dias para desistir, mesmo sem defeito; devolução imediata e atualizada; canal de desistência, confirmação e estorno no cartão (CDC, art. 49; Decreto 7.962/2013, art. 5º)",
+    "cliente_ideal": "Dono de loja que vendeu pelo WhatsApp e pelo Instagram na Black Friday e começa a receber pedidos de devolução sem defeito",
+    "objetivo": "salvamento",
+    "cta": "Comente ONLINE que eu te mando o checklist da desistência na venda online",
+    "teste_do_envio": "Mandaria para quem atende o WhatsApp da loja, para saber o que responder quando o cliente desistir"
+   }
+  },
+  {
+   "id": "p3",
+   "formato": "reel",
+   "fundo": "night",
+   "modulo": "Contratos",
+   "horario_ig": "18:30",
+   "horario_fb": "18:45",
+   "brief": {
+    "angulo": "dor",
+    "tema": "Contratos: renovação do aluguel do ponto comercial — condições do art. 51 da Lei 8.245/1991 (contrato escrito com prazo, 5 anos, 3 anos no mesmo ramo) e a janela de 1 ano a 6 meses antes do fim (§5º); exemplo com fim em 30/11/2027, janela aberta a partir de 30/11/2026",
+    "cliente_ideal": "Dono de loja, clínica ou restaurante em imóvel alugado há anos, com contrato vencendo em 2027, que acha que renova 'conversando com o dono'",
+    "objetivo": "lead (comentário PONTO)",
+    "cta": "Comente PONTO que eu te mando o checklist da renovação do aluguel",
+    "teste_do_envio": "Mandaria para o sócio ou para o advogado, para marcar a janela antes que ela feche"
+   }
+  }
+ ]
+}
