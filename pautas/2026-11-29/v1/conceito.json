@@ -1,0 +1,61 @@
+{
+ "p1": {
+  "big_ideas": {
+   "segura": "lista de dicas de pós-venda",
+   "ousada": "o story é a própria mensagem: um balão de conversa branco em cima do azul, pronto para copiar",
+   "estranha": "story com a caixa de entrada vazia do lojista",
+   "escolhida": "ousada",
+   "por_que": "a segura não para o dedo; a estranha não ensina nada"
+  },
+  "quebra_de_padrao": "balão de mensagem gigante no meio do story, como se fosse um print",
+  "formato": "story PNG (render.py)",
+  "fundo_inicial": "blue",
+  "destaque": "Night sobre azul",
+  "semente_trilha": null
+ },
+ "p2": {
+  "big_ideas": {
+   "segura": "lista do que pedir antes do recesso",
+   "ousada": "duas barras lado a lado: quanto o estoque dura × quantos dias o fornecedor fica sem entregar; a barra curta é o problema",
+   "estranha": "calendário de dezembro com os dias do recesso arrancados",
+   "escolhida": "ousada",
+   "por_que": "a comparação de barras mostra a falta em 1 segundo; o calendário não mostra quanto pedir"
+  },
+  "quebra_de_padrao": "a resposta antes da conta: o slide 2 abre dizendo que faltam 5 dias e só depois mostra a divisão",
+  "formato": "carrossel: capa PNG + 2 slides animados + checklist + CTA",
+  "fundo_inicial": "cloud",
+  "capa": {
+   "fundo": "cloud",
+   "titulo": "O fornecedor fecha no fim de ano. Meu estoque aguenta?",
+   "previa": "barras 15 dias × 20 dias (exemplo)"
+  },
+  "slides": [
+   "capa cloud",
+   "s2 night animado: barras 15 × 20 dias, 120 ÷ 8 = 15 dias (exemplo)",
+   "s3 blue animado: (20 − 15) × 8 = 40 unidades a mais",
+   "s4 cloud checklist 5 passos",
+   "s5 blue CTA RECESSO"
+  ],
+  "semente_trilha": 3332
+ },
+ "p3": {
+  "big_ideas": {
+   "segura": "explicar que parcelado entra aos poucos",
+   "ousada": "a venda de R$ 9.000 vira três barras de R$ 3.000 e, na cena seguinte, a conta de R$ 5.000 do fornecedor aparece inteira ao lado da primeira barra",
+   "estranha": "maquininha cuspindo o dinheiro em pedaços",
+   "escolhida": "ousada",
+   "por_que": "a estranha pede ilustração que não temos; a segura não tem virada"
+  },
+  "quebra_de_padrao": "a barra cheia da venda se parte em três na troca de cena (máscara no momento da virada)",
+  "formato": "reel 16,6 s",
+  "fundo_inicial": "night",
+  "cenas": [
+   "night: 'Vendi bem no cartão. Quanto entra em dezembro?' + barra Cartão em 3x R$ 9.000 (exemplo)",
+   "blue: barras Dez/Jan/Fev R$ 3.000 cada",
+   "cloud: entra R$ 3.000 × estoque vence R$ 5.000; falta R$ 2.000",
+   "night: 4 passos",
+   "cloud: CTA CAIXA"
+  ],
+  "semente_trilha": 3333
+ }
+}

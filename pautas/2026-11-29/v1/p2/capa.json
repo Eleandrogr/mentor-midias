@@ -1,0 +1,7 @@
+{
+ "fundo": "cloud",
+ "titulo": "O fornecedor fecha no fim de ano. Meu estoque aguenta?",
+ "apoio": "A conta de 1 minuto antes do último pedido.",
+ "previa": {"tipo": "barras", "series": [{"rotulo": "Café 500 g (exemplo)", "valor": 15, "destaque": true}, {"rotulo": "Dias sem entrega (exemplo)", "valor": 20}], "sufixo": " dias"},
+ "chamada": "Arraste para fazer a conta"
+}

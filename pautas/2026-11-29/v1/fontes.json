@@ -1,0 +1,19 @@
+{
+ "observacao": "Nesta execução o WebFetch não abriu nenhuma página (permissão não respondida em execução sem ninguém; o shell também é bloqueado para planalto.gov.br). Por isso as 3 peças não usam dado externo: todos os números são exemplos marcados como exemplo na arte e na legenda. Temas com dado legal (prazo de validade no CDC, aviso prévio e prazo da rescisão na CLT) ficaram para uma execução que consiga abrir a fonte.",
+ "dados": [],
+ "exemplos": [
+  {
+   "peca": "p1",
+   "valores": "nome Ana e mensagem de exemplo"
+  },
+  {
+   "peca": "p2",
+   "valores": "120 un. ÷ 8 por dia = 15 dias; recesso 23/12 a 06/01 + 5 dias de entrega = 20 dias sem entrega (22/12 a 11/01); (20 − 15) × 8 = 40 un.",
+   "conferido": "conta refeita na planilha-cobertura-estoque.xlsx (LibreOffice): 8; 15; 5; 40"
+  },
+  {
+   "peca": "p3",
+   "valores": "R$ 9.000 ÷ 3 = R$ 3.000; R$ 5.000 − R$ 3.000 = R$ 2.000"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "data": "2026-11-29",
+ "versao": 1,
+ "regras": "v2",
+ "volume": "v3",
+ "contexto": "28/11: story blue Pessoas, carrossel cloud Vendas, reel night Contratos. Último post previsto (28/11 18:30) night → 29/11 abre em blue. Carrossel e reel fora de Vendas e Contratos. 29/11 é domingo, 2º dia depois da Black Friday. Sem vídeo de gente real (marca/telas não existe). 28/11 teve teste (story em vídeo, 1º de 5) → 29/11 sem teste; o 2º story em vídeo vai em 30/11. Nesta execução o WebFetch não abriu nenhuma página (permissão não respondida, execução sem ninguém), então as 3 peças usam só contas de exemplo, sem dado externo.",
+ "teste": null,
+ "pecas": [
+  {"id": "p1", "formato": "story", "fundo": "blue", "modulo": "Vendas", "horario_ig": "08:40", "horario_fb": "08:45",
+   "brief": {"angulo": "educativo", "tema": "Vendas: pós-venda da Black Friday — domingo é o dia de mandar uma mensagem curta para quem comprou (chegou bem? precisa trocar?)", "cliente_ideal": "Dono de loja que vendeu pelo WhatsApp e no balcão na Black Friday e não tem rotina de falar com o cliente depois da venda", "objetivo": "lead (resposta VOLTA)", "cta": "Responda este story com VOLTA e eu te mando 3 mensagens prontas de pós-venda", "teste_do_envio": "Mandaria para quem atende o WhatsApp da loja, para disparar as mensagens hoje"}},
+  {"id": "p2", "formato": "carrossel", "fundo": "cloud", "modulo": "Estoque", "linkedin": true, "horario_ig": "12:15", "horario_fb": "12:30", "horario_li": "12:45",
+   "brief": {"angulo": "educativo", "tema": "Estoque: o fornecedor fecha no fim de ano — cobertura em dias (estoque ÷ venda por dia) comparada com os dias sem entrega; a diferença entra no último pedido antes do recesso (valores e datas de exemplo)", "cliente_ideal": "Dono de comércio ou pequena indústria que compra de poucos fornecedores e só descobre o recesso quando o pedido de janeiro não chega", "objetivo": "salvamento", "cta": "Comente RECESSO que eu te mando a planilha de cobertura do estoque", "teste_do_envio": "Mandaria para quem faz as compras, para fechar o último pedido antes do recesso"}},
+  {"id": "p3", "formato": "reel", "fundo": "night", "modulo": "Financeiro", "horario_ig": "18:30", "horario_fb": "18:45",
+   "brief": {"angulo": "dor", "tema": "Financeiro: venda parcelada no cartão na Black Friday entra aos poucos (exemplo: R$ 9.000 em 3x = R$ 3.000 por mês), mas a conta do fornecedor de dezembro vence inteira; listar parcelas por mês antes de planejar dezembro", "cliente_ideal": "Dono de loja que vendeu bem no cartão parcelado na Black Friday e conta com esse dinheiro para pagar o fornecedor em dezembro", "objetivo": "lead (comentário CAIXA)", "cta": "Comente CAIXA que eu te mando a planilha de fluxo de caixa de 30 dias", "teste_do_envio": "Mandaria para o sócio ou para quem cuida do financeiro, antes de prometer pagamento ao fornecedor"}}
+ ]
+}

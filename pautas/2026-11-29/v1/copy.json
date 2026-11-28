@@ -1,0 +1,35 @@
+{
+ "p1": {
+  "arte": "Vendi na Black Friday. / Já falei com quem comprou? / Mensagem de hoje: Oi, Ana. Obrigado pela compra na Black Friday. Chegou tudo certo? Se precisar trocar, é só me chamar aqui. / Domingo, 15 minutos. Uma mensagem curta para cada cliente da semana. / Nome e mensagem de exemplo. / Responda este story com VOLTA e eu te mando 3 mensagens prontas de pós-venda. / Hoje, 12h15, no feed: o fornecedor fecha no fim de ano."
+ },
+ "p2": {
+  "instagram": "O fornecedor fecha no fim de ano. Meu estoque aguenta?\n\nA conta é de 1 minuto: cobertura = estoque ÷ venda por dia.\nNo exemplo: 120 pacotes de café ÷ 8 por dia = 15 dias.\nSe o fornecedor entrega dia 22/12 e só volta a entregar dia 11/01, são 20 dias sem entrega. Faltam 5 dias de café.\n5 dias × 8 por dia = 40 pacotes a mais no último pedido. (Valores e datas de exemplo.)\n\nNa prática, nesta semana:\n1. Liste os 20 itens que mais vendem\n2. Venda por dia: últimos 30 dias ÷ 30\n3. Peça ao fornecedor as datas do recesso por escrito\n4. Calcule a cobertura de cada item\n5. Peça a diferença no último pedido antes do recesso\n\nNo Mentor, a venda de cada item aparece no relatório de vendas, sem somar nota por nota.\n\nComente RECESSO que eu te mando a planilha de cobertura do estoque.",
+  "facebook": "Você já perguntou ao seu fornecedor quando ele fecha no fim de ano?\n\nA conta para saber se o estoque aguenta: estoque ÷ venda por dia = dias de cobertura.\nNo exemplo do vídeo: 120 unidades ÷ 8 por dia = 15 dias, contra 20 dias sem entrega. Faltam 40 unidades no último pedido. (Valores de exemplo.)\n\nNa prática: faça a conta nesta semana para os itens que mais vendem.\n\nComente RECESSO que eu te mando a planilha de cobertura do estoque.",
+  "linkedin": "Quem faz as compras na sua empresa já sabe as datas do recesso dos fornecedores?\n\nA conta que eu faria antes do último pedido do ano:\nCobertura = estoque ÷ venda média por dia.\nDias que faltam = dias sem entrega − cobertura.\nPedido extra = dias que faltam × venda por dia.\n\nNo exemplo do vídeo: 120 unidades ÷ 8 por dia = 15 dias de cobertura. Última entrega em 22/12 e próxima em 11/01: 20 dias sem entrega. Faltam 5 dias, ou 40 unidades. (Valores e datas de exemplo.)\n\nO que eu faria nesta semana:\n1. Listar os 20 itens que mais vendem\n2. Calcular a venda média por dia dos últimos 30 dias\n3. Pedir aos fornecedores as datas do recesso por escrito\n4. Calcular a cobertura de cada item\n5. Incluir a diferença no último pedido antes do recesso\n\nComente RECESSO que eu te mando a planilha de cobertura do estoque.",
+  "hashtags_ig": [
+   "estoque",
+   "compras",
+   "varejo",
+   "pequenasempresas",
+   "gestao"
+  ],
+  "hashtags_fb": [],
+  "hashtags_li": [
+   "Estoque",
+   "PME",
+   "Compras"
+  ]
+ },
+ "p3": {
+  "instagram": "Vendi bem no cartão. Quanto entra em dezembro?\n\nVenda parcelada entra aos poucos.\nNo exemplo: R$ 9.000 em 3x = R$ 3.000 em dezembro, R$ 3.000 em janeiro, R$ 3.000 em fevereiro.\nSe o estoque comprado para a Black Friday vence em dezembro, R$ 5.000 saem de uma vez. Faltam R$ 2.000 no caixa. (Valores de exemplo; o dia de cada parcela depende do contrato da maquininha.)\n\nNa prática, nesta semana:\n1. Liste as vendas parceladas da Black Friday\n2. Anote o mês de cada parcela\n3. Compare com o que vence em dezembro\n4. Se faltar, negocie o prazo com o fornecedor agora\n\nNo Mentor, as parcelas a receber aparecem por mês no Financeiro.\n\nComente CAIXA que eu te mando a planilha de fluxo de caixa de 30 dias.",
+  "facebook": "Você sabe quanto da Black Friday no cartão entra de fato em dezembro?\n\nNo exemplo do vídeo: R$ 9.000 em 3x = R$ 3.000 por mês. Se a conta do fornecedor de R$ 5.000 vence em dezembro, faltam R$ 2.000. (Valores de exemplo.)\n\nNa prática: anote o mês de cada parcela antes de prometer pagamento ao fornecedor.\n\nComente CAIXA que eu te mando a planilha de fluxo de caixa de 30 dias.",
+  "hashtags_ig": [
+   "fluxodecaixa",
+   "blackfriday",
+   "gestaofinanceira",
+   "pequenasempresas",
+   "varejo"
+  ],
+  "hashtags_fb": []
+ }
+}
